@@ -5,7 +5,7 @@
 👋 Hi, I’m @renzodupont<br/><br/>
 I have 10+ years of experience in different development technologies, 8+ being Salesforce Advanced Administrator for several companies.<br/>
 I am a team player and enjoy finding new challenges everyday.<br/><br/>
-💞️ Emoji fan, I find them a great tool to keek a possitive actitud and increse morale.
+👉 Emoji fan, I find them a great tool to keek a possitive actitud and increse morale.
 
 # About this repo
 
