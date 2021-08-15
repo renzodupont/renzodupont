@@ -14,4 +14,4 @@ I found it so useful that I started using it for every lab project as well as to
 
 # Contact info
 
-📫 https://www.linkedin.com/in/renzo-dupont-b9797941/ | https://twitter.com/renzodupont | https://instagram.com/renzodupont
+📫 https://www.linkedin.com/in/renzo-dupont-b9797941/ | https://twitter.com/renzodupont | https://instagram.com/renzondl
