@@ -329,11 +329,7 @@ nav ul li a:hover::after {
 /* === HERO SECTION === */
 .hero {
   position: relative;
-  background: linear-gradient(
-    135deg,
-    #050812 0%,
-    var(--color-bg-primary) 100%
-  );
+  background: linear-gradient(135deg, #050812 0%, var(--color-bg-primary) 100%);
   color: var(--color-text-primary);
   padding: clamp(4rem, 15vh, 8rem) 0;
   text-align: center;

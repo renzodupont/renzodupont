@@ -72,12 +72,12 @@ jobs:
             echo "🔄 Restarting application..."
 
             # Check if PM2 process exists
-            if pm2 list | grep -q "nomasdesinformacion"; then
+            if pm2 list | grep -q "renzodupont"; then
               echo "♻️  Restarting existing PM2 process..."
-              pm2 restart nomasdesinformacion
+              pm2 restart renzodupont
             else
               echo "🆕 Starting new PM2 process..."
-              pm2 start app.js --name "nomasdesinformacion" --time
+              pm2 start app.js --name "renzodupont" --time
             fi
 
             # Save PM2 configuration
@@ -89,7 +89,7 @@ jobs:
 
             # Show application logs (last 20 lines)
             echo "📝 Recent application logs:"
-            pm2 logs nomasdesinformacion --lines 20 --nostream
+            pm2 logs renzodupont --lines 20 --nostream
 
             echo "✅ Deployment completed successfully!"
             echo "🌐 Application should be running on port 8899"
