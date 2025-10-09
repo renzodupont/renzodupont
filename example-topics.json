@@ -1,0 +1,64 @@
+{
+  "topics": [
+    {
+      "topic": "React Server Components: Revolución en el Desarrollo Web Moderno",
+      "context": "Explain React Server Components in 2024-2025, benefits, how they work, and practical examples. Include comparisons with traditional React."
+    },
+    {
+      "topic": "TypeScript vs JavaScript: Cuándo y Por Qué Elegir TypeScript en 2025",
+      "context": "Analyze TypeScript adoption, benefits, trade-offs, and real-world use cases. Include code examples and best practices."
+    },
+    {
+      "topic": "Inteligencia Artificial para Desarrolladores: APIs de IA que Todo Programador Debe Conocer",
+      "context": "Cover GPT-4, Claude, Gemini APIs. Practical integration examples, pricing, use cases for web development."
+    },
+    {
+      "topic": "Next.js 15: Guía Completa de las Nuevas Características y App Router",
+      "context": "Deep dive into Next.js 15 features, App Router, Server Actions, streaming, and performance improvements with examples."
+    },
+    {
+      "topic": "Python para Desarrollo Web: FastAPI vs Django vs Flask en 2025",
+      "context": "Compare modern Python frameworks, performance benchmarks, use cases, and when to choose each one."
+    },
+    {
+      "topic": "CSS Moderno: Grid, Flexbox y las Nuevas Propiedades que Cambian Todo",
+      "context": "Cover modern CSS features including Container Queries, :has(), cascade layers, and new layout techniques."
+    },
+    {
+      "topic": "Optimización Web: Cómo Lograr 100/100 en Lighthouse Performance",
+      "context": "Practical guide to web performance optimization: lazy loading, code splitting, image optimization, Core Web Vitals."
+    },
+    {
+      "topic": "Arquitectura de Microservicios: Cuándo Usarla y Cuándo No en Proyectos Reales",
+      "context": "Explain microservices architecture, benefits, complexity, when to use monoliths vs microservices, with examples."
+    },
+    {
+      "topic": "Git Avanzado: Técnicas que Todo Desarrollador Profesional Debe Dominar",
+      "context": "Cover advanced Git concepts: rebasing, cherry-picking, bisect, reflog, and collaborative workflows."
+    },
+    {
+      "topic": "Docker y Kubernetes: Guía Práctica para Desarrolladores JavaScript",
+      "context": "Practical Docker containerization and Kubernetes orchestration for Node.js apps, with deployment examples."
+    },
+    {
+      "topic": "GraphQL vs REST: Análisis Técnico y Casos de Uso en 2025",
+      "context": "Compare GraphQL and REST APIs, performance, tooling, when to use each, with code examples and best practices."
+    },
+    {
+      "topic": "Testing en JavaScript: Jest, Vitest y Testing Library - Guía Completa",
+      "context": "Comprehensive testing guide for JavaScript/React apps, unit tests, integration tests, E2E testing best practices."
+    },
+    {
+      "topic": "Carrera en Tech desde Uruguay: Oportunidades, Salarios y Trabajo Remoto",
+      "context": "Analyze tech job market in Uruguay, remote opportunities, salary ranges, best companies, and career paths for developers."
+    },
+    {
+      "topic": "Web3 y Blockchain para Desarrolladores: Más Allá del Hype",
+      "context": "Technical overview of blockchain development, smart contracts, real use cases, and practical considerations for web developers."
+    },
+    {
+      "topic": "Node.js vs Deno vs Bun: El Futuro de JavaScript en el Backend",
+      "context": "Compare Node.js runtime alternatives in 2025, performance benchmarks, ecosystem maturity, migration considerations."
+    }
+  ]
+}

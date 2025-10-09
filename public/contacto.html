@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contacta con Renzo Dupont para consultas, colaboraciones o sugerencias sobre tecnología y desarrollo."
+    />
+    <title>Contacto | Renzo Dupont</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">Renzo Dupont</a>
+          <nav>
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/quienes-somos.html">Sobre Mí</a></li>
+              <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="page-content">
+      <div class="container-narrow">
+        <h1>Contacto</h1>
+
+        <p>
+          Me encanta conectar con otros desarrolladores, profesionales de
+          tecnología y personas interesadas en aprender. Si tenés consultas
+          sobre mis artículos, querés sugerir temas, colaborar en algún
+          proyecto, o simplemente conversar sobre tecnología, no dudes en
+          escribirme.
+        </p>
+
+        <p style="text-align: center">
+          <a href="mailto:renzo@renzodupont.com" class="contact-email"
+            >renzo@renzodupont.com</a
+          >
+        </p>
+
+        <p>
+          Me comprometo a responder todas las consultas en el menor tiempo
+          posible. La construcción de una comunidad de aprendizaje sólida en
+          español es un trabajo colectivo, y tu participación es fundamental.
+        </p>
+
+        <p>
+          <strong>Algunas ideas de contacto:</strong>
+        </p>
+        <ul>
+          <li>Sugerir temas para futuros artículos</li>
+          <li>Reportar errores técnicos o mejoras</li>
+          <li>Proponer colaboraciones o proyectos</li>
+          <li>Consultas sobre desarrollo web o programación</li>
+          <li>Compartir recursos o herramientas útiles</li>
+        </ul>
+
+        <p>
+          También podés conectarte conmigo en redes sociales para mantenerte al
+          día con las últimas publicaciones y compartir experiencias con la
+          comunidad.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <ul class="social-links">
+            <li><a href="#" aria-label="Twitter">𝕏</a></li>
+            <li><a href="#" aria-label="LinkedIn">in</a></li>
+            <li><a href="#" aria-label="GitHub">⚡</a></li>
+          </ul>
+          <p class="footer-text">
+            © 2025 <a href="/">Renzo Dupont</a> - Tecnología en español
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button
+      class="scroll-to-top"
+      id="scrollToTop"
+      aria-label="Volver arriba"
+    ></button>
+
+    <!-- SCRIPTS -->
+    <script>
+      // Efecto header al hacer scroll
+      const header = document.querySelector("header");
+      const scrollToTopBtn = document.getElementById("scrollToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+          scrollToTopBtn.classList.add("visible");
+        } else {
+          header.classList.remove("scrolled");
+          scrollToTopBtn.classList.remove("visible");
+        }
+      });
+
+      // Scroll to top functionality
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>

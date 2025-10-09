@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conoce a Renzo Dupont: desarrollador, creador de contenido técnico y apasionado por compartir conocimiento de tecnología en español."
+    />
+    <title>Sobre Mí | Renzo Dupont</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">Renzo Dupont</a>
+          <nav>
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/quienes-somos.html">Sobre Mí</a></li>
+              <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="page-content">
+      <div class="container-narrow">
+        <h1>Sobre Mí</h1>
+
+        <p>
+          ¡Hola! Soy <strong>Renzo Dupont</strong>, desarrollador de software y
+          creador de contenido técnico apasionado por la tecnología y el
+          desarrollo web. Este blog nace con la misión de compartir conocimiento
+          técnico de calidad en español, especialmente orientado a la comunidad
+          de Uruguay y toda Latinoamérica.
+        </p>
+
+        <p>
+          En un mundo donde el contenido técnico en inglés domina, creo
+          firmemente que
+          <strong
+            >el conocimiento debe estar disponible en nuestro idioma</strong
+          >. Mi objetivo es crear tutoriales, artículos de análisis y recursos
+          prácticos que ayuden a desarrolladores de todos los niveles a mejorar
+          sus habilidades y mantenerse actualizados con las últimas tendencias
+          tecnológicas.
+        </p>
+
+        <p>
+          Me especializo en <strong>desarrollo web full-stack</strong>, con
+          enfoque en tecnologías modernas como JavaScript, React, Node.js,
+          Python y arquitecturas de cloud. Pero más allá de las tecnologías
+          específicas, me apasiona entender los conceptos fundamentales que
+          hacen que la tecnología funcione: algoritmos, patrones de diseño,
+          buenas prácticas y arquitectura de software.
+        </p>
+
+        <p>
+          Este espacio está diseñado para ser accesible pero profundo. No busco
+          simplificar en exceso ni usar términos confusos innecesariamente. Mi
+          filosofía es clara:
+          <strong
+            >explicar conceptos complejos de manera que sean
+            comprensibles</strong
+          >, pero sin perder rigurosidad técnica. Cada artículo está pensado
+          para que puedas aprender algo nuevo, ya sea una herramienta, un
+          concepto o una mejor manera de resolver problemas.
+        </p>
+
+        <p>
+          Como profesional radicado en Uruguay, entiendo las realidades del
+          mercado local y regional. Mis artículos no solo cubren tecnología
+          global, sino también cómo aplicarla en nuestro contexto, qué
+          oportunidades existen en el mercado local e internacional, y cómo
+          desarrollar una carrera en tecnología desde Latinoamérica.
+        </p>
+
+        <p>
+          Te invito a ser parte de esta comunidad de aprendizaje. Compartí los
+          artículos que te resulten útiles, dejá tus comentarios y preguntas, y
+          ayudame a construir un espacio donde el conocimiento técnico en
+          español sea de primer nivel.
+          <strong
+            >Porque la tecnología no entiende de idiomas, pero sí de
+            comunidades.</strong
+          >
+        </p>
+
+        <h2>Áreas de Enfoque</h2>
+        <ul>
+          <li>Desarrollo Web (Frontend y Backend)</li>
+          <li>JavaScript, TypeScript, React, Node.js</li>
+          <li>Python y desarrollo de APIs</li>
+          <li>Arquitectura de software y patrones de diseño</li>
+          <li>Cloud Computing y DevOps</li>
+          <li>Inteligencia Artificial y Machine Learning</li>
+          <li>Carrera profesional en tecnología</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <ul class="social-links">
+            <li><a href="#" aria-label="Twitter">𝕏</a></li>
+            <li><a href="#" aria-label="LinkedIn">in</a></li>
+            <li><a href="#" aria-label="GitHub">⚡</a></li>
+          </ul>
+          <p class="footer-text">
+            © 2025 <a href="/">Renzo Dupont</a> - Tecnología en español
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button
+      class="scroll-to-top"
+      id="scrollToTop"
+      aria-label="Volver arriba"
+    ></button>
+
+    <!-- SCRIPTS -->
+    <script>
+      // Efecto header al hacer scroll
+      const header = document.querySelector("header");
+      const scrollToTopBtn = document.getElementById("scrollToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+          scrollToTopBtn.classList.add("visible");
+        } else {
+          header.classList.remove("scrolled");
+          scrollToTopBtn.classList.remove("visible");
+        }
+      });
+
+      // Scroll to top functionality
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>

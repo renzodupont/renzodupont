@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Renzo Dupont - Blog de tecnología, desarrollo web, programación y análisis técnico en español para Uruguay y la región."
+    />
+    <meta
+      name="keywords"
+      content="tecnología, desarrollo web, programación, Uruguay, español, JavaScript, Python, React, Node.js"
+    />
+    <meta name="author" content="Renzo Dupont" />
+    <title>Renzo Dupont | Tecnología y Desarrollo</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">Renzo Dupont</a>
+
+          <!-- SEARCH BAR -->
+          <div class="search-container">
+            <form class="search-form" onsubmit="performSearch(event)">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar artículos..."
+                class="search-input"
+              />
+              <button type="submit" class="search-btn">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="21 21l-4.35-4.35"></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/quienes-somos.html">Sobre Mí</a></li>
+              <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <h1>Tecnología en Español.<br />Conocimiento sin Barreras.</h1>
+        <p>
+          Artículos técnicos, tutoriales y análisis sobre desarrollo web,
+          programación y tecnología moderna para la comunidad hispanohablante.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLES -->
+    <section class="featured-section">
+      <div class="container">
+        <h2 class="section-title">Artículos Destacados</h2>
+        <div id="featuredArticles" class="featured-grid">
+          <!-- Featured articles will be loaded here -->
+          <div class="loading">Cargando artículos destacados...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH RESULTS (Hidden by default) -->
+    <section class="search-results" id="searchResults" style="display: none">
+      <div class="container">
+        <h2 class="section-title">
+          Resultados de búsqueda para: <span id="searchTerm"></span>
+        </h2>
+        <div id="searchArticles" class="articles-grid">
+          <!-- Search results will be loaded here -->
+        </div>
+        <button onclick="clearSearch()" class="clear-search-btn">
+          Ver todos los artículos
+        </button>
+      </div>
+    </section>
+
+    <!-- ALL ARTICLES -->
+    <section class="articles-section" id="allArticles">
+      <div class="container">
+        <h2 class="section-title">Todos los Artículos</h2>
+        <div id="articlesGrid" class="articles-grid">
+          <!-- All articles will be loaded here -->
+          <div class="loading">Cargando artículos...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Renzo Dupont</h3>
+            <p>
+              Compartiendo conocimiento sobre tecnología, desarrollo web y
+              programación en español para Uruguay y toda la comunidad
+              hispanohablante.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Enlaces</h3>
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/quienes-somos.html">Sobre Mí</a></li>
+              <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Categorías</h3>
+            <ul id="categoriesList">
+              <!-- Categories will be loaded dynamically -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Renzo Dupont. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      let allPosts = [];
+      let currentSearch = "";
+
+      // Load posts on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        loadFeaturedPosts();
+        loadAllPosts();
+        loadCategories();
+      });
+
+      // Load featured posts
+      async function loadFeaturedPosts() {
+        try {
+          const response = await fetch("/api/posts?featured=true&limit=3");
+          const data = await response.json();
+
+          const container = document.getElementById("featuredArticles");
+          if (data.posts.length === 0) {
+            container.innerHTML =
+              "<p>No hay artículos destacados disponibles.</p>";
+            return;
+          }
+
+          container.innerHTML = data.posts
+            .map(
+              (post) => `
+            <article class="featured-card">
+              <div class="featured-image">
+                <img src="${getImagePath(post.id)}" alt="${
+                post.title
+              }" loading="lazy" />
+              </div>
+              <div class="featured-content">
+                <div class="featured-label">Destacado</div>
+                <h3><a href="${getPostUrl(post.link)}">${post.title}</a></h3>
+                <p class="featured-excerpt">${post.excerpt}</p>
+                <div class="featured-meta">
+                  <time>${formatDate(post.date)}</time>
+                  <div class="tags">
+                    ${post.tags
+                      .slice(0, 3)
+                      .map((tag) => `<span class="tag">${tag}</span>`)
+                      .join("")}
+                  </div>
+                </div>
+              </div>
+            </article>
+          `
+            )
+            .join("");
+        } catch (error) {
+          console.error("Error loading featured posts:", error);
+          document.getElementById("featuredArticles").innerHTML =
+            "<p>Error cargando artículos destacados.</p>";
+        }
+      }
+
+      // Load all posts
+      async function loadAllPosts() {
+        try {
+          const response = await fetch("/api/posts?limit=20");
+          const data = await response.json();
+          allPosts = data.posts;
+
+          displayPosts(allPosts, "articlesGrid");
+        } catch (error) {
+          console.error("Error loading posts:", error);
+          document.getElementById("articlesGrid").innerHTML =
+            "<p>Error cargando artículos.</p>";
+        }
+      }
+
+      // Display posts in a container
+      function displayPosts(posts, containerId) {
+        const container = document.getElementById(containerId);
+
+        if (posts.length === 0) {
+          container.innerHTML = "<p>No se encontraron artículos.</p>";
+          return;
+        }
+
+        container.innerHTML = posts
+          .map(
+            (post) => `
+          <article class="article-card">
+            <div class="article-image">
+              <img src="${getImagePath(post.id)}" alt="${
+              post.title
+            }" loading="lazy" />
+            </div>
+            <div class="article-content">
+              <h3><a href="${getPostUrl(post.link)}">${post.title}</a></h3>
+              <p class="article-excerpt">${truncateText(post.excerpt, 120)}</p>
+              <div class="article-meta">
+                <time>${formatDate(post.date)}</time>
+                <div class="tags">
+                  ${post.tags
+                    .slice(0, 3)
+                    .map((tag) => `<span class="tag">${tag}</span>`)
+                    .join("")}
+                </div>
+              </div>
+            </div>
+          </article>
+        `
+          )
+          .join("");
+      }
+
+      // Search functionality
+      async function performSearch(event) {
+        event.preventDefault();
+
+        const searchTerm = document.getElementById("searchInput").value.trim();
+        if (!searchTerm) return;
+
+        currentSearch = searchTerm;
+
+        try {
+          const response = await fetch(
+            `/api/posts?search=${encodeURIComponent(searchTerm)}&limit=50`
+          );
+          const data = await response.json();
+
+          document.getElementById("searchTerm").textContent = searchTerm;
+          document.getElementById("searchResults").style.display = "block";
+          document.getElementById("allArticles").style.display = "none";
+
+          displayPosts(data.posts, "searchArticles");
+
+          // Scroll to results
+          document
+            .getElementById("searchResults")
+            .scrollIntoView({ behavior: "smooth" });
+        } catch (error) {
+          console.error("Error searching posts:", error);
+          document.getElementById("searchArticles").innerHTML =
+            "<p>Error en la búsqueda. Inténtelo de nuevo.</p>";
+        }
+      }
+
+      // Clear search
+      function clearSearch() {
+        currentSearch = "";
+        document.getElementById("searchInput").value = "";
+        document.getElementById("searchResults").style.display = "none";
+        document.getElementById("allArticles").style.display = "block";
+      }
+
+      // Load categories for footer
+      function loadCategories() {
+        if (allPosts.length === 0) {
+          setTimeout(loadCategories, 1000);
+          return;
+        }
+
+        const allTags = allPosts.flatMap((post) => post.tags);
+        const uniqueTags = [...new Set(allTags)];
+        const topTags = uniqueTags.slice(0, 6);
+
+        const container = document.getElementById("categoriesList");
+        container.innerHTML = topTags
+          .map(
+            (tag) =>
+              `<li><a href="#" onclick="searchByTag('${tag}')">${tag}</a></li>`
+          )
+          .join("");
+      }
+
+      // Search by tag
+      function searchByTag(tag) {
+        document.getElementById("searchInput").value = tag;
+        performSearch({ preventDefault: () => {} });
+      }
+
+      // Helper functions
+      function getImagePath(postId) {
+        return `/posts/2025/10/${postId}-1.png`;
+      }
+
+      function getPostUrl(link) {
+        return "/" + link.replace("public/", "");
+      }
+
+      function formatDate(dateString) {
+        const date = new Date(dateString);
+        return date.toLocaleDateString("es-ES", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+      }
+
+      function truncateText(text, maxLength) {
+        if (text.length <= maxLength) return text;
+        return text.substring(0, maxLength).trim() + "...";
+      }
+    </script>
+  </body>
+</html>

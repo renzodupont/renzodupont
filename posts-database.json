@@ -1,0 +1,301 @@
+{
+  "posts": [
+    {
+      "id": "alerta-regional-la-desinformacion-israel-palestina-en-youtube-que-divide-a-uruguay-y-argentina",
+      "title": "Alerta Regional: La Desinformación Israel-Palestina en YouTube que Divide a Uruguay y Argentina",
+      "excerpt": "En la era digital, discernir la verdad del conflicto Israel-Palestina es un desafío. YouTube amplifica la desinformación y el odio, polarizando a sociedades como Uruguay y Argentina.",
+      "link": "public/posts/2025/10/alerta-regional-la-desinformacion-israel-palestina-en-youtube-que-divide-a-uruguay-y-argentina.html",
+      "imagePrompt": "Conceptual image depicting the 'War of Information' on the Israel-Palestine conflict. A central digital screen displays fragmented news and symbols (Star of David, Keffiyeh pattern) that appear distorted and manipulated. Surrounding the screen are ghostly hands reaching out, symbolizing online users absorbing misinformation. A map of South America (Uruguay, Argentina highlighted) subtly visible in the background, showing the global reach. Dark, ominous lighting, editorial photography, high detail, symbolizing digital chaos and polarization.",
+      "date": "2025-10-08T23:48:27.776Z",
+      "featured": false,
+      "tags": [
+        "Desinformación",
+        "Conflicto Israel-Palestina",
+        "Redes Sociales",
+        "Uruguay",
+        "Argentina",
+        "Alfabetización Mediática"
+      ]
+    },
+    {
+      "id": "ahorro-inversion-publica-argentina",
+      "title": "El \"Ahorro\" en la Inversión Pública Argentina: Analizando los Costos Ocultos del Ajuste",
+      "excerpt": "El discurso oficial presenta el ajuste en la inversión pública como una medida necesaria de \"racionalización del gasto\". Sin embargo, cuando analizamos en detalle qué se está recortando y cuáles son las verdaderas consecuencias...",
+      "link": "public/posts/2025/10/ahorro-inversion-publica-argentina.html",
+      "imagePrompt": "Economic charts and graphs, financial data visualization, money and budgets",
+      "date": "2025-10-04T00:00:00Z",
+      "featured": true,
+      "tags": [
+        "economía",
+        "argentina",
+        "política fiscal"
+      ]
+    },
+    {
+      "id": "amenaza-mapuche-uruguay",
+      "title": "La \"Amenaza Mapuche\" en Uruguay: Un Discurso de Odio Importado Sin Fundamento Real",
+      "excerpt": "En los últimos años, ciertos sectores políticos y mediáticos en Uruguay han comenzado a reproducir narrativas sobre una supuesta \"amenaza mapuche\". Este discurso, importado desde Argentina y Chile, carece de fundamento real...",
+      "link": "public/posts/2025/10/amenaza-mapuche-uruguay.html",
+      "imagePrompt": "Indigenous culture, peaceful community, traditional symbols",
+      "date": "2025-10-04T01:00:00Z",
+      "featured": false,
+      "tags": [
+        "uruguay",
+        "derechos humanos",
+        "pueblos originarios"
+      ]
+    },
+    {
+      "id": "big-pharma-ganancias-vs-vidas",
+      "title": "Big Pharma y el Negocio de la Salud: Cuando las Ganancias Valen Más que las Vidas",
+      "excerpt": "La industria farmacéutica global ha convertido la salud en uno de los negocios más lucrativos del mundo. Mientras las grandes corporaciones farmacéuticas registran ganancias récord, millones de personas...",
+      "link": "public/posts/2025/10/big-pharma-ganancias-vs-vidas.html",
+      "imagePrompt": "Medical pills, healthcare symbols, stethoscope",
+      "date": "2025-10-04T02:00:00Z",
+      "featured": true,
+      "tags": [
+        "salud",
+        "corporaciones",
+        "farmacéuticas"
+      ]
+    },
+    {
+      "id": "concentracion-mediatica-rio-plata",
+      "title": "Concentración Mediática en el Río de la Plata: Cuando Pocos Controlan Toda la Información",
+      "excerpt": "La concentración de medios de comunicación en Argentina y Uruguay ha alcanzado niveles alarmantes. Un puñado de grupos empresariales controla la mayoría de los medios de comunicación...",
+      "link": "public/posts/2025/10/concentracion-mediatica-rio-plata.html",
+      "imagePrompt": "Radio towers, broadcast waves, communication networks",
+      "date": "2025-10-04T03:00:00Z",
+      "featured": false,
+      "tags": [
+        "medios",
+        "concentración",
+        "río de la plata"
+      ]
+    },
+    {
+      "id": "contaminacion-agua-agronegocio-uruguay",
+      "title": "\"No Hay Contaminación\": Las Mentiras Corporativas sobre el Agua y el Agronegocio en Uruguay",
+      "excerpt": "Uruguay enfrenta una crisis de contaminación del agua que afecta directamente a la población. Sin embargo, los lobbies del agronegocio y las corporaciones multinacionales insisten en negar la realidad...",
+      "link": "public/posts/2025/10/contaminacion-agua-agronegocio-uruguay.html",
+      "imagePrompt": "Clean water, rivers, agricultural fields",
+      "date": "2025-10-04T04:00:00Z",
+      "featured": true,
+      "tags": [
+        "uruguay",
+        "medio ambiente",
+        "agronegocio"
+      ]
+    },
+    {
+      "id": "criminalizacion-protesta-social",
+      "title": "Criminalización de la Protesta Social: Cuando Manifestarse se Convierte en Delito",
+      "excerpt": "En toda América Latina observamos un fenómeno preocupante: la criminalización sistemática de la protesta social. Los gobiernos utilizan el aparato judicial y policial para desalentar...",
+      "link": "public/posts/2025/10/criminalizacion-protesta-social.html",
+      "imagePrompt": "Peaceful demonstration, raised hands, social justice",
+      "date": "2025-10-04T05:00:00Z",
+      "featured": false,
+      "tags": [
+        "derechos humanos",
+        "protesta",
+        "justicia social"
+      ]
+    },
+    {
+      "id": "desmantelamiento-tv-publica",
+      "title": "Desmantelamiento de la TV Pública: Cuando el Estado Abandona la Comunicación Ciudadana",
+      "excerpt": "La televisión pública ha sido históricamente un espacio fundamental para la comunicación ciudadana y el acceso democrático a la información. Sin embargo, en los últimos años...",
+      "link": "public/posts/2025/10/desmantelamiento-tv-publica.html",
+      "imagePrompt": "Television broadcast, media equipment, communication",
+      "date": "2025-10-04T06:00:00Z",
+      "featured": false,
+      "tags": [
+        "medios públicos",
+        "comunicación",
+        "democracia"
+      ]
+    },
+    {
+      "id": "deuda-externa-politicas-sociales",
+      "title": "Deuda Externa y Políticas Sociales: El Falso Dilema del Ajuste Estructural",
+      "excerpt": "Los organismos internacionales y los gobiernos neoliberales presentan la deuda externa y las políticas sociales como un dilema inevitable: o se paga la deuda o se invierte en el pueblo...",
+      "link": "public/posts/2025/10/deuda-externa-politicas-sociales.html",
+      "imagePrompt": "Global finance, debt chains, economic balance",
+      "date": "2025-10-04T07:00:00Z",
+      "featured": false,
+      "tags": [
+        "deuda externa",
+        "políticas sociales",
+        "economía"
+      ]
+    },
+    {
+      "id": "discurso-anti-derechos",
+      "title": "El Discurso Anti-Derechos: Cómo se Construye el Odio hacia la Diversidad",
+      "excerpt": "En los últimos años hemos sido testigos del crecimiento de discursos que atacan sistemáticamente los derechos conquistados por las minorías y grupos históricamente discriminados...",
+      "link": "public/posts/2025/10/discurso-anti-derechos.html",
+      "imagePrompt": "Diversity symbols, human rights, equality",
+      "date": "2025-10-04T08:00:00Z",
+      "featured": true,
+      "tags": [
+        "derechos humanos",
+        "diversidad",
+        "discriminación"
+      ]
+    },
+    {
+      "id": "fake-news-dolar-argentina",
+      "title": "Fake News sobre el Dólar en Argentina: Desinformación Financiera como Arma Política",
+      "excerpt": "La desinformación sobre el tipo de cambio y la situación del dólar en Argentina se ha convertido en una herramienta política sistemática. Medios y operadores políticos...",
+      "link": "public/posts/2025/10/fake-news-dolar-argentina.html",
+      "imagePrompt": "Currency exchange, financial markets, economic news",
+      "date": "2025-10-04T09:00:00Z",
+      "featured": false,
+      "tags": [
+        "argentina",
+        "desinformación",
+        "economía"
+      ]
+    },
+    {
+      "id": "flexibilizacion-laboral-derechos",
+      "title": "Flexibilización Laboral y Pérdida de Derechos: El Costo Real de la \"Modernización\" del Trabajo",
+      "excerpt": "El discurso de la \"modernización laboral\" y la \"flexibilización\" esconde una realidad mucho más cruda: la precarización sistemática del trabajo y la pérdida de derechos...",
+      "link": "public/posts/2025/10/flexibilizacion-laboral-derechos.html",
+      "imagePrompt": "Workers, labor rights, workplace protection",
+      "date": "2025-10-04T10:00:00Z",
+      "featured": false,
+      "tags": [
+        "derechos laborales",
+        "precarización",
+        "trabajo"
+      ]
+    },
+    {
+      "id": "granjas-trolls-desinformacion-industria",
+      "title": "Granjas de Trolls y Desinformación: La Industria del Engaño Digital",
+      "excerpt": "La desinformación en redes sociales no es un fenómeno espontáneo. Detrás de las campañas de fake news existe toda una industria organizada de granjas de trolls...",
+      "link": "public/posts/2025/10/granjas-trolls-desinformacion-industria.html",
+      "imagePrompt": "Digital networks, internet connections, cyber security",
+      "date": "2025-10-04T11:00:00Z",
+      "featured": true,
+      "tags": [
+        "desinformación",
+        "redes sociales",
+        "trolls"
+      ]
+    },
+    {
+      "id": "inseguridad-alimentaria-argentina",
+      "title": "Inseguridad Alimentaria en Argentina: Cuando la Abundancia no Llega a la Mesa",
+      "excerpt": "Argentina, uno de los mayores productores de alimentos del mundo, enfrenta paradójicamente altos niveles de inseguridad alimentaria. Mientras el país exporta granos y carne...",
+      "link": "public/posts/2025/10/inseguridad-alimentaria-argentina.html",
+      "imagePrompt": "Fresh food, agricultural abundance, nutrition",
+      "date": "2025-10-04T12:00:00Z",
+      "featured": false,
+      "tags": [
+        "argentina",
+        "alimentación",
+        "pobreza"
+      ]
+    },
+    {
+      "id": "justicia-climatica-sur-global",
+      "title": "Justicia Climática y el Sur Global: Quiénes Pagan las Consecuencias del Cambio Climático",
+      "excerpt": "El cambio climático no afecta a todos por igual. Mientras los países desarrollados del Norte Global son los principales responsables de las emisiones históricas...",
+      "link": "public/posts/2025/10/justicia-climatica-sur-global.html",
+      "imagePrompt": "Climate change, renewable energy, environmental protection",
+      "date": "2025-10-04T13:00:00Z",
+      "featured": false,
+      "tags": [
+        "cambio climático",
+        "justicia",
+        "sur global"
+      ]
+    },
+    {
+      "id": "lawfare-rio-plata",
+      "title": "Lawfare en el Río de la Plata: La Justicia como Herramienta Política",
+      "excerpt": "El lawfare o guerra judicial se ha convertido en una práctica sistemática en Argentina y Uruguay. El uso del sistema judicial como herramienta de persecución política...",
+      "link": "public/posts/2025/10/lawfare-rio-plata.html",
+      "imagePrompt": "Justice scales, legal system, courthouse",
+      "date": "2025-10-04T14:00:00Z",
+      "featured": false,
+      "tags": [
+        "lawfare",
+        "justicia",
+        "política"
+      ]
+    },
+    {
+      "id": "mitos-verdades-reforma-jubilatoria-uruguay",
+      "title": "Mitos y Verdades sobre la Reforma Jubilatoria en Uruguay",
+      "excerpt": "El debate sobre la reforma del sistema jubilatorio en Uruguay está lleno de mitos y medias verdades. Los defensores del sistema privado presentan argumentos...",
+      "link": "public/posts/2025/10/mitos-verdades-reforma-jubilatoria-uruguay.html",
+      "imagePrompt": "Elderly care, retirement planning, social security",
+      "date": "2025-10-04T15:00:00Z",
+      "featured": false,
+      "tags": [
+        "uruguay",
+        "jubilaciones",
+        "seguridad social"
+      ]
+    },
+    {
+      "id": "poder-big-tech-monopolios-digitales",
+      "title": "El Poder de las Big Tech: Monopolios Digitales y Control de la Información",
+      "excerpt": "Las grandes corporaciones tecnológicas han alcanzado un nivel de concentración de poder sin precedentes en la historia. Google, Facebook, Amazon y Apple controlan...",
+      "link": "public/posts/2025/10/poder-big-tech-monopolios-digitales.html",
+      "imagePrompt": "Technology networks, digital devices, data streams",
+      "date": "2025-10-04T16:00:00Z",
+      "featured": true,
+      "tags": [
+        "big tech",
+        "monopolios",
+        "tecnología"
+      ]
+    },
+    {
+      "id": "privatizacion-educacion-publica",
+      "title": "Privatización de la Educación Pública: El Negocio de la Ignorancia",
+      "excerpt": "La educación pública enfrenta un ataque sistemático en toda América Latina. Bajo el discurso de la \"eficiencia\" y la \"calidad\", se impulsan políticas que buscan...",
+      "link": "public/posts/2025/10/privatizacion-educacion-publica.html",
+      "imagePrompt": "School buildings, education symbols, learning",
+      "date": "2025-10-04T17:00:00Z",
+      "featured": false,
+      "tags": [
+        "educación",
+        "privatización",
+        "educación pública"
+      ]
+    },
+    {
+      "id": "seguridad-populismo-punitivo-uruguay",
+      "title": "Seguridad y Populismo Punitivo en Uruguay: El Miedo como Política de Estado",
+      "excerpt": "El discurso de la \"mano dura\" y el populismo punitivo han ganado terreno en Uruguay. Los políticos utilizan el miedo y la inseguridad para justificar políticas...",
+      "link": "public/posts/2025/10/seguridad-populismo-punitivo-uruguay.html",
+      "imagePrompt": "Public safety, community protection, security",
+      "date": "2025-10-04T18:00:00Z",
+      "featured": false,
+      "tags": [
+        "uruguay",
+        "seguridad",
+        "populismo punitivo"
+      ]
+    },
+    {
+      "id": "uberizacion-trabajo-precarizacion",
+      "title": "Uberización del Trabajo: Precarización Laboral Disfrazada de Libertad",
+      "excerpt": "La \"economía de plataformas\" y la \"uberización\" del trabajo se presentan como innovaciones que brindan libertad y flexibilidad a los trabajadores. Sin embargo, detrás de esta narrativa...",
+      "link": "public/posts/2025/10/uberizacion-trabajo-precarizacion.html",
+      "imagePrompt": "Modern work, gig economy, digital platforms",
+      "date": "2025-10-04T19:00:00Z",
+      "featured": false,
+      "tags": [
+        "trabajo",
+        "uberización",
+        "precarización"
+      ]
+    }
+  ]
+}

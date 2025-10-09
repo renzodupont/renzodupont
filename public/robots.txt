@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /posts-database.json
+Disallow: /posts-config.xml
+Disallow: /*.js$
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /package.json
+
+# Allow access to CSS and images
+Allow: /css/
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Sitemap
+Sitemap: https://yoursite.com/sitemap.xml
