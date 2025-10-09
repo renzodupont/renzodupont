@@ -1,0 +1,95 @@
+name: Deploy Renzo Dupont
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test Connection
+        run: |
+          echo "Testing connection to droplet..."
+          echo "Host: ${{ secrets.DROPLET_HOST }}"
+          echo "Port: ${{ secrets.DROPLET_PORT }}"
+
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: ${{ secrets.DROPLET_USERNAME }}
+          key: ${{ secrets.DROPLET_SSH_KEY }}
+          port: ${{ secrets.DROPLET_PORT }}
+          command_timeout: 30m
+          timeout: 30m
+          debug: true
+          script: |
+            echo "🚀 Starting deployment of Renzo Dupont..."
+
+            # Navigate to the deployment directory
+            cd /var/www/renzodupont/renzodupont || exit 1
+
+            # Show current status
+            echo "📂 Current directory: $(pwd)"
+
+            # Pull latest changes from main branch
+            echo "⬇️  Pulling latest changes..."
+            git fetch origin
+            git reset --hard origin/main
+            git clean -fd
+
+            # Show Node.js version
+            echo "📦 Node.js version: $(node --version)"
+            echo "📦 npm version: $(npm --version)"
+
+            # Clean install dependencies
+            echo "🧹 Cleaning old dependencies..."
+            rm -rf node_modules package-lock.json
+
+            echo "📥 Installing dependencies..."
+            npm install --production
+
+            # Verify installation
+            if [ ! -d "node_modules" ]; then
+              echo "❌ ERROR: Dependencies installation failed"
+              exit 1
+            fi
+
+            echo "✅ Dependencies installed successfully"
+
+            # Check if app.js exists
+            if [ ! -f "app.js" ]; then
+              echo "❌ ERROR: app.js not found"
+              exit 1
+            fi
+
+            echo "✅ Application files verified"
+
+            # Restart the application with PM2
+            echo "🔄 Restarting application..."
+
+            # Check if PM2 process exists
+            if pm2 list | grep -q "nomasdesinformacion"; then
+              echo "♻️  Restarting existing PM2 process..."
+              pm2 restart nomasdesinformacion
+            else
+              echo "🆕 Starting new PM2 process..."
+              pm2 start app.js --name "nomasdesinformacion" --time
+            fi
+
+            # Save PM2 configuration
+            pm2 save
+
+            # Show PM2 status
+            echo "📊 PM2 Status:"
+            pm2 list
+
+            # Show application logs (last 20 lines)
+            echo "📝 Recent application logs:"
+            pm2 logs nomasdesinformacion --lines 20 --nostream
+
+            echo "✅ Deployment completed successfully!"
+            echo "🌐 Application should be running on port 8899"

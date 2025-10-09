@@ -18,7 +18,7 @@ cp .env.example .env
 
 # 3. Iniciar servidor
 npm start
-# Visita: http://localhost:8888
+# Visita: http://localhost:8899
 ```
 
 ---
@@ -110,7 +110,7 @@ O también:
 npm run dev
 ```
 
-**Qué hace:** Inicia el servidor Express en http://localhost:8888  
+**Qué hace:** Inicia el servidor Express en http://localhost:8899  
 **Uso:** Para ver el sitio localmente antes de desplegar
 
 ---
@@ -294,7 +294,7 @@ npm run create-post "Impacto de la inflación en Uruguay"
 
 # 2. Revisar localmente
 npm start
-# Visita: http://localhost:8888
+# Visita: http://localhost:8899
 
 # 3. Desplegar
 git add .
