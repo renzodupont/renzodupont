@@ -19,6 +19,8 @@
     "workflow": "./complete-workflow.sh",
     "workflow-dry": "./complete-workflow.sh --dry-run",
     "create-post": "node orchestrate-post.js",
+    "create-post-featured": "node orchestrate-post.js --featured",
+    "create-post-no-image": "node orchestrate-post.js --no-image",
     "create-content": "node generate-content.js",
     "regenerate-post": "node regenerate-post.js",
     "regenerate-all": "node regenerate-post.js --all",

@@ -2,4 +2,52 @@
 <posts>
   <!-- This file stores simplified prompts for each blog post to avoid complex descriptions that cause text generation -->
   <!-- Tech posts will be added here as they are created -->
-</posts>
+
+  <post>
+    <title>Salesforce vs. Ransomware: Análisis de la Decisión de No Pagar en Ataques SaaS 2024-2025</title>
+    <link>public/posts/2025/10/salesforce-vs-ransomware-analisis-de-la-decision-de-no-pagar-en-ataques-saas-2024-2025.html</link>
+    <prompt>Una imagen abstracta y futurista que representa un entorno de nube seguro (simbolizando Salesforce) bajo un ataque digital. Un ícono amenazante de candado de ransomware pixelado se cierne sobre flujos de datos entrelazados. En primer plano, un escudo abstracto y brillante simboliza la defensa y la decisión de no pagar. Elementos de ciberseguridad como fragmentos de código, líneas de red y gráficos analíticos se integran sutilmente en el fondo. Colores predominantes son azules profundos, verdes y rojos para la amenaza, con acentos brillantes de blanco/dorado para la seguridad. Estilo de arte digital, de alta tecnología.</prompt>
+  </post>
+  
+  <post>
+    <title>Navegadores del Futuro: IA, Seguridad Proactiva y la Web en Evolución</title>
+    <link>public/posts/2025/10/navegadores-del-futuro-ia-seguridad-proactiva-y-la-web-en-evolucion.html</link>
+    <prompt>An abstract, futuristic image representing a web browser. It should show glowing lines of code, a shield icon symbolizing security, subtle AI neural network patterns, and a sleek, transparent browser window concept floating in a dark, digital space. Emphasize innovation, data flow, and protective elements. High-tech, digital art style, deep blue and green colors with bright accents, symbolizing complexity and advanced solutions.</prompt>
+  </post>
+  
+  <post>
+    <title>Finanzas Cuantitativas: Desentrañando los 'Debasement Trades' con HPC e IA en Wall Street</title>
+    <link>public/posts/2025/10/finanzas-cuantitativas-desentranando-los-debasement-trades-con-hpc-e-ia-en-wall-street.html</link>
+    <prompt>Imagen abstracta y futurista que combine elementos de Wall Street y alta tecnología. Un gráfico bursátil estilizado superpuesto con circuitos brillantes de una placa base o chips. Visualizar flujos de datos rápidos en azul y verde neón. El fondo oscuro con reflejos de una ciudad moderna (Wall Street/Nueva York) difuminada. Elementos de IA y aprendizaje automático, como redes neuronales visualizadas, conectando los datos financieros. Concepto de velocidad, precisión y análisis avanzado. Colores predominantes: azul eléctrico, verde neón, plateado y gris oscuro. Estilo de ciencia ficción tecnológica.</prompt>
+  </post>
+  
+  <post>
+    <title>Tecnología vs. Fake News: Detección Avanzada de Desinformación en Facebook con IA y PLN</title>
+    <link>public/posts/2025/10/tecnologia-vs-fake-news-deteccion-avanzada-de-desinformacion-en-facebook-con-ia-y-pln.html</link>
+    <prompt>Una composición visual moderna y tecnológica que representa la detección de noticias falsas. En el centro, una pantalla que simula el feed de Facebook, con contenido engañoso resaltado o marcado por iconos de alerta. Rodeando la pantalla, elementos abstractos que simbolizan la Inteligencia Artificial y el Procesamiento de Lenguaje Natural: grafos de nodos interconectados, líneas de código, y un cerebro digital estilizado. La paleta de colores debe ser una mezcla de azules profundos, púrpuras, y toques de verde brillante, con un énfasis en la claridad y la precisión de la información.</prompt>
+  </post>
+  
+  <post>
+    <title>Arquitectura del Engaño Digital: Algoritmos, Redes Sociales y Teorías Conspirativas</title>
+    <link>public/posts/2025/10/arquitectura-del-engano-digital-algoritmos-redes-sociales-y-teorias-conspirativas.html</link>
+    <prompt>A highly stylized and abstract digital network diagram with glowing lines representing data flow, some paths converging into isolated, transparent spheres (filter bubbles) and others forming self-reinforcing loops (echo chambers). In the background, subtle, blurred social media platform logos. The overall aesthetic is modern, high-tech, and slightly unsettling, using deep blues, purples, and electric reds to denote misinformation spreading. Focus on intricate connections and segmented information flow.</prompt>
+  </post>
+  
+  <post>
+    <title>Costos Millonarios de la IA: ¿Burbuja o el Rescate Open Source en LatAm?</title>
+    <link>public/posts/2025/10/costos-millonarios-de-la-ia-burbuja-o-el-rescate-open-source-en-latam.html</link>
+    <prompt>Representación conceptual de la Inteligencia Artificial: chips de GPU de alto rendimiento y centros de datos, con elementos visuales que sugieren altos costos y burbuja económica (gráficos ascendentes, monedas digitales). Contraste con símbolos de código abierto y diagramas de colaboración. Un sutil mapa de América Latina se integra en el fondo. Estilo moderno, digital, con tonos azules y verdes. Ilustra la democratización de la IA frente a sus costos.</prompt>
+  </post>
+  
+  <post>
+    <title>IA Ética: Dimensiones Clave y su Necesidad Imperante en Uruguay y Latinoamérica</title>
+    <link>public/posts/2025/10/ia-etica-dimensiones-clave-y-su-necesidad-imperante-en-uruguay-y-latinoamerica.html</link>
+    <prompt>Una imagen conceptual que represente la intersección de la inteligencia artificial y la ética. Mostrar elementos tecnológicos como circuitos neuronales y visualizaciones de datos abstractas fusionándose con símbolos humanos de justicia, equilibrio o un cerebro humano estilizado. Predominan tonos azules y verdes, con toques dorados que simbolizan la sabiduría y la responsabilidad. Fondo difuminado de un mapa de América Latina o referencias sutiles a la región. Estilo moderno, digital y ligeramente futurista, con una sensación de equilibrio y reflexión.</prompt>
+  </post>
+  
+  <post>
+    <title>Ciberseguridad Esencial: Identifica y Previene los 3 Tipos de Phishing Más Comunes en Latam</title>
+    <link>public/posts/2025/10/ciberseguridad-esencial-identifica-y-previene-los-3-tipos-de-phishing-mas-comunes-en-latam.html</link>
+    <prompt>An abstract and modern digital illustration representing cybersecurity and the threat of phishing. A central human silhouette interacts with a glowing, distorted digital interface, symbolizing vulnerability. Around the silhouette, various phishing elements appear: fake email icons, malicious link graphics, and suspicious SMS bubbles. In the background, subtle, wireframe outlines of the Latin American and Uruguayan map are visible, indicating regional focus. The color palette should be dark blues and greens, with stark contrasts of warning reds and oranges highlighting the threats. Style: tech-noir, digital art, highly detailed, focus on data flow and human interaction.</prompt>
+  </post>
+  </posts>

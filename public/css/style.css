@@ -512,6 +512,159 @@ nav ul li a:hover::after {
   z-index: 1;
 }
 
+/* === FEATURED PAGINATION CONTROLS === */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.featured-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-bg-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: 2px solid var(--color-bg-tertiary);
+  position: relative;
+  z-index: 10;
+}
+
+.control-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: var(--transition-smooth);
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.control-btn:hover:not(:disabled) {
+  background: var(--color-accent-primary);
+  color: var(--color-bg-primary);
+  transform: scale(1.1);
+}
+
+.control-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.control-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.counter {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  min-width: 60px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Auto-play indicator */
+.featured-controls::after {
+  content: "●";
+  color: var(--color-accent-primary);
+  font-size: 0.6rem;
+  margin-left: 0.5rem;
+  animation: autoplay-pulse 2s ease-in-out infinite;
+}
+
+@keyframes autoplay-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* === PAGINATION CONTROLS === */
+.pagination-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--color-bg-secondary);
+  border-radius: 16px;
+  border: 2px solid var(--color-bg-tertiary);
+}
+
+.load-more-btn {
+  background: var(--color-gradient);
+  color: var(--color-bg-primary);
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.load-more-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.load-more-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.load-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+}
+
+.load-more-btn:active {
+  transform: translateY(-1px);
+}
+
+.pagination-info {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.pagination-info strong {
+  color: var(--color-accent-primary);
+  font-weight: 700;
+}
+
 /* Full-width Featured Card Design */
 .featured-card {
   background: var(--color-bg-primary);
@@ -1548,8 +1701,9 @@ footer::before {
 
 .social-links {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .social-links a {
@@ -1567,6 +1721,13 @@ footer::before {
   overflow: hidden;
 }
 
+.social-links a svg {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  z-index: 1;
+}
+
 .social-links a::before {
   content: "";
   position: absolute;
@@ -1578,7 +1739,7 @@ footer::before {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: width 0.4s ease, height 0.4s ease;
-  z-index: -1;
+  z-index: 0;
 }
 
 .social-links a:hover {
@@ -1740,6 +1901,11 @@ footer::before {
     font-size: 1.5rem;
   }
 
+  .social-links a svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1755,6 +1921,21 @@ footer::before {
 
   .featured-excerpt {
     font-size: 1rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .load-more-btn {
+    width: 100%;
+    padding: 1rem 2rem;
   }
 }
 
@@ -1812,6 +1993,11 @@ footer::before {
     width: 40px;
     height: 40px;
     font-size: 1.3rem;
+  }
+
+  .social-links a svg {
+    width: 18px;
+    height: 18px;
   }
 
   .featured-content {

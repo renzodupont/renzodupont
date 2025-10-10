@@ -41,8 +41,10 @@ app.get("/api/posts", (req, res) => {
     const dbPath = path.join(__dirname, "posts-database.json");
     const data = JSON.parse(fs.readFileSync(dbPath, "utf-8"));
 
-    const { featured, search, limit = 20 } = req.query;
+    const { featured, search, limit = 20, page = 1, offset = 0 } = req.query;
+
     let posts = data.posts;
+    const totalPosts = posts.length;
 
     // Filter featured posts
     if (featured === "true") {
@@ -63,10 +65,36 @@ app.get("/api/posts", (req, res) => {
     // Sort by date (newest first)
     posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    // Limit results
-    posts = posts.slice(0, parseInt(limit));
+    // Calculate pagination
+    const totalFiltered = posts.length;
+    const limitNum = parseInt(limit);
+    const pageNum = parseInt(page);
+    const offsetNum = parseInt(offset);
 
-    res.json({ posts, total: posts.length });
+    // Calculate start position (use offset if provided, otherwise calculate from page)
+    const start = offsetNum > 0 ? offsetNum : (pageNum - 1) * limitNum;
+    const end = start + limitNum;
+
+    // Apply pagination
+    const paginatedPosts = posts.slice(start, end);
+
+    // Calculate metadata
+    const totalPages = Math.ceil(totalFiltered / limitNum);
+    const hasMore = end < totalFiltered;
+    const hasPrevious = start > 0;
+
+    res.json({
+      posts: paginatedPosts,
+      pagination: {
+        total: totalFiltered,
+        totalPages,
+        currentPage: pageNum,
+        limit: limitNum,
+        offset: start,
+        hasMore,
+        hasPrevious,
+      },
+    });
   } catch (error) {
     res.status(500).json({ error: "Failed to load posts" });
   }
