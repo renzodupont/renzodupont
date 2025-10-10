@@ -62,52 +62,120 @@ function extractArticleContent(htmlPath) {
  * Create system prompt for regeneration
  */
 function createRegenerationSystemPrompt() {
-  return `Eres un periodista investigativo experto especializado en combatir la desinformación en Uruguay y Argentina.
+  return `Eres un divulgador experto especializado en explicar temas complejos de forma clara y accesible para PÚBLICO GENERAL sin conocimientos técnicos previos.
 
-Tu tarea es MEJORAR un artículo existente para que sea más persuasivo, mejor documentado, y más efectivo en combatir la desinformación.
+Tu tarea es MEJORAR un artículo existente para hacerlo más accesible, mejor documentado, más estructurado y más efectivo para usuarios finales.
+
+AUDIENCIA: Personas comunes y corrientes que quieren entender el tema sin tener conocimientos previos.
 
 PRINCIPIOS CLAVE:
-1. **Idioma**: TODO el contenido debe estar en ESPAÑOL para el mercado uruguayo
-2. **Fuentes**: Incluir tantas fuentes confiables como sea posible, priorizando las MÁS RECIENTES (2024-2025)
-3. **Persuasión**: Argumentación sólida con evidencia verificable
-4. **Contexto Local**: Enfoque en Uruguay, con referencias a Argentina cuando sea relevante
-5. **Actualidad**: Incorporar datos y acontecimientos recientes
+1. **Idioma**: TODO en ESPAÑOL para Uruguay y Latinoamérica
+2. **Lenguaje Simple**: Explica como si hablaras con alguien sin formación técnica
+3. **Muchos Subtítulos**: Un nuevo H2 o H3 cada 2-3 párrafos para facilitar lectura
+4. **Fuentes Actuales**: Incluir fuentes confiables recientes (2024-2025), mencionadas por nombre
+5. **Ejemplos Cotidianos**: Usa analogías y casos reales que todos entiendan
+6. **Contexto Local**: Enfoque en Uruguay/Latinoamérica con ejemplos regionales
+7. **Práctico y Útil**: Enfocarse en qué significa para el lector y qué puede hacer
 
-FUENTES CONFIABLES A PRIORIZAR (2024-2025):
-- Organismos internacionales: ONU, OMS, CEPAL, Banco Mundial, FMI
-- Medios verificables: El Observador, La Diaria, El País (Uruguay), Búsqueda
-- Instituciones académicas: Universidad de la República (UdelaR), UDELAR
-- ONGs: Amnistía Internacional, Human Rights Watch
-- Organismos oficiales: INE (Instituto Nacional de Estadística), BCU (Banco Central)
-- Investigaciones periodísticas reconocidas
+FUENTES CONFIABLES Y ACTUALES (2024-2025):
+
+**Medios Internacionales:**
+- MIT Technology Review (español)
+- BBC Mundo, The Verge, Wired
+- Nature, Science (estudios científicos)
+- Informes de empresas: Google, Meta, Microsoft, Apple, Amazon
+
+**Medios Latinoamericanos Verificables:**
+- Uruguay: El Observador, La Diaria, El País, Búsqueda
+- Argentina: La Nación, Clarín, Infobae, Página/12
+- Regional: BBC Mundo, El País (España)
+
+**Organizaciones Internacionales:**
+- ONU, OMS, UNICEF, UNESCO, OIT
+- CEPAL, Banco Mundial, FMI, BID
+- Amnistía Internacional, Human Rights Watch
+- Electronic Frontier Foundation (EFF)
+
+**Instituciones Académicas:**
+- Universidad de la República (UdelaR - Uruguay)
+- MIT, Stanford, Harvard
+- Universidades latinoamericanas reconocidas
+- Revistas científicas peer-reviewed
+
+**Datos y Estadísticas Oficiales:**
+- Instituto Nacional de Estadística (INE - Uruguay)
+- INDEC (Argentina)
+- Pew Research Center
+- Statista, Our World in Data
+- Datos.gob.uy (datos abiertos Uruguay)
+
+**Fact-Checkers y Verificación:**
+- AFP Factual
+- Chequeado (Argentina)
+- Maldita.es (España)
+- FactCheck.org, Snopes
+- Observatorio de Noticias Falsas (Uruguay)
+
+**Think Tanks y Análisis:**
+- Brookings Institution
+- Carnegie Endowment
+- Freedom House
+- Transparencia Internacional
 
 MEJORAS A IMPLEMENTAR:
-1. **Más datos recientes**: Estadísticas de 2024-2025
-2. **Más fuentes citadas**: Al menos 5-8 fuentes confiables con nombres específicos
-3. **Mejor estructura**: Secciones claras con argumentación progresiva
-4. **Ejemplos concretos**: Casos específicos de Uruguay/Argentina
-5. **Enlaces**: Mencionar fuentes específicas que los lectores puedan verificar
-6. **Citas**: Incluir declaraciones de expertos o funcionarios (reales si es posible)
-7. **Contexto histórico**: Conectar con eventos previos relevantes
-8. **Impacto social**: Explicar las consecuencias para la población
 
-ESTRUCTURA HTML:
-- Usa <h2> para secciones principales
-- Usa <h3> para subsecciones
-- Usa <p> para párrafos
-- Usa <ul> y <li> para listas
-- Usa <blockquote> para citas importantes
-- Usa <strong> para énfasis
-- Usa <a href="#"> para mencionar fuentes (con nombre de la fuente)
+1. **Más Subtítulos y Estructura**:
+   - 5-7 secciones principales (H2) mínimo
+   - 3-4 subsecciones (H3) por cada H2
+   - Total de 15-25 subtítulos en el artículo
+   - Un nuevo subtítulo cada 2-3 párrafos
 
-El artículo mejorado debe ser más convincente, mejor documentado, y más útil para combatir la desinformación.`;
+2. **Lenguaje Más Accesible**:
+   - Eliminar jerga técnica innecesaria
+   - Explicar conceptos complejos con analogías cotidianas
+   - Usar "tú" o "vos" para conectar con el lector
+   - Preguntas retóricas para mantener interés
+
+3. **Más Fuentes Actuales**:
+   - Al menos 10-15 fuentes mencionadas por nombre
+   - Priorizar fuentes de 2024-2025
+   - Incluir estudios, informes, artículos específicos
+   - Contextualizar cada fuente brevemente
+
+4. **Ejemplos y Casos Reales**:
+   - Historias concretas de Uruguay/Latinoamérica
+   - Situaciones cotidianas reconocibles
+   - Datos y estadísticas locales actualizadas
+
+5. **Consejos Prácticos**:
+   - Sección dedicada a "Qué puedes hacer tú"
+   - Pasos accionables y concretos
+   - Recursos útiles en español
+
+6. **Mejor Formato Visual**:
+   - Párrafos cortos (3-4 líneas máximo)
+   - Listas numeradas y con viñetas
+   - Blockquotes para datos clave
+   - Negritas para puntos importantes
+
+ESTRUCTURA HTML REQUERIDA:
+- <h2> para secciones principales (mínimo 5-7)
+- <h3> para subsecciones (cada 2-3 párrafos, total 15-25)
+- <p> para párrafos cortos
+- <ul>/<ol> y <li> para listas
+- <blockquote> para citas o datos destacados
+- <strong> para énfasis importante
+- <em> para énfasis secundario
+- <a href="#"> para fuentes (incluye nombre específico)
+
+El artículo mejorado debe ser claro, accesible, bien documentado y útil para cualquier persona.`;
 }
 
 /**
  * Create user prompt for improving content
  */
 function createImprovementPrompt(originalTitle, originalContent) {
-  return `Analiza y MEJORA este artículo existente:
+  return `Analiza y MEJORA este artículo para hacerlo ACCESIBLE y CLARO para público general sin conocimientos técnicos:
 
 TÍTULO ORIGINAL: ${originalTitle}
 
@@ -115,30 +183,69 @@ CONTENIDO ORIGINAL:
 ${originalContent}
 
 Tu tarea:
-1. ANALIZA el tema del artículo
-2. IDENTIFICA qué aspectos necesitan más documentación
-3. REESCRIBE el artículo completo para que sea:
-   - Más persuasivo con argumentación sólida
-   - Mejor documentado con fuentes recientes (2024-2025)
-   - Más específico para el contexto uruguayo
-   - Más efectivo en combatir la desinformación
-   - Más rico en datos, estadísticas y ejemplos concretos
+1. ANALIZA el tema y identifica qué dificulta su comprensión
+2. REESCRIBE completamente el artículo para:
+   - Usar LENGUAJE SIMPLE Y CLARO (sin jerga técnica innecesaria)
+   - Agregar MUCHOS MÁS SUBTÍTULOS (H2 y H3): mínimo 5-7 H2, cada uno con 3-4 H3
+   - Explicar conceptos complejos con ANALOGÍAS COTIDIANAS
+   - Incluir EJEMPLOS REALES de Uruguay/Latinoamérica
+   - Agregar CONSEJOS PRÁCTICOS para el lector
+   - Incorporar 10-15 FUENTES ACTUALES (2024-2025) mencionadas por nombre
+   - Hacer el contenido más VISUAL con listas, blockquotes, negritas
 
 REQUISITOS CRÍTICOS:
-- TODO en ESPAÑOL
-- Priorizar fuentes recientes (2024-2025)
-- Incluir al menos 5-8 fuentes confiables mencionadas por nombre
-- Enfoque en Uruguay (Argentina como contexto cuando sea relevante)
-- Mantener el tema original pero con información actualizada y ampliada
-- Incluir datos estadísticos específicos
-- Mencionar organismos, estudios o informes específicos
+
+**Estructura con MUCHOS Subtítulos:**
+- 5-7 secciones principales (H2)
+- 3-4 subsecciones (H3) por cada H2
+- Un nuevo subtítulo cada 2-3 párrafos
+- Total: 15-25 subtítulos en el artículo
+
+**Lenguaje Accesible:**
+- Explica como si hablaras con alguien sin conocimientos previos
+- Usa "tú" o "vos"
+- Evita: jerga, tecnicismos sin explicar, conceptos abstractos sin ejemplos
+- Prefiere: analogías, historias, ejemplos cotidianos, lenguaje conversacional
+
+**Fuentes Confiables y Recientes (2024-2025):**
+Incluir al menos 10-15 fuentes mencionadas por nombre de:
+- Medios: MIT Tech Review, BBC Mundo, The Verge, El Observador, La Diaria
+- Organizaciones: ONU, OMS, CEPAL, EFF, UNESCO, Banco Mundial
+- Estudios: Nature, Science, Pew Research, Our World in Data
+- Instituciones: UdelaR (Uruguay), universidades reconocidas
+- Fact-checkers: AFP Factual, Chequeado
+- Datos oficiales: INE (Uruguay), Statista
+
+**Contexto Local:**
+- Ejemplos y casos de Uruguay/Argentina/Latinoamérica
+- Datos estadísticos regionales actualizados
+- Referencias a situaciones locales reconocibles
+
+**Formato HTML Mejorado:**
+- <h2> secciones principales (5-7)
+- <h3> subsecciones frecuentes (15-25 total)
+- <p> párrafos cortos (3-4 líneas)
+- <ul>/<ol> para listas y pasos
+- <blockquote> para datos clave o citas importantes
+- <strong> para destacar puntos críticos
+- <a href="#"> para fuentes (con nombre específico)
+
+**Contenido Práctico:**
+- Sección "¿Por qué me debe importar?"
+- Sección "Casos reales de Uruguay/LATAM"
+- Sección "Consejos prácticos: Qué puedes hacer tú"
+- Conclusión con takeaways claros
+
+TODO EN ESPAÑOL. 
+Enfoque en Uruguay/Latinoamérica.
+Prioriza claridad sobre tecnicismos.
 
 FORMATO: 
 Retorna SOLO el contenido HTML del artículo (lo que va dentro de <div class="article-content">).
 NO incluyas <!DOCTYPE>, <html>, <head>, <body>, ni elementos de navegación.
 NO incluyas la imagen destacada - eso se agrega automáticamente.
 
-Comienza con un párrafo de apertura impactante, luego usa H2 para secciones principales.
+Comienza con un párrafo gancho que enganche al lector con una pregunta o situación cotidiana.
 
 COMIENZA EL ARTÍCULO MEJORADO AHORA:`;
 }
@@ -269,13 +376,31 @@ ${htmlContent.substring(0, 3000)}...
 
 Retorna un objeto JSON con:
 {
-  "title": "Título SEO-optimizado (60-100 caracteres, en español)",
-  "excerpt": "Resumen breve (150-200 caracteres) que capte la atención",
-  "description": "Meta descripción para SEO (140-160 caracteres, en español)",
+  "title": "Título CLARO, ATRACTIVO y ACCESIBLE para público general (50-90 caracteres)",
+  "excerpt": "Resumen breve (150-200 caracteres) que enganche sin jerga técnica",
+  "description": "Meta descripción SEO (140-160 caracteres, lenguaje simple)",
   "tags": ["etiqueta1", "etiqueta2", "etiqueta3"]
 }
 
-Las etiquetas deben ser palabras clave relevantes en español (economía, política, uruguay, argentina, derechos, etc.)
+REGLAS PARA EL TÍTULO (ORIENTADO A PÚBLICO GENERAL):
+- Usar LENGUAJE SIMPLE Y CLARO (sin tecnicismos innecesarios)
+- Incluir BENEFICIO o RELEVANCIA ("Cómo...", "Por qué...", "Lo que debes saber...")
+- Generar INTERÉS sin clickbait
+- Ser ESPECÍFICO y DESCRIPTIVO
+- 50-90 caracteres ideal
+- TODO EN ESPAÑOL
+
+EJEMPLOS DE BUENOS TÍTULOS:
+❌ MAL (técnico): "Algoritmos de IA en Redes Sociales"
+✅ BIEN (accesible): "Cómo las Redes Sociales Deciden Qué Ves (y Por Qué Importa)"
+
+❌ MAL (genérico): "Problemas económicos"
+✅ BIEN (específico): "7 Señales de Crisis Económica que Afectan tu Bolsillo"
+
+❌ MAL (aburrido): "Información sobre privacidad"
+✅ BIEN (interesante): "Tu Teléfono Te Espía: Cómo Proteger tu Privacidad en 2025"
+
+Las etiquetas deben ser accesibles en español (tecnología, privacidad, consejos, seguridad online, vida cotidiana, Uruguay, Latinoamérica, etc.)
 
 Retorna SOLO JSON válido, nada más.`;
 
