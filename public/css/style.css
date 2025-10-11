@@ -1885,7 +1885,7 @@ footer::before {
   .mobile-menu-toggle {
     display: flex;
   }
-  
+
   /* Header adjustments */
   .header-content {
     flex-direction: row;
@@ -1894,7 +1894,7 @@ footer::before {
     gap: 1rem;
     flex-wrap: nowrap;
   }
-  
+
   /* Hide search on very small screens, move to menu */
   .search-container {
     margin: 0;
@@ -1902,15 +1902,15 @@ footer::before {
     max-width: 200px;
     flex: 1;
   }
-  
+
   .logo {
     order: 1;
   }
-  
+
   .mobile-menu-toggle {
     order: 3;
   }
-  
+
   /* Mobile Navigation Slide-in */
   nav {
     position: fixed;
@@ -1927,7 +1927,7 @@ footer::before {
     overflow-y: auto;
     order: 4;
   }
-  
+
   nav.active {
     right: 0;
   }
@@ -1939,7 +1939,7 @@ footer::before {
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
-  
+
   nav ul li {
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -1953,19 +1953,19 @@ footer::before {
     letter-spacing: 0.05em;
     border-radius: 0;
   }
-  
+
   nav ul li a::before {
     display: none;
   }
-  
+
   nav ul li a:hover {
     transform: translateX(10px);
     padding-left: 10px;
   }
-  
+
   /* Overlay when menu is open */
   body::after {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -1979,13 +1979,13 @@ footer::before {
     z-index: 999;
     pointer-events: none;
   }
-  
+
   body.menu-open::after {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
-  
+
   body.menu-open {
     overflow: hidden;
   }
@@ -2099,16 +2099,16 @@ footer::before {
   .logo {
     font-size: 1.2rem;
   }
-  
+
   /* Hide search on very small screens */
   .search-container {
     display: none;
   }
-  
+
   .mobile-menu-toggle {
     order: 2;
   }
-  
+
   /* Narrower menu on small screens */
   nav {
     width: 85%;

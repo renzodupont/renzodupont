@@ -25,7 +25,9 @@ function updatePostFile(filePath) {
 
     // Check if mobile menu already exists
     if (content.includes('class="mobile-menu-toggle"')) {
-      console.log(`⏭️  Skipping ${path.basename(filePath)} - already has mobile menu`);
+      console.log(
+        `⏭️  Skipping ${path.basename(filePath)} - already has mobile menu`
+      );
       return false;
     }
 
