@@ -323,6 +323,32 @@ function generateHTMLFile(metadata, articleContent, slug, dateInfo) {
     <div class="container">
       <div class="header-content">
         <a href="/" class="logo">Renzo Dupont</a>
+        
+        <!-- SEARCH BAR -->
+        <div class="search-container">
+          <form class="search-form" onsubmit="performSearch(event)">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Buscar artículos..."
+              class="search-input"
+            />
+            <button type="submit" class="search-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="21 21l-4.35-4.35"></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+        
         <nav>
           <ul>
             <li><a href="/">Inicio</a></li>
@@ -383,6 +409,8 @@ function generateHTMLFile(metadata, articleContent, slug, dateInfo) {
       <p>&copy; 2025 Renzo Dupont. Tecnología en español.</p>
     </div>
   </footer>
+  
+  <script src="/js/search.js"></script>
 </body>
 </html>`;
 }
