@@ -413,7 +413,7 @@ Retorna SOLO JSON válido, nada más.`;
 function generateHTMLFile(metadata, articleContent, slug, dateInfo) {
   const pageUrl = `https://renzodupont.com/posts/${dateInfo.year}/${dateInfo.month}/${slug}.html`;
   const imageUrl = `https://renzodupont.com/posts/${dateInfo.year}/${dateInfo.month}/${slug}-1.png`;
-  
+
   return `<!DOCTYPE html>
 <html lang="es">
 <head>

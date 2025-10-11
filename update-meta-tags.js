@@ -31,10 +31,7 @@ function updateHTMLFile(filePath) {
   const imgSrc = imgElement?.getAttribute("src") || "";
 
   // Build URLs
-  const relativePath = path.relative(
-    path.join(__dirname, "public"),
-    filePath
-  );
+  const relativePath = path.relative(path.join(__dirname, "public"), filePath);
   const urlPath = relativePath.replace(/\\/g, "/");
   const pageUrl = `https://renzodupont.com/${urlPath}`;
 
@@ -42,10 +39,7 @@ function updateHTMLFile(filePath) {
   let imageUrl = "https://renzodupont.com/favicon.ico"; // Default fallback
   if (imgSrc) {
     const imgPath = path.join(path.dirname(filePath), imgSrc);
-    const imgRelative = path.relative(
-      path.join(__dirname, "public"),
-      imgPath
-    );
+    const imgRelative = path.relative(path.join(__dirname, "public"), imgPath);
     imageUrl = `https://renzodupont.com/${imgRelative.replace(/\\/g, "/")}`;
   }
 
@@ -140,7 +134,7 @@ function findHTMLFiles(dir) {
  */
 async function main() {
   console.log("🚀 Actualizando meta tags en todos los archivos HTML...\n");
-  console.log("=" .repeat(70));
+  console.log("=".repeat(70));
 
   const publicDir = path.join(__dirname, "public");
 

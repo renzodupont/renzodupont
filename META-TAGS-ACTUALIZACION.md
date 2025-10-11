@@ -12,21 +12,21 @@ Se han agregado **favicon** y **meta tags de redes sociales** (Open Graph y Twit
 
 ```html
 <!-- Favicon -->
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/favicon.ico" />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="article">
-<meta property="og:url" content="[URL del artículo]">
-<meta property="og:title" content="[Título del artículo]">
-<meta property="og:description" content="[Descripción]">
-<meta property="og:image" content="[URL de imagen destacada]">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="[URL del artículo]" />
+<meta property="og:title" content="[Título del artículo]" />
+<meta property="og:description" content="[Descripción]" />
+<meta property="og:image" content="[URL de imagen destacada]" />
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="[URL del artículo]">
-<meta name="twitter:title" content="[Título del artículo]">
-<meta name="twitter:description" content="[Descripción]">
-<meta name="twitter:image" content="[URL de imagen destacada]">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="[URL del artículo]" />
+<meta name="twitter:title" content="[Título del artículo]" />
+<meta name="twitter:description" content="[Descripción]" />
+<meta name="twitter:image" content="[URL de imagen destacada]" />
 ```
 
 ### 2. Script de Actualización Masiva
@@ -34,6 +34,7 @@ Se han agregado **favicon** y **meta tags de redes sociales** (Open Graph y Twit
 **Archivo nuevo:** `update-meta-tags.js`
 
 Este script procesa **todos los archivos HTML** en el directorio `public/` y:
+
 - Agrega favicon si no existe
 - Agrega/actualiza Open Graph tags
 - Agrega/actualiza Twitter Card tags
@@ -48,9 +49,11 @@ Este script procesa **todos los archivos HTML** en el directorio `public/` y:
 **Total:** 26 archivos HTML actualizados
 
 **Artículos del blog (22):**
+
 - Todos los artículos en `public/posts/2025/10/*.html`
 
 **Páginas principales (4):**
+
 - `public/index.html`
 - `public/quienes-somos.html`
 - `public/contacto.html`
@@ -63,6 +66,7 @@ Este script procesa **todos los archivos HTML** en el directorio `public/` y:
 ✅ **Favicon visible** en todos los navegadores y pestañas
 
 ✅ **Previews mejorados** al compartir en:
+
 - Facebook
 - Twitter/X
 - LinkedIn
@@ -71,6 +75,7 @@ Este script procesa **todos los archivos HTML** en el directorio `public/` y:
 - Otros (que soporten Open Graph)
 
 ✅ **Imágenes correctas** en cada preview:
+
 - Artículos: usan su imagen destacada
 - Páginas principales: usan favicon como fallback
 
@@ -111,6 +116,7 @@ git diff public/
 ```
 
 Para testear cómo se ve en redes sociales:
+
 - Facebook: https://developers.facebook.com/tools/debug/
 - Twitter: https://cards-dev.twitter.com/validator
 - LinkedIn: https://www.linkedin.com/post-inspector/
