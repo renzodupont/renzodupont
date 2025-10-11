@@ -349,6 +349,13 @@ function generateHTMLFile(metadata, articleContent, slug, dateInfo) {
           </form>
         </div>
         
+        <!-- MOBILE MENU TOGGLE -->
+        <button class="mobile-menu-toggle" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
         <nav>
           <ul>
             <li><a href="/">Inicio</a></li>
@@ -411,6 +418,7 @@ function generateHTMLFile(metadata, articleContent, slug, dateInfo) {
   </footer>
   
   <script src="/js/search.js"></script>
+  <script src="/js/mobile-menu.js"></script>
 </body>
 </html>`;
 }
