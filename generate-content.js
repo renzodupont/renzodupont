@@ -98,10 +98,10 @@ function validateArticleCompleteness(content) {
     issues.push("No conclusion section (H2 with 'Conclusión') found");
   }
 
-  // Check minimum length (articles should be substantial)
-  if (content.length < 8000) {
+  // Check minimum length (articles should be substantial but concise)
+  if (content.length < 4000) {
     issues.push(
-      `Article seems short (${content.length} chars). Expected 8000+ chars for complete article.`
+      `Article seems too short (${content.length} chars). Expected 4000+ chars for complete article.`
     );
   }
 
@@ -208,67 +208,70 @@ AUDIENCIA: Personas sin conocimientos técnicos previos. Explica todo de forma s
 
 REQUISITOS DEL ARTÍCULO:
 - ESPAÑOL (Uruguay/Latinoamérica)
-- 2000-3000 palabras
+- 1000-1500 palabras (MÁXIMO 1500 palabras - artículos concisos y directos)
 - LENGUAJE SIMPLE Y ACCESIBLE (sin jerga técnica compleja)
-- MUCHOS SUBTÍTULOS: Mínimo 5-7 secciones principales (H2) con 3-4 subsecciones (H3) cada una
+- 4-6 secciones principales (H2) con 2-3 subsecciones (H3) cada una
 - Un nuevo subtítulo cada 2-3 párrafos para facilitar la lectura
 - Explicar conceptos complejos con ANALOGÍAS y EJEMPLOS COTIDIANOS
-- Usar HISTORIAS y CASOS REALES de Uruguay/Latinoamérica
+- Usar HISTORIAS y CASOS REALES de Uruguay/Latinoamérica cuando sea relevante
 - Incluir CONSEJOS PRÁCTICOS que el lector pueda aplicar
-- Al menos 8-12 referencias de fuentes confiables actuales (2024-2025)
+- 5-8 referencias de fuentes confiables actuales (2024-2025)
 - Listas numeradas y con viñetas para mayor claridad
 - Destacar puntos clave con <strong>
+- SER CONCISO: Ir directo al grano sin rodeos innecesarios
 
-ESTRUCTURA OBLIGATORIA CON MUCHOS SUBTÍTULOS:
+ESTRUCTURA OBLIGATORIA (CONCISA Y DIRECTA):
 
-1. INTRODUCCIÓN GANCHO (1-2 párrafos)
-   - Empieza con una pregunta o situación cotidiana
-   - Conecta con la vida del lector
+1. INTRODUCCIÓN GANCHO (1 párrafo corto)
+   - Pregunta o situación cotidiana que enganche
 
-2. ¿POR QUÉ ME DEBE IMPORTAR? (H2)
-   - Explica la relevancia personal
-   - Impacto en la vida diaria
+2. ¿POR QUÉ ME DEBE IMPORTAR? (H2 - 2-3 párrafos)
+   - Relevancia personal directa
+   - Impacto real en la vida del lector
    
-3. LOS BÁSICOS EXPLICADOS SIMPLE (H2)
-   - H3: Primer concepto fundamental con analogía
-   - H3: Segundo concepto con ejemplo cotidiano
-   - H3: Tercer concepto con historia real
+3. CONCEPTOS CLAVE (H2 con 2-3 H3)
+   - H3: Concepto 1 con analogía simple
+   - H3: Concepto 2 con ejemplo cotidiano
+   - (H3: Concepto 3 opcional)
 
-4. SECCIONES PRINCIPALES (3-5 H2, cada una con 3-4 H3)
+4. SECCIONES PRINCIPALES (2-3 H2, cada una con 2-3 H3)
    - H2: Título descriptivo y atractivo
-     * H3: Subtema 1 (cada 2-3 párrafos)
-     * H3: Subtema 2
-     * H3: Subtema 3
+     * H3: Subtema importante
      * H3: Ejemplo práctico o caso real
+     * (H3: Tercer punto solo si es esencial)
    
-5. CASOS REALES DE URUGUAY/LATAM (H2)
-   - H3: Caso 1 con nombres y contexto
-   - H3: Caso 2 verificable
-   - H3: Lecciones aprendidas
-
-6. CONSEJOS PRÁCTICOS (H2)
+5. CONSEJOS PRÁCTICOS (H2 con 2-3 H3)
+   - H3: Qué puedes hacer tú (acción concreta)
+   - H3: Cómo protegerte o aprovechar esta info
+   - H3: Recursos útiles (opcional, solo si hay buenos recursos)
    - H3: Qué puedes hacer tú
    - H3: Cómo protegerte/aprovechar esta info
-   - H3: Recursos útiles en español
+   - H3: Recursos útiles (opcional, solo si hay buenos recursos)
 
-7. CONCLUSIÓN PRÁCTICA (H2 - OBLIGATORIA Y COMPLETA)
-   - Resumen de takeaways clave
-   - Reflexión final
-   - Llamado a la acción concreto
-   - Mensaje final motivador
-   - DEBE SER UN CIERRE COMPLETO Y SATISFACTORIO (3-5 párrafos mínimo)
+6. CONCLUSIÓN PRÁCTICA (H2 - OBLIGATORIA Y COMPLETA)
+   - Resumen conciso de los puntos clave (2-3 párrafos)
+   - Llamado a la acción concreto y motivador
+   - Mensaje final impactante
+   - DEBE SER UN CIERRE COMPLETO (2-3 párrafos mínimo)
+
+⚠️ IMPORTANTE - ARTÍCULOS CONCISOS:
+- MÁXIMO 1500 palabras - mantén el contenido BREVE y DIRECTO
+- Elimina relleno y repetición innecesaria
+- Cada párrafo debe aportar valor concreto
+- Prioriza CALIDAD sobre CANTIDAD
+- Si puedes decir algo en 2 párrafos, no uses 4
 
 ⚠️ CRÍTICO - PREVENCIÓN DE CONTENIDO CORTADO:
 - El artículo DEBE terminar con una conclusión COMPLETA y BIEN FORMADA
 - NO dejes frases incompletas o párrafos sin cerrar
 - VERIFICA que la última frase termine con punto final
-- La conclusión debe tener AL MENOS 3-5 párrafos completos
+- La conclusión debe tener AL MENOS 2-3 párrafos completos
 - Incluye un mensaje final claro y motivador
 - NO cortes el contenido abruptamente
 - El último párrafo debe sentirse como un CIERRE NATURAL del artículo
 
 FUENTES PRIORITARIAS ACTUALES (2024-2025):
-**Menciona por nombre y con contexto al menos 8-12 fuentes de:**
+**Menciona por nombre y con contexto 5-8 fuentes de:**
 - Medios verificables: MIT Technology Review, BBC Mundo, The Verge, Wired
 - Medios locales: El Observador, La Diaria, El País (Uruguay), La Nación (Argentina)
 - Organizaciones: ONU, OMS, CEPAL, Banco Mundial, EFF, UNESCO
@@ -290,7 +293,7 @@ IMPORTANTE - ESTILO DE ESCRITURA:
 
 EL ARTÍCULO DEBE ESTAR 100% COMPLETO:
 1. NUNCA termines una frase a medias o con palabras incompletas
-2. La CONCLUSIÓN es OBLIGATORIA y debe tener 3-5 párrafos COMPLETOS
+2. La CONCLUSIÓN es OBLIGATORIA y debe tener 2-3 párrafos COMPLETOS
 3. El último párrafo debe incluir un mensaje final motivador y completo
 4. VERIFICA que la última frase termine con punto final (.)
 5. NO dejes listas sin terminar
@@ -299,17 +302,15 @@ EL ARTÍCULO DEBE ESTAR 100% COMPLETO:
 8. El artículo debe sentirse como un CIERRE NATURAL y SATISFACTORIO
 
 ESTRUCTURA DE LA CONCLUSIÓN OBLIGATORIA (último H2 del artículo):
-<h2>Conclusión práctica: [Título descriptivo y motivador]</h2>
-<p>[Párrafo 1: Resumen de los puntos clave del artículo]</p>
-<p>[Párrafo 2: Reflexión sobre el impacto o relevancia personal]</p>
-<p>[Párrafo 3: Llamado a la acción - qué puede hacer el lector]</p>
-<p>[Párrafo 4: Mensaje final motivador y empoderador]</p>
-<p><strong>[Frase de cierre impactante con llamado final.]</strong></p>
+<h2>Conclusión práctica: [Título descriptivo]</h2>
+<p>[Párrafo 1: Resumen conciso de los puntos clave]</p>
+<p>[Párrafo 2: Llamado a la acción - qué puede hacer el lector]</p>
+<p><strong>[Frase de cierre impactante.]</strong></p>
 
 EJEMPLOS DE CIERRES COMPLETOS Y CORRECTOS:
 ✅ BIEN: "¡El futuro de un internet más confiable está en tus manos!"
-✅ BIEN: "Con estos conocimientos, ya estás preparado para navegar el mundo digital de forma más segura y consciente."
-✅ BIEN: "Recordá: la mejor defensa contra la desinformación eres vos, tu criterio y tu disposición a verificar antes de compartir."
+✅ BIEN: "Con estos conocimientos, ya estás preparado para navegar el mundo digital de forma más segura."
+✅ BIEN: "Recordá: la mejor defensa eres vos y tu disposición a verificar antes de compartir."
 
 ❌ MAL (incompleto): "La mejor defensa es"
 ❌ MAL (incompleto): "Recordá que tu"

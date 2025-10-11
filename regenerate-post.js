@@ -64,40 +64,23 @@ function extractArticleContent(htmlPath) {
 function createRegenerationSystemPrompt() {
   return `Eres un divulgador experto especializado en explicar temas complejos de forma clara y accesible para PÚBLICO GENERAL sin conocimientos técnicos previos.
 
-Tu tarea es MEJORAR un artículo existente para hacerlo más accesible, mejor documentado, más estructurado y más efectivo para usuarios finales.
+Tu tarea es MEJORAR un artículo existente para hacerlo MÁS CONCISO, mejor documentado, más estructurado y más efectivo para usuarios finales.
 
 AUDIENCIA: Personas comunes y corrientes que quieren entender el tema sin tener conocimientos previos.
 
 PRINCIPIOS CLAVE:
 1. **Idioma**: TODO en ESPAÑOL para Uruguay y Latinoamérica
-2. **Lenguaje Simple**: Explica como si hablaras con alguien sin formación técnica
-3. **Muchos Subtítulos**: Un nuevo H2 o H3 cada 2-3 párrafos para facilitar lectura
-4. **Fuentes Actuales**: Incluir fuentes confiables recientes (2024-2025), mencionadas por nombre
-5. **Ejemplos Cotidianos**: Usa analogías y casos reales que todos entiendan
-6. **Contexto Local**: Enfoque en Uruguay/Latinoamérica con ejemplos regionales
-7. **Práctico y Útil**: Enfocarse en qué significa para el lector y qué puede hacer
+2. **CONCISO Y DIRECTO**: Artículos de 1000-1500 palabras máximo - sin relleno
+3. **Lenguaje Simple**: Explica como si hablaras con alguien sin formación técnica
+4. **Estructura Clara**: 4-6 secciones H2 con 2-3 subsecciones H3 cada una
+5. **Fuentes Actuales**: 5-8 fuentes confiables recientes (2024-2025)
+6. **Ejemplos Cotidianos**: Analogías y casos reales que todos entiendan
+7. **Contexto Local**: Enfoque en Uruguay/Latinoamérica cuando sea relevante
+8. **Práctico y Útil**: Qué significa para el lector y qué puede hacer
 
-FUENTES CONFIABLES Y ACTUALES (2024-2025):
-
-**Medios Internacionales:**
-- MIT Technology Review (español)
-- BBC Mundo, The Verge, Wired
-- Nature, Science (estudios científicos)
-- Informes de empresas: Google, Meta, Microsoft, Apple, Amazon
-
-**Medios Latinoamericanos Verificables:**
-- Uruguay: El Observador, La Diaria, El País, Búsqueda
-- Argentina: La Nación, Clarín, Infobae, Página/12
-- Regional: BBC Mundo, El País (España)
-
-**Organizaciones Internacionales:**
-- ONU, OMS, UNICEF, UNESCO, OIT
-- CEPAL, Banco Mundial, FMI, BID
-- Amnistía Internacional, Human Rights Watch
-- Electronic Frontier Foundation (EFF)
-
-**Instituciones Académicas:**
-- Universidad de la República (UdelaR - Uruguay)
+ESTRUCTURA DEL ARTÍCULO MEJORADO:
+- Introducción gancho (1 párrafo corto)
+- ¿Por qué me debe importar? (H2 - 2-3 párrafos)
 - MIT, Stanford, Harvard
 - Universidades latinoamericanas reconocidas
 - Revistas científicas peer-reviewed
@@ -144,38 +127,54 @@ MEJORAS A IMPLEMENTAR:
 
 4. **Ejemplos y Casos Reales**:
    - Historias concretas de Uruguay/Latinoamérica
-   - Situaciones cotidianas reconocibles
-   - Datos y estadísticas locales actualizadas
+- Conceptos clave (H2 con 2-3 H3)
+- Secciones principales (2-3 H2, cada una con 2-3 H3)
+- Consejos prácticos (H2 con 2-3 H3)
+- Conclusión práctica (H2 - OBLIGATORIA, 2-3 párrafos)
 
-5. **Consejos Prácticos**:
-   - Sección dedicada a "Qué puedes hacer tú"
-   - Pasos accionables y concretos
-   - Recursos útiles en español
+TONO: Conversacional, cercano pero informativo. Usa "tú" o "vos".
 
-6. **Mejor Formato Visual**:
-   - Párrafos cortos (3-4 líneas máximo)
-   - Listas numeradas y con viñetas
-   - Blockquotes para datos clave
-   - Negritas para puntos importantes
+FUENTES CONFIABLES (2024-2025):
+- Medios: MIT Tech Review, BBC Mundo, The Verge, El Observador, La Diaria
+- Organizaciones: ONU, OMS, CEPAL, EFF, UNESCO, Banco Mundial
+- Estudios: Nature, Science, Pew Research
+- Fact-checkers: AFP Factual, Chequeado
+- Datos oficiales: INE (Uruguay), Statista
 
-ESTRUCTURA HTML REQUERIDA:
-- <h2> para secciones principales (mínimo 5-7)
-- <h3> para subsecciones (cada 2-3 párrafos, total 15-25)
-- <p> para párrafos cortos
-- <ul>/<ol> y <li> para listas
-- <blockquote> para citas o datos destacados
-- <strong> para énfasis importante
-- <em> para énfasis secundario
-- <a href="#"> para fuentes (incluye nombre específico)
+FORMATO HTML:
+- <h2> secciones principales (4-6)
+- <h3> subsecciones (8-15 total)
+- <p> párrafos cortos
+- <ul>/<ol> para listas
+- <blockquote> para datos clave
+- <strong> para puntos críticos
+- <a href="#"> para fuentes
 
-El artículo mejorado debe ser claro, accesible, bien documentado y útil para cualquier persona.`;
+⚠️ IMPORTANTE:
+- MÁXIMO 1500 palabras - sé CONCISO
+- Elimina relleno y repeticiones
+- Cada párrafo debe aportar valor
+- La CONCLUSIÓN es OBLIGATORIA (2-3 párrafos)
+- El artículo DEBE terminar COMPLETO con punto final
+
+TODO EN ESPAÑOL.
+Enfoque Uruguay/Latinoamérica cuando sea relevante.
+
+FORMATO: 
+Retorna SOLO el contenido HTML del artículo (lo que va dentro de <div class="article-content">).
+NO incluyas <!DOCTYPE>, <html>, <head>, <body>, ni navegación.
+NO incluyas la imagen destacada.
+
+Comienza con un párrafo gancho que enganche al lector.
+
+COMIENZA EL ARTÍCULO MEJORADO AHORA:`;
 }
 
 /**
  * Create user prompt for improving content
  */
 function createImprovementPrompt(originalTitle, originalContent) {
-  return `Analiza y MEJORA este artículo para hacerlo ACCESIBLE y CLARO para público general sin conocimientos técnicos:
+  return `Analiza y MEJORA este artículo para hacerlo MÁS CONCISO, CLARO y ACCESIBLE para público general:
 
 TÍTULO ORIGINAL: ${originalTitle}
 
@@ -183,41 +182,41 @@ CONTENIDO ORIGINAL:
 ${originalContent}
 
 Tu tarea:
-1. ANALIZA el tema y identifica qué dificulta su comprensión
+1. ANALIZA el tema y identifica qué es esencial y qué es relleno
 2. REESCRIBE completamente el artículo para:
-   - Usar LENGUAJE SIMPLE Y CLARO (sin jerga técnica innecesaria)
-   - Agregar MUCHOS MÁS SUBTÍTULOS (H2 y H3): mínimo 5-7 H2, cada uno con 3-4 H3
-   - Explicar conceptos complejos con ANALOGÍAS COTIDIANAS
-   - Incluir EJEMPLOS REALES de Uruguay/Latinoamérica
-   - Agregar CONSEJOS PRÁCTICOS para el lector
-   - Incorporar 10-15 FUENTES ACTUALES (2024-2025) mencionadas por nombre
-   - Hacer el contenido más VISUAL con listas, blockquotes, negritas
+   - REDUCIR a 1000-1500 palabras MÁXIMO (elimina relleno y repetición)
+   - Usar LENGUAJE SIMPLE Y DIRECTO (sin jerga innecesaria)
+   - Agregar subtítulos claros: 4-6 H2, cada uno con 2-3 H3
+   - Explicar conceptos con ANALOGÍAS SIMPLES
+   - Incluir EJEMPLOS BREVES de Uruguay/LATAM cuando sea relevante
+   - Agregar CONSEJOS PRÁCTICOS concretos
+   - Incorporar 5-8 FUENTES ACTUALES (2024-2025) mencionadas por nombre
+   - Estructura visual: listas, blockquotes, negritas
 
 REQUISITOS CRÍTICOS:
 
-**Estructura con MUCHOS Subtítulos:**
-- 5-7 secciones principales (H2)
-- 3-4 subsecciones (H3) por cada H2
+**Estructura Clara y Concisa:**
+- 4-6 secciones principales (H2)
+- 2-3 subsecciones (H3) por cada H2
 - Un nuevo subtítulo cada 2-3 párrafos
-- Total: 15-25 subtítulos en el artículo
+- Total: 8-15 subtítulos en el artículo
 
 **Lenguaje Accesible:**
-- Explica como si hablaras con alguien sin conocimientos previos
+- Explica de forma SIMPLE y DIRECTA
 - Usa "tú" o "vos"
-- Evita: jerga, tecnicismos sin explicar, conceptos abstractos sin ejemplos
-- Prefiere: analogías, historias, ejemplos cotidianos, lenguaje conversacional
+- Evita: jerga, tecnicismos innecesarios, relleno, repeticiones
+- Prefiere: analogías breves, ejemplos concretos, lenguaje conversacional
 
-**Fuentes Confiables y Recientes (2024-2025):**
-Incluir al menos 10-15 fuentes mencionadas por nombre de:
+**Fuentes Actuales (2024-2025):**
+Incluir 5-8 fuentes mencionadas por nombre:
 - Medios: MIT Tech Review, BBC Mundo, The Verge, El Observador, La Diaria
-- Organizaciones: ONU, OMS, CEPAL, EFF, UNESCO, Banco Mundial
-- Estudios: Nature, Science, Pew Research, Our World in Data
-- Instituciones: UdelaR (Uruguay), universidades reconocidas
+- Organizaciones: ONU, OMS, CEPAL, EFF, UNESCO
+- Estudios: Nature, Science, Pew Research
 - Fact-checkers: AFP Factual, Chequeado
 - Datos oficiales: INE (Uruguay), Statista
 
-**Contexto Local:**
-- Ejemplos y casos de Uruguay/Argentina/Latinoamérica
+**Contexto Local (cuando sea relevante):**
+- Ejemplos breves de Uruguay/Argentina/Latinoamérica
 - Datos estadísticos regionales actualizados
 - Referencias a situaciones locales reconocibles
 
@@ -228,26 +227,30 @@ Incluir al menos 10-15 fuentes mencionadas por nombre de:
 - <ul>/<ol> para listas y pasos
 - <blockquote> para datos clave o citas importantes
 - <strong> para destacar puntos críticos
-- <a href="#"> para fuentes (con nombre específico)
-
 **Contenido Práctico:**
-- Sección "¿Por qué me debe importar?"
-- Sección "Casos reales de Uruguay/LATAM"
-- Sección "Consejos prácticos: Qué puedes hacer tú"
-- Conclusión con takeaways claros
+- Sección "¿Por qué me debe importar?" (2-3 párrafos)
+- Sección "Consejos prácticos: Qué puedes hacer tú" (H2 con 2-3 H3)
+- Conclusión obligatoria (H2 - 2-3 párrafos completos)
+
+⚠️ CRÍTICO:
+- MÁXIMO 1500 palabras - elimina TODO el relleno
+- Artículo DEBE terminar COMPLETO con punto final
+- Conclusión OBLIGATORIA con 2-3 párrafos
+- NO dejes frases incompletas
+- Cada párrafo debe aportar valor real
 
 TODO EN ESPAÑOL. 
-Enfoque en Uruguay/Latinoamérica.
-Prioriza claridad sobre tecnicismos.
+Enfoque Uruguay/Latinoamérica cuando sea relevante.
+Prioriza CLARIDAD y BREVEDAD.
 
 FORMATO: 
 Retorna SOLO el contenido HTML del artículo (lo que va dentro de <div class="article-content">).
-NO incluyas <!DOCTYPE>, <html>, <head>, <body>, ni elementos de navegación.
-NO incluyas la imagen destacada - eso se agrega automáticamente.
+NO incluyas <!DOCTYPE>, <html>, <head>, <body>, ni navegación.
+NO incluyas la imagen destacada.
 
-Comienza con un párrafo gancho que enganche al lector con una pregunta o situación cotidiana.
+Comienza con un párrafo gancho breve.
 
-COMIENZA EL ARTÍCULO MEJORADO AHORA:`;
+COMIENZA EL ARTÍCULO MEJORADO Y CONCISO AHORA:`;
 }
 
 /**
@@ -293,12 +296,8 @@ async function regenerateArticle(htmlPath) {
     const metadata = await generateMetadata(improvedContent, existing.title);
     console.log(`✅ Título optimizado: ${metadata.title}`);
 
-    // Create backup
-    const backupPath = htmlPath.replace(".html", ".backup.html");
-    fs.copyFileSync(htmlPath, backupPath);
-    console.log(`\n💾 Backup creado: ${backupPath}`);
-
-    // Replace content in HTML
+    // Replace content in HTML (no backup - direct overwrite)
+    console.log("\n� Actualizando archivo HTML...");
     const dom = new JSDOM(existing.fullHTML);
     const doc = dom.window.document;
 
