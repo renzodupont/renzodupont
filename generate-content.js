@@ -411,6 +411,9 @@ Retorna SOLO JSON válido, nada más.`;
  * Generate the complete HTML file
  */
 function generateHTMLFile(metadata, articleContent, slug, dateInfo) {
+  const pageUrl = `https://renzodupont.com/posts/${dateInfo.year}/${dateInfo.month}/${slug}.html`;
+  const imageUrl = `https://renzodupont.com/posts/${dateInfo.year}/${dateInfo.month}/${slug}-1.png`;
+  
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -419,6 +422,24 @@ function generateHTMLFile(metadata, articleContent, slug, dateInfo) {
   <meta name="description" content="${metadata.description}">
   <meta name="date" content="${dateInfo.isoDate}">
   <title>${metadata.title} | Renzo Dupont</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="${pageUrl}">
+  <meta property="og:title" content="${metadata.title}">
+  <meta property="og:description" content="${metadata.description}">
+  <meta property="og:image" content="${imageUrl}">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="${pageUrl}">
+  <meta name="twitter:title" content="${metadata.title}">
+  <meta name="twitter:description" content="${metadata.description}">
+  <meta name="twitter:image" content="${imageUrl}">
+  
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
