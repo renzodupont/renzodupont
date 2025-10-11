@@ -56,6 +56,55 @@ function getCurrentDateTime() {
 }
 
 /**
+ * Validate that article content is complete and not truncated
+ */
+function validateArticleCompleteness(content) {
+  const issues = [];
+  
+  // Check if content ends abruptly (with common Spanish prepositions/articles)
+  const incompletePatterns = [
+    /\b(el|la|de|en|a|y|que|te|se|tu|su|lo|los|las|un|una|es|por|para|con|del|al)\s*$/i,
+    /,\s*$/,  // Ends with comma
+    /:\s*$/,  // Ends with colon
+    /\(\s*$/,  // Unclosed parenthesis
+    /<strong>\s*$/,  // Unclosed strong tag
+    /<em>\s*$/,  // Unclosed em tag
+  ];
+  
+  for (const pattern of incompletePatterns) {
+    if (pattern.test(content.trim())) {
+      issues.push("Content appears to end with an incomplete sentence or phrase");
+      break;
+    }
+  }
+  
+  // Check for unclosed HTML tags
+  const openTags = (content.match(/<(h2|h3|p|ul|ol|li|blockquote|strong|em)>/g) || []).length;
+  const closeTags = (content.match(/<\/(h2|h3|p|ul|ol|li|blockquote|strong|em)>/g) || []).length;
+  if (openTags !== closeTags) {
+    issues.push(`HTML tag mismatch: ${openTags} opening tags vs ${closeTags} closing tags`);
+  }
+  
+  // Check for conclusion section
+  if (!/<h2>.*[Cc]onclusión/i.test(content)) {
+    issues.push("No conclusion section (H2 with 'Conclusión') found");
+  }
+  
+  // Check minimum length (articles should be substantial)
+  if (content.length < 8000) {
+    issues.push(`Article seems short (${content.length} chars). Expected 8000+ chars for complete article.`);
+  }
+  
+  // Check if ends with proper punctuation
+  const lastText = content.replace(/<[^>]+>/g, '').trim();
+  if (!lastText.match(/[.!?]$/)) {
+    issues.push("Last sentence doesn't end with proper punctuation (., !, ?)");
+  }
+  
+  return issues;
+}
+
+/**
  * Create the system prompt for Gemini
  */
 function createSystemPrompt() {
@@ -192,9 +241,21 @@ ESTRUCTURA OBLIGATORIA CON MUCHOS SUBTÍTULOS:
    - H3: Cómo protegerte/aprovechar esta info
    - H3: Recursos útiles en español
 
-7. CONCLUSIÓN PRÁCTICA
+7. CONCLUSIÓN PRÁCTICA (H2 - OBLIGATORIA Y COMPLETA)
    - Resumen de takeaways clave
-   - Llamado a la acción
+   - Reflexión final
+   - Llamado a la acción concreto
+   - Mensaje final motivador
+   - DEBE SER UN CIERRE COMPLETO Y SATISFACTORIO (3-5 párrafos mínimo)
+
+⚠️ CRÍTICO - PREVENCIÓN DE CONTENIDO CORTADO:
+- El artículo DEBE terminar con una conclusión COMPLETA y BIEN FORMADA
+- NO dejes frases incompletas o párrafos sin cerrar
+- VERIFICA que la última frase termine con punto final
+- La conclusión debe tener AL MENOS 3-5 párrafos completos
+- Incluye un mensaje final claro y motivador
+- NO cortes el contenido abruptamente
+- El último párrafo debe sentirse como un CIERRE NATURAL del artículo
 
 FUENTES PRIORITARIAS ACTUALES (2024-2025):
 **Menciona por nombre y con contexto al menos 8-12 fuentes de:**
@@ -215,10 +276,34 @@ IMPORTANTE - ESTILO DE ESCRITURA:
 - Evita: "El paradigma del framework", "Implementación de algoritmos", "Arquitectura distribuida"
 - Prefiere: "Cómo funciona", "Lo que significa para ti", "Un ejemplo simple"
 
-CRÍTICO: Retorna SOLO el contenido HTML del cuerpo del artículo (el contenido que va dentro de <div class="article-content">). 
-NO incluyas <!DOCTYPE html>, <html>, <head>, <body>, ni elementos de navegación.
-NO incluyas la etiqueta de imagen destacada - eso se agrega automáticamente.
-TODO EN ESPAÑOL.
+⚠️⚠️⚠️ INSTRUCCIONES CRÍTICAS PARA EVITAR CONTENIDO CORTADO ⚠️⚠️⚠️
+
+EL ARTÍCULO DEBE ESTAR 100% COMPLETO:
+1. NUNCA termines una frase a medias o con palabras incompletas
+2. La CONCLUSIÓN es OBLIGATORIA y debe tener 3-5 párrafos COMPLETOS
+3. El último párrafo debe incluir un mensaje final motivador y completo
+4. VERIFICA que la última frase termine con punto final (.)
+5. NO dejes listas sin terminar
+6. NO dejes secciones incompletas
+7. Cada sección H2 debe estar completamente desarrollada con sus H3 correspondientes
+8. El artículo debe sentirse como un CIERRE NATURAL y SATISFACTORIO
+
+ESTRUCTURA DE LA CONCLUSIÓN OBLIGATORIA (último H2 del artículo):
+<h2>Conclusión práctica: [Título descriptivo y motivador]</h2>
+<p>[Párrafo 1: Resumen de los puntos clave del artículo]</p>
+<p>[Párrafo 2: Reflexión sobre el impacto o relevancia personal]</p>
+<p>[Párrafo 3: Llamado a la acción - qué puede hacer el lector]</p>
+<p>[Párrafo 4: Mensaje final motivador y empoderador]</p>
+<p><strong>[Frase de cierre impactante con llamado final.]</strong></p>
+
+EJEMPLOS DE CIERRES COMPLETOS Y CORRECTOS:
+✅ BIEN: "¡El futuro de un internet más confiable está en tus manos!"
+✅ BIEN: "Con estos conocimientos, ya estás preparado para navegar el mundo digital de forma más segura y consciente."
+✅ BIEN: "Recordá: la mejor defensa contra la desinformación eres vos, tu criterio y tu disposición a verificar antes de compartir."
+
+❌ MAL (incompleto): "La mejor defensa es"
+❌ MAL (incompleto): "Recordá que tu"
+❌ MAL (cortado): "En resumen, la tecnología"
 
 FORMATO HTML:
 - <h2> para secciones principales (5-7 mínimo)
@@ -231,7 +316,14 @@ FORMATO HTML:
 - <em> para énfasis
 - <a href="#"> para mencionar fuentes (incluye nombre de la fuente)
 
-COMIENZA EL ARTÍCULO AHORA CON EL PRIMER PÁRRAFO GANCHO:`;
+CRÍTICO: 
+- Retorna SOLO el contenido HTML del cuerpo del artículo (el contenido que va dentro de <div class="article-content">)
+- NO incluyas <!DOCTYPE html>, <html>, <head>, <body>, ni elementos de navegación
+- NO incluyas la etiqueta de imagen destacada - eso se agrega automáticamente
+- TODO EN ESPAÑOL
+- ASEGÚRATE de que el artículo esté 100% COMPLETO con conclusión final apropiada
+
+COMIENZA EL ARTÍCULO AHORA CON EL PRIMER PÁRRAFO GANCHO Y TERMÍNALO CON UNA CONCLUSIÓN COMPLETA:`;
 }
 
 /**
@@ -444,7 +536,7 @@ async function generatePost(topic, additionalContext = "") {
         temperature: 0.8,
         topK: 40,
         topP: 0.95,
-        maxOutputTokens: 8192,
+        maxOutputTokens: 16384, // Increased from 8192 to prevent content truncation
       },
     });
 
@@ -459,6 +551,17 @@ async function generatePost(topic, additionalContext = "") {
     const articleContent = result.response.text();
     console.log("✅ Article generated successfully");
     console.log(`   Length: ${articleContent.length} characters`);
+
+    // Validate that article is complete (not truncated)
+    console.log("\n🔍 Validating article completeness...");
+    const validationIssues = validateArticleCompleteness(articleContent);
+    if (validationIssues.length > 0) {
+      console.warn("\n⚠️  WARNING: Potential issues detected:");
+      validationIssues.forEach(issue => console.warn(`   - ${issue}`));
+      console.warn("\n   Consider regenerating the article or manually completing it.");
+    } else {
+      console.log("✅ Article appears complete");
+    }
 
     // Step 2: Generate metadata
     console.log("\n🏷️  Step 2: Generating metadata...");
