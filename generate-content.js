@@ -60,47 +60,57 @@ function getCurrentDateTime() {
  */
 function validateArticleCompleteness(content) {
   const issues = [];
-  
+
   // Check if content ends abruptly (with common Spanish prepositions/articles)
   const incompletePatterns = [
     /\b(el|la|de|en|a|y|que|te|se|tu|su|lo|los|las|un|una|es|por|para|con|del|al)\s*$/i,
-    /,\s*$/,  // Ends with comma
-    /:\s*$/,  // Ends with colon
-    /\(\s*$/,  // Unclosed parenthesis
-    /<strong>\s*$/,  // Unclosed strong tag
-    /<em>\s*$/,  // Unclosed em tag
+    /,\s*$/, // Ends with comma
+    /:\s*$/, // Ends with colon
+    /\(\s*$/, // Unclosed parenthesis
+    /<strong>\s*$/, // Unclosed strong tag
+    /<em>\s*$/, // Unclosed em tag
   ];
-  
+
   for (const pattern of incompletePatterns) {
     if (pattern.test(content.trim())) {
-      issues.push("Content appears to end with an incomplete sentence or phrase");
+      issues.push(
+        "Content appears to end with an incomplete sentence or phrase"
+      );
       break;
     }
   }
-  
+
   // Check for unclosed HTML tags
-  const openTags = (content.match(/<(h2|h3|p|ul|ol|li|blockquote|strong|em)>/g) || []).length;
-  const closeTags = (content.match(/<\/(h2|h3|p|ul|ol|li|blockquote|strong|em)>/g) || []).length;
+  const openTags = (
+    content.match(/<(h2|h3|p|ul|ol|li|blockquote|strong|em)>/g) || []
+  ).length;
+  const closeTags = (
+    content.match(/<\/(h2|h3|p|ul|ol|li|blockquote|strong|em)>/g) || []
+  ).length;
   if (openTags !== closeTags) {
-    issues.push(`HTML tag mismatch: ${openTags} opening tags vs ${closeTags} closing tags`);
+    issues.push(
+      `HTML tag mismatch: ${openTags} opening tags vs ${closeTags} closing tags`
+    );
   }
-  
+
   // Check for conclusion section
   if (!/<h2>.*[Cc]onclusión/i.test(content)) {
     issues.push("No conclusion section (H2 with 'Conclusión') found");
   }
-  
+
   // Check minimum length (articles should be substantial)
   if (content.length < 8000) {
-    issues.push(`Article seems short (${content.length} chars). Expected 8000+ chars for complete article.`);
+    issues.push(
+      `Article seems short (${content.length} chars). Expected 8000+ chars for complete article.`
+    );
   }
-  
+
   // Check if ends with proper punctuation
-  const lastText = content.replace(/<[^>]+>/g, '').trim();
+  const lastText = content.replace(/<[^>]+>/g, "").trim();
   if (!lastText.match(/[.!?]$/)) {
     issues.push("Last sentence doesn't end with proper punctuation (., !, ?)");
   }
-  
+
   return issues;
 }
 
@@ -557,8 +567,10 @@ async function generatePost(topic, additionalContext = "") {
     const validationIssues = validateArticleCompleteness(articleContent);
     if (validationIssues.length > 0) {
       console.warn("\n⚠️  WARNING: Potential issues detected:");
-      validationIssues.forEach(issue => console.warn(`   - ${issue}`));
-      console.warn("\n   Consider regenerating the article or manually completing it.");
+      validationIssues.forEach((issue) => console.warn(`   - ${issue}`));
+      console.warn(
+        "\n   Consider regenerating the article or manually completing it."
+      );
     } else {
       console.log("✅ Article appears complete");
     }
