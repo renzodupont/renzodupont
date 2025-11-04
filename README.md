@@ -2,11 +2,11 @@
 
 # 👋 Hi, I'm Renzo Dupont
 
-### Senior Computer Science Engineer | Founder & CEO | Salesforce Expert (16+ Years)
+### Senior Computer Science Engineer | Founder & CEO | Salesforce Expert
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/renzo-dupont-b9797941)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:renzo@startupp.ai)
-[![Website](https://img.shields.io/badge/Website-06b6d4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://renzodupont.com)
+[![Website](https://img.shields.io/badge/Website-06b6d4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://startupp.ai)
 
 </div>
 
