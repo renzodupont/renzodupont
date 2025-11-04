@@ -1,544 +1,136 @@
-# Renzo Dupont - Tech Blog 💻
+<div align="center">
 
-**Blog de tecnología y desarrollo web en español**
+# 👋 Hi, I'm Renzo Dupont
 
-Contenido técnico de alta calidad sobre desarrollo web, programación y tecnología moderna para la comunidad hispanohablante, con enfoque en Uruguay y Latinoamérica.
+### Senior Computer Science Engineer | Founder & CEO | Salesforce Expert (16+ Years)
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/renzo-dupont-b9797941)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:renzo@startupp.ai)
+[![Website](https://img.shields.io/badge/Website-06b6d4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://renzodupont.com)
 
-## 🚀 Inicio Rápido
-
-```bash
-# 1. Instalar dependencias
-npm install
-
-# 2. Configurar API key (obtener en https://aistudio.google.com/app/apikey)
-cp .env.example .env
-# Edita .env y agrega tu GEMINI_API_KEY
-
-# 3. Iniciar servidor
-npm start
-# Visita: http://localhost:8899
-```
+</div>
 
 ---
 
-## 📋 Comandos Disponibles
+## 🚀 About Me
 
-### 🎯 **Comandos Principales (Más Usados)**
+Senior Computer Science Engineer and entrepreneur with **18+ years** of experience delivering data-driven solutions that increase revenue, reduce costs, and improve client retention. 
 
-#### 1. Crear Nuevo Post Completo
+Founder & CEO of dual-entity operation (**Startupp.Cloud LLC** - U.S. & **Creditech Uy SAS** - Uruguay). Expert in Salesforce, Business Intelligence, full-stack development, and cross-functional team leadership serving U.S. and Latin American markets.
 
-```bash
-npm run create-post "Tema o concepto técnico del artículo"
-```
+### 🎯 Current Roles
 
-**Qué hace:** Genera artículo técnico completo en español + imagen de portada + actualiza base de datos  
-**Características:**
+- **Senior Computer Science Engineer** @ [Gargle, Inc.](https://gargle.com) (2013-Present)
+  - Lead Senior Engineer for entire company infrastructure (80+ employees on site + remote)
+  - Executive Director of Business Intelligence (2023-Present)
+  
+- **Founder & CEO** @ Startupp.ai & Creditech Uy SAS (2022-Present)
+  - Providing software engineering services for startups
+  - Leading fintech startup transforming Uruguay's lending landscape
 
-- ✅ **Título generado automáticamente por IA** (técnico y atractivo)
-- ✅ 1500-2500 palabras en español
-- ✅ 5-8 referencias técnicas confiables (MDN, documentación oficial, etc.)
-- ✅ Ejemplos de código cuando sea relevante
-- ✅ Tecnologías y frameworks actuales (2024-2025)
-- ✅ Imagen técnica generada con IA
-- ✅ SEO optimizado
-
-**Ejemplo:**
-
-```bash
-npm run create-post "React Server Components y su impacto en el desarrollo web"
-npm run create-post "TypeScript vs JavaScript en 2025"
-npm run create-post "Optimización de rendimiento en Next.js"
-```
-
-**💡 Tip:** No necesitas pensar en el título final. Solo describe el tema técnico y Gemini creará un título informativo y atractivo automáticamente.
+- **Chief Technology Officer** @ Credilit S.A. (2018-Present)
+  - Managing technology projects for 40+ year credit administrator
 
 ---
 
-#### 2. Regenerar Post Existente (Mejorar)
+## 💼 Experience Highlights
 
-```bash
-npm run regenerate-post "ruta/al/post.html"
-```
+### 🏆 Key Achievements
 
-**Qué hace:** Mejora un artículo técnico existente con más referencias y mejores explicaciones  
-**Características:**
+- **20% client retention increase** through groundbreaking BI initiative (2024)
+- **75% expense reduction** while maintaining operational continuity (2021)
+- **$25,000+ saved** through data migrations and process optimization (2020)
+- **60% efficiency improvement, 40% cost reduction** in Call Scoring system redesign (2022)
+- **30% productivity increase, 15% revenue growth** from data-driven platform delivery (2023)
+- Led **Salesforce GEMINI Project** (internal finance tool) as Team Lead at Altimetrik for Salesforce (2010-2011)
 
-- ✅ Más referencias técnicas actualizadas
-- ✅ Mejores explicaciones y ejemplos
-- ✅ Información más reciente (2024-2025)
-- ✅ Crea backup automático del original
-- ✅ Actualiza metadata y base de datos
+### 🌟 Notable Projects
 
-**Ejemplo:**
-
-```bash
-npm run regenerate-post "public/posts/2025/10/react-hooks-guia.html"
-```
+- **Project Gemini for Salesforce** - Internal finance management tool (Team Lead, 2010-2011)
+- **Complex Data Migrations & Mergers** - Enterprise-level data operations
+- **International Development Teams** - Managed teams across Uruguay, India, Nepal, Philippines
+- **Multiple Company Foundings** - Software development, marketing, and fintech sectors
 
 ---
 
-#### 3. Regenerar TODOS los Posts
+## 🛠️ Tech Stack
 
-```bash
-npm run regenerate-all
-```
+### **Leadership & Strategy**
+Business Intelligence · Data Strategy · Team Management · Agile/Scrum · Project Management
 
-**Qué hace:** Mejora TODOS los artículos del sitio automáticamente  
-**Características:**
+### **Salesforce** (16+ Years)
+Advanced Admin & Dev · Apex · Lightning · Flows · REST API · Data Migration · GEMINI Project
 
-- ⚡ Procesa todos los posts en public/posts/
-- 🔄 Espera 5 segundos entre posts (evitar rate limiting)
-- � Crea backup de cada original
-- 📊 Muestra resumen con estadísticas
-- ⏱️ Estimado: ~2-3 minutos por artículo
+### **Development**
+- **Backend:** C#/.NET/WPF (4+ yrs) · Node.js/Express (4+ yrs) · Python · PHP
+- **Frontend:** React · Angular · JavaScript/TypeScript · HTML5/CSS3
+- **Databases:** SQL Server · MySQL · MongoDB (10+ years) · Airtable · PostgreSQL
 
-**Perfecto para:** Actualizar toda la base de artículos con nueva información y fuentes
+### **Cloud & Tools**
+AWS · GCP · Azure · Docker · Git · CI/CD · Zapier · n8n · ChargeOver · Stripe · Apollo
 
----
-
-#### 4. Iniciar Servidor Local
-
-```bash
-npm start
-```
-
-O también:
-
-```bash
-npm run dev
-```
-
-**Qué hace:** Inicia el servidor Express en http://localhost:8899  
-**Uso:** Para ver el sitio localmente antes de desplegar
+### **Integrations**
+Salesforce · Calendly · Twilio · RingCentral · AgencyAnalytics · LLMs · Ad Platforms · Google Workspace Services
 
 ---
 
-### 🎨 **Generación de Imágenes**
+## 🎓 Education & Certifications
 
-#### 6. Generar Imágenes para Posts Nuevos
+- **Bachelor of Science in Computer Science** - Escuela Técnica Pedro Blanes, Uruguay (2005-2008)
+  - U.S. equivalency granted by Hervé Queneau, Ph.D., Brooklyn College, CUNY
+- **Two Years of Doctoral Studies** - Universidad Católica del Uruguay (2008-2011)
 
-```bash
-npm run generate-images
-```
+### Professional Certifications
 
-**Qué hace:** Genera imágenes solo para posts que NO tienen imagen  
-**Características:**
-
-- 🎨 Usa Gemini Imagen 3.0
-- 🚀 Procesa solo mes actual
-- 🔍 Detecta posts sin imagen automáticamente
-
----
-
-#### 7. Generar Imágenes (Modo Inteligente)
-
-```bash
-npm run generate-images-smart
-```
-
-**Qué hace:** Igual que `generate-images` pero con análisis más profundo del contenido
+- **Machine Learning and AI with Python (CS109xa)** - HarvardX, Harvard University (November 2024)
+- **Full Stack Development** - MIT xPro (2021)
+- **Salesforce Administrator ADM201** - Salesforce (2010)
+- **Advanced Administrator** - Udemy (2019)
+- **C# & WPF Development** - LATU Montevideo (2009-2010)
 
 ---
 
-#### 8. Regenerar TODAS las Imágenes
+## 🌍 Languages
 
-```bash
-npm run generate-images-all
-```
-
-**Qué hace:** Regenera imágenes para TODOS los posts (incluye los que ya tienen)  
-**⚠️ Advertencia:** Sobrescribe imágenes existentes
+- **Spanish:** Native
+- **English:** C1 (Advanced, certified and professional experience)
 
 ---
 
-### � **Generación de Contenido**
+## 📝 Recent Blog Posts
 
-#### 9. Crear Solo Contenido (Sin Imagen)
+I write technical content in Spanish for the Latin American community. Visit my blog: [renzodupont.com](https://renzodupont.com)
 
-```bash
-npm run create-content "Tema o concepto"
-```
-
-**Qué hace:** Genera solo el HTML del artículo (sin imagen ni actualizar BD)  
-**Uso:** Cuando quieres revisar el contenido antes de generar la imagen
-
-**💡 Importante:** El título se genera automáticamente por IA. Solo proporciona el tema/concepto.
-
-**Con contexto adicional:**
-
-```bash
-node generate-content.js "Tema" --context "Enfocarse en datos 2024-2025"
-```
-
-**Modo interactivo:**
-
-```bash
-node generate-content.js --interactive
-```
-
-**Modo batch (múltiples artículos):**
-
-```bash
-node generate-content.js --batch topics.json
-```
+Topics covered:
+- AI & Machine Learning
+- Full-Stack Development
+- Salesforce & CRM Systems
+- Data Engineering & Business Intelligence
+- Web Development Best Practices
 
 ---
 
-### 🗂️ **Organización y Mantenimiento**
+## 💬 Let's Connect
 
-#### 10. Organizar Posts por Fecha
+I'm always open to discussing:
+- Technology projects and collaborations
+- Salesforce implementations
+- Startup opportunities
+- Mentoring and knowledge sharing
 
-```bash
-npm run organize-posts
-```
-
-**Qué hace:** Mueve posts a estructura `YYYY/MM/slug.html`  
-**Ejemplo:** `post.html` → `2025/10/post.html`
-
-**Vista previa (sin hacer cambios):**
-
-```bash
-npm run organize-posts-dry
-```
+**📧 Email:** [renzo@startupp.ai](mailto:renzo@startupp.ai)  
+**💼 LinkedIn:** [linkedin.com/in/renzo-dupont-b9797941](https://linkedin.com/in/renzo-dupont-b9797941)  
+**🌐 Website:** [renzodupont.com](https://renzodupont.com)
 
 ---
 
-#### 11. Actualizar Links Internos
+<div align="center">
 
-```bash
-npm run update-links
-```
+### 💡 "Technology doesn't understand languages, but it does understand communities."
 
-**Qué hace:** Actualiza todos los enlaces después de reorganizar posts  
-**Uso:** Ejecutar después de `organize-posts`
+**Bilingual professional serving U.S. and Latin American markets since 2007**
 
-**Vista previa:**
+Made with ❤️ from Uruguay
 
-```bash
-npm run update-links-dry
-```
+</div>
 
----
-
-#### 12. Actualizar Referencias de Imágenes
-
-```bash
-npm run update-images
-```
-
-**Qué hace:** Actualiza las rutas de imágenes en los posts HTML
-
-**Vista previa:**
-
-```bash
-npm run update-images-dry
-```
-
----
-
-### ⚡ **Workflow Completo**
-
-#### 13. Ejecutar Workflow Completo
-
-```bash
-npm run workflow
-```
-
-**Qué hace:** Ejecuta organizar + generar imágenes + actualizar links (todo de una vez)
-
-**Vista previa:**
-
-```bash
-npm run workflow-dry
-```
-
----
-
-## 📚 Documentación Detallada
-
-### Guías Principales
-
-- **[COMANDOS_ACTUALIZADOS.md](COMANDOS_ACTUALIZADOS.md)** - Guía completa en español de todos los comandos
-- **[AUTOMATION_GUIDE.md](AUTOMATION_GUIDE.md)** - Guía completa de automatización
-- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Referencia rápida de comandos
-
-### Guías Específicas
-
-- **[REGENERACION_MASIVA.md](REGENERACION_MASIVA.md)** - Cómo regenerar todos los posts
-- **[ACTUALIZACION_URUGUAY.md](ACTUALIZACION_URUGUAY.md)** - Optimización para Uruguay
-- **[IMAGE_GENERATION_GUIDE.md](IMAGE_GENERATION_GUIDE.md)** - Generación de imágenes
-- **[WORKFLOW_GUIDE.md](WORKFLOW_GUIDE.md)** - Flujo de trabajo completo
-
-### Configuración y Solución de Problemas
-
-- **[SETUP_CHECKLIST.md](SETUP_CHECKLIST.md)** - Checklist de configuración
-- **[GITHUB_ACTIONS_TROUBLESHOOTING.md](GITHUB_ACTIONS_TROUBLESHOOTING.md)** - Solucionar problemas de despliegue
-
----
-
-## 🎯 Workflows Comunes
-
-### Crear y Publicar Nuevo Artículo
-
-```bash
-# 1. Crear post completo (solo da el tema, no el título final)
-npm run create-post "Impacto de la inflación en Uruguay"
-
-# El sistema genera automáticamente:
-# - Título fuerte y atractivo
-# - Artículo completo 1500-2500 palabras
-# - Imagen de portada
-# - Actualiza base de datos
-
-# 2. Revisar localmente
-npm start
-# Visita: http://localhost:8899
-
-# 3. Desplegar
-git add .
-git commit -m "Add: React Server Components tutorial"
-git push origin main
-# GitHub Actions despliega automáticamente
-```
-
----
-
-### Mejorar Artículo Existente
-
-```bash
-# 1. Regenerar con referencias actualizadas
-npm run regenerate-post "public/posts/2025/10/viejo-articulo.html"
-
-# 2. Revisar cambios
-npm start
-
-# 3. Desplegar
-git add .
-git commit -m "Update: Mejorar viejo-articulo con info 2024-2025"
-git push origin main
-```
-
----
-
-### Actualizar Toda la Base de Artículos
-
-```bash
-# 1. Regenerar todos (toma tiempo!)
-npm run regenerate-all
-# ⏱️ Estimado: 15 artículos = ~45 minutos
-
-# 2. Revisar algunos al azar
-npm start
-
-# 3. Desplegar
-git add .
-git commit -m "Regenerate all posts with updated references"
-git push origin main
-```
-
----
-
-### Reorganizar Posts y Generar Imágenes
-
-```bash
-# 1. Vista previa de cambios
-npm run workflow-dry
-
-# 2. Ejecutar workflow completo
-npm run workflow
-
-# 3. Desplegar
-git add .
-git commit -m "Organize posts and generate images"
-git push origin main
-```
-
----
-
-## 🛠️ Características del Sistema
-
-### ✅ Contenido Generado
-
-- **Idioma:** 100% español para mercado hispanohablante
-- **Enfoque:** Tecnología moderna, desarrollo web, programación
-- **Referencias:** Mínimo 5-8 referencias técnicas por artículo
-- **Actualidad:** Prioriza tecnologías y frameworks 2024-2025
-- **Longitud:** 1500-2500 palabras
-- **Estructura:** H2/H3, listas, código, explicaciones claras
-
-### ✅ Referencias Prioritarias
-
-**Documentación Oficial:**
-
-- MDN Web Docs
-- React, Vue, Angular docs
-- Node.js, Python.org
-- TypeScript, Next.js
-
-**Comunidad y Recursos:**
-
-- Stack Overflow, GitHub
-- CSS-Tricks, Smashing Magazine
-- Dev.to, Medium (technical)
-- Estudios de rendimiento y benchmarks
-
-### ✅ Imágenes
-
-- Generadas con Gemini Imagen 3.0
-- Estilo técnico moderno
-- Sin texto ni watermarks
-- Formato optimizado para web
-
----
-
-## 📁 Estructura del Proyecto
-
-```
-renzodupont-tech/
-├── app.js                      # Servidor Express
-├── package.json                # Scripts y dependencias
-├── .env                        # API keys (no incluido en repo)
-├── .env.example                # Plantilla de configuración
-│
-├── generate-content.js         # Generación de artículos con IA
-├── regenerate-post.js          # Mejora de artículos existentes
-├── orchestrate-post.js         # Pipeline completo (contenido + imagen + BD)
-├── generate-images-smart.js    # Generación inteligente de imágenes
-├── organize-posts.js           # Organización por fecha
-├── update-post-links.js        # Actualización de enlaces
-├── complete-workflow.sh        # Script de workflow completo
-│
-├── posts-database.json         # Base de datos de posts
-├── posts-config.xml            # Configuración de posts
-├── example-topics.json         # Temas técnicos de ejemplo
-│
-└── public/                     # Archivos públicos
-    ├── index.html              # Página principal
-    ├── quienes-somos.html      # Sobre mí
-    ├── contacto.html           # Contacto
-    ├── css/
-    │   └── style.css           # Estilos (dark theme + turquesa)
-    ├── images/                 # Imágenes generadas
-    └── posts/                  # Artículos
-        └── 2025/
-            └── 10/
-                ├── post-1.html
-                ├── post-1-1.png
-                ├── post-2.html
-                └── post-2-1.png
-```
-
----
-
-## 🔧 Requisitos
-
-### Obligatorios
-
-- **Node.js** 14 o superior
-- **GEMINI_API_KEY** (gratis en https://aistudio.google.com/app/apikey)
-
-### Dependencias (se instalan con npm install)
-
-- `express` - Servidor web
-- `@google/generative-ai` - API de Gemini para contenido
-- `@google/genai` - API de Imagen para imágenes
-- `dotenv` - Variables de entorno
-- `jsdom` - Manipulación de HTML
-- `node-fetch` - HTTP requests
-
----
-
-## 🚀 Despliegue
-
-El sitio se despliega automáticamente via **GitHub Actions** cuando haces push a `main`:
-
-```bash
-git add .
-git commit -m "Tu mensaje"
-git push origin main
-```
-
-GitHub Actions automáticamente:
-
-1. Se conecta a tu servidor via SSH
-2. Hace `git pull` de los cambios
-3. Ejecuta `npm install`
-4. Reinicia el proceso
-5. Sitio actualizado! ✅
-
-**Monitorear despliegue:** https://github.com/renzodupont/renzodupont/actions
-
----
-
-## 📊 Checklist de Calidad
-
-Antes de publicar un artículo, verificar:
-
-- [ ] Está en español
-- [ ] Menciona 5-8 referencias técnicas
-- [ ] Incluye información de 2024-2025
-- [ ] Tiene ejemplos de código si son relevantes
-- [ ] Cita documentación oficial
-- [ ] Estructura clara con H2/H3
-- [ ] 1500-2500 palabras
-- [ ] Tiene imagen de portada
-- [ ] Links funcionan correctamente
-- [ ] Revisado en localhost antes de push
-
----
-
-## 🐛 Solución de Problemas
-
-### Error: "GEMINI_API_KEY not found"
-
-```bash
-# Verifica tu .env
-cat .env | grep GEMINI_API_KEY
-
-# Si no existe, agrégala
-echo "GEMINI_API_KEY=tu_clave_aqui" >> .env
-```
-
-### Contenido no en español
-
-Con los nuevos prompts, todo debería estar en español. Si no:
-
-```bash
-# Verifica que tienes la última versión
-git pull origin main
-```
-
-### API rate limit exceeded
-
-Espera 24 horas o actualiza a plan pago de Gemini API.
-
----
-
-## 📧 Contacto
-
-Para consultas, colaboraciones o sugerencias:  
-**renzo@renzodupont.com**
-
----
-
-## 📜 Licencia
-
-MIT License - Usa, modifica y distribuye libremente.
-
----
-
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas:
-
-1. Fork el repositorio
-2. Crea una rama: `git checkout -b feature/nueva-funcionalidad`
-3. Commit: `git commit -m "Add: nueva funcionalidad"`
-4. Push: `git push origin feature/nueva-funcionalidad`
-5. Abre un Pull Request
-
----
-
-**Tecnología en español. Conocimiento sin barreras.** 💻
