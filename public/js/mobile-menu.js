@@ -1,64 +1,45 @@
 /**
- * Mobile Menu Functionality
- * Handles hamburger menu toggle for mobile devices
+ * Mobile Menu
  */
-
-document.addEventListener("DOMContentLoaded", () => {
-  const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
-  const nav = document.querySelector("nav");
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.querySelector('nav');
   const body = document.body;
 
-  if (!mobileMenuToggle || !nav) return;
+  if (!toggle || !nav) return;
 
-  // Toggle menu
-  mobileMenuToggle.addEventListener("click", (e) => {
+  toggle.addEventListener('click', (e) => {
     e.stopPropagation();
-    mobileMenuToggle.classList.toggle("active");
-    nav.classList.toggle("active");
-    body.classList.toggle("menu-open");
+    toggle.classList.toggle('active');
+    nav.classList.toggle('active');
+    body.classList.toggle('menu-open');
   });
 
-  // Close menu when clicking on overlay (body after element)
-  body.addEventListener("click", (e) => {
-    if (
-      body.classList.contains("menu-open") &&
-      !nav.contains(e.target) &&
-      !mobileMenuToggle.contains(e.target)
-    ) {
-      closeMenu();
+  body.addEventListener('click', (e) => {
+    if (body.classList.contains('menu-open') && !nav.contains(e.target) && !toggle.contains(e.target)) {
+      close();
     }
   });
 
-  // Close menu when clicking on a navigation link
-  const navLinks = nav.querySelectorAll("a");
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      closeMenu();
-    });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', close);
   });
 
-  // Close menu on ESC key
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && body.classList.contains("menu-open")) {
-      closeMenu();
-    }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && body.classList.contains('menu-open')) close();
   });
 
-  // Close menu on window resize (if resized to desktop)
-  let resizeTimer;
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      if (window.innerWidth > 768 && body.classList.contains("menu-open")) {
-        closeMenu();
-      }
+  let timer;
+  window.addEventListener('resize', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      if (window.innerWidth > 768 && body.classList.contains('menu-open')) close();
     }, 250);
   });
 
-  // Helper function to close menu
-  function closeMenu() {
-    mobileMenuToggle.classList.remove("active");
-    nav.classList.remove("active");
-    body.classList.remove("menu-open");
+  function close() {
+    toggle.classList.remove('active');
+    nav.classList.remove('active');
+    body.classList.remove('menu-open');
   }
 });
