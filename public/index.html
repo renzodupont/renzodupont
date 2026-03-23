@@ -46,6 +46,7 @@
             <div class="hero-orb hero-orb-1"></div>
             <div class="hero-orb hero-orb-2"></div>
             <div class="hero-orb hero-orb-3"></div>
+            <canvas class="particle-canvas" id="particleCanvas"></canvas>
         </div>
         <div class="container hero-content">
             <div class="hero-label">// Senior Computer Science Engineer</div>
@@ -438,5 +439,100 @@
 
     <script src="/js/mobile-menu.js"></script>
     <script src="/js/animations.js"></script>
+
+    <!-- Particle System -->
+    <script>
+    (function() {
+      const canvas = document.getElementById('particleCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d', { alpha: true });
+      const isReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (isReduced) return;
+
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      const count = isMobile ? 40 : 80;
+      const speed = isMobile ? 0.25 : 0.4;
+      const maxDist = isMobile ? 90 : 130;
+      const fps = isMobile ? 30 : 60;
+      const interval = 1000 / fps;
+      let particles = [];
+      let raf, last = 0;
+
+      function resize() {
+        const r = canvas.parentElement.getBoundingClientRect();
+        canvas.width = r.width;
+        canvas.height = r.height;
+      }
+
+      class P {
+        constructor() { this.reset(); }
+        reset() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.vx = (Math.random() - 0.5) * speed;
+          this.vy = (Math.random() - 0.5) * speed;
+          this.size = Math.random() * 2 + 1;
+          this.opacity = Math.random() * 0.5 + 0.2;
+        }
+        update() {
+          this.x += this.vx; this.y += this.vy;
+          if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        }
+        draw() {
+          ctx.fillStyle = `rgba(249, 115, 22, ${this.opacity})`;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      function init() {
+        particles = [];
+        for (let i = 0; i < count; i++) particles.push(new P());
+      }
+
+      function connections() {
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const d = Math.sqrt(dx * dx + dy * dy);
+            if (d < maxDist) {
+              ctx.strokeStyle = `rgba(249, 115, 22, ${(1 - d / maxDist) * 0.15})`;
+              ctx.lineWidth = 0.5;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+      }
+
+      function animate(t) {
+        raf = requestAnimationFrame(animate);
+        if (t - last < interval) return;
+        last = t;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => { p.update(); p.draw(); });
+        connections();
+      }
+
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { if (!raf) animate(performance.now()); }
+          else { cancelAnimationFrame(raf); raf = null; }
+        });
+      }, { threshold: 0.1 });
+
+      resize(); init(); obs.observe(canvas);
+      let rt;
+      window.addEventListener('resize', () => {
+        clearTimeout(rt);
+        rt = setTimeout(() => { resize(); init(); }, 250);
+      });
+    })();
+    </script>
 </body>
 </html>
