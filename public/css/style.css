@@ -1522,8 +1522,12 @@ footer {
     color: #4a5568;
     margin-top: 0.25rem;
   }
+  .resume-web .resume-contact a {
+    color: #06b6d4 !important;
+    text-decoration: underline;
+  }
 
-  .resume-web .resume-section { margin-bottom: 1rem; }
+  .resume-web .resume-section { margin-bottom: 1.25rem; }
   .resume-web .resume-section h2 {
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 10.5pt;
@@ -1536,9 +1540,9 @@ footer {
   .resume-web .resume-section p,
   .resume-web .resume-section li {
     font-size: 8.5pt;
-    line-height: 1.4;
+    line-height: 1.5;
     color: #374151;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
   }
   .resume-web .resume-section li::before { background: #06b6d4; }
 
@@ -1567,7 +1571,7 @@ footer {
   .resume-web .tech-compact {
     font-size: 8.5pt;
     color: #374151;
-    line-height: 1.2;
+    line-height: 1.5;
   }
   .resume-web .tech-compact strong { color: #0f172a; }
 
