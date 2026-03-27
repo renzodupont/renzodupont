@@ -1567,6 +1567,7 @@ footer {
   .resume-web .tech-compact {
     font-size: 8.5pt;
     color: #374151;
+    line-height: 1.2;
   }
   .resume-web .tech-compact strong { color: #0f172a; }
 
