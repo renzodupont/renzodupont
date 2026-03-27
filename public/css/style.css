@@ -1344,7 +1344,7 @@ footer {
 }
 .resume-web .job-header:first-of-type { margin-top: 0; }
 .resume-web .company-name {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 700;
   color: var(--accent);
@@ -1551,6 +1551,7 @@ footer {
   .resume-web .resume-section li::before { background: #06b6d4; }
 
   .resume-web .company-name {
+    font-family: Arial, Helvetica, sans-serif !important;
     font-size: 9pt;
     color: #06b6d4;
   }
