@@ -1287,6 +1287,8 @@ footer {
   margin-top: 0.5rem;
 }
 .resume-web .resume-contact a { color: var(--accent); }
+.print-only { display: none; }
+.screen-only { display: inline; }
 .resume-web .resume-personal {
   font-size: 0.82rem;
   color: var(--text-muted);
@@ -1524,8 +1526,10 @@ footer {
   }
   .resume-web .resume-contact a {
     color: #06b6d4 !important;
-    text-decoration: underline;
+    text-decoration: none;
   }
+  .screen-only { display: none !important; }
+  .print-only { display: inline !important; }
 
   .resume-web .resume-section { margin-bottom: 1.25rem; }
   .resume-web .resume-section h2 {
