@@ -1537,10 +1537,9 @@ footer {
     margin-bottom: 0.75rem;
     padding-bottom: 0.6rem;
     border-bottom: 2px solid #06b6d4;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+    display: block;
+    text-align: center;
+    width: 100%;
   }
   .resume-web .profile-image {
     width: 100px;
