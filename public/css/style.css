@@ -1289,6 +1289,7 @@ footer {
 .resume-web .resume-contact a { color: var(--accent); }
 .print-only { display: none; }
 .screen-only { display: inline; }
+.print-page-break { display: none; }
 .resume-web .resume-personal {
   font-size: 0.82rem;
   color: var(--text-muted);
@@ -1632,7 +1633,13 @@ footer {
     transform: none !important;
   }
 
+  .print-page-break { display: block; page-break-before: always; break-before: page; }
+
   #summary, #competencies { page-break-inside: avoid; page-break-after: avoid; }
   #experience { page-break-inside: auto; }
-  #education, #achievements { page-break-inside: avoid; }
+  #education { page-break-inside: avoid; }
+
+  .resume-web .resume-section li { page-break-inside: avoid; }
+  .resume-web .job-header { page-break-after: avoid; }
+  .resume-web .job-header + ul { page-break-before: avoid; }
 }
