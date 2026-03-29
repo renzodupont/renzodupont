@@ -14,7 +14,7 @@
 
 ## About Me
 
-Senior Engineer with **18+ years** of experience building and scaling enterprise systems, CRMs, and cloud infrastructure. Founder & CEO of **Startupp.ai** (US & Mexico), providing Fractional CTO services to startups and growing companies.
+Senior Engineer with **18+ years** of experience building and scaling enterprise systems, CRMs, and cloud infrastructure. Founder & CEO of **Startupp.ai** (US & Latam), providing Fractional CTO services to startups and growing companies.
 
 Currently the Lead Senior Engineer at **Gargle, Inc.** — owning the entire company's infrastructure across Salesforce, AWS, GCP, and 15+ integrated platforms.
 
