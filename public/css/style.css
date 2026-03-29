@@ -1383,6 +1383,46 @@ footer {
   color: var(--text-muted);
 }
 
+/* ---------- RESUME VERSION SELECTOR ---------- */
+.resume-versions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  margin-top: 6rem;
+  margin-bottom: 0.5rem;
+}
+.resume-versions span {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-right: 0.25rem;
+}
+.resume-versions a {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted) !important;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.3s var(--ease);
+}
+.resume-versions a:hover {
+  color: var(--accent) !important;
+  border-color: var(--border-accent);
+  background: var(--accent-glow);
+}
+.resume-versions a.active {
+  color: var(--bg-deep) !important;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
 .resume-web .print-button {
   position: fixed;
   top: 100px;
@@ -1428,6 +1468,8 @@ footer {
   .page-hero { padding: 8rem 0 3rem; }
   .resume-web .resume-header { flex-direction: column; text-align: center; }
   .resume-web .print-button { top: auto; bottom: 1.5rem; right: 1.5rem; }
+  .resume-versions { flex-wrap: wrap; margin-top: 5rem; }
+  .resume-versions span { width: 100%; text-align: center; margin-bottom: 0.25rem; }
 }
 
 @media (max-width: 480px) {
@@ -1476,7 +1518,7 @@ footer {
     font-family: Arial, Helvetica, sans-serif !important;
   }
 
-  header, footer, .scroll-to-top, .print-button, .scroll-indicator { display: none !important; }
+  header, footer, .scroll-to-top, .print-button, .scroll-indicator, .resume-versions { display: none !important; }
 
   .resume-web {
     padding: 0;
