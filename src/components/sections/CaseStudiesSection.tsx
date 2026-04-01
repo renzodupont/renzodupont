@@ -8,9 +8,24 @@ const caseStudies = [
 ]
 
 const products = [
-  { name: 'Ava CRM', color: 'accent' },
-  { name: 'Agency OS', color: 'pink' },
-  { name: 'Your ID', color: 'accent' },
+  {
+    name: 'Ava CRM',
+    color: 'accent' as const,
+    description: 'AI-native CRM with 12+ modules — contacts, invoicing, projects, inventory, marketing, and more.',
+    stack: ['React', 'TypeScript', 'Cloudflare Workers', 'D1', 'R2', 'REST API', 'Whitelabel-ready'],
+  },
+  {
+    name: 'Agency OS',
+    color: 'pink' as const,
+    description: 'BYOK digital marketing agency platform with AI-powered campaign management and analytics.',
+    stack: ['React', 'Node.js', 'PostgreSQL', 'OpenAI API', 'Multi-tenant', 'Stripe Billing'],
+  },
+  {
+    name: 'Your ID',
+    color: 'accent' as const,
+    description: 'Identity verification platform for the Mexican rental market with enterprise-grade encryption.',
+    stack: ['React Native', 'Python', 'AES-256 Encryption', 'OCR/ML Pipeline', 'AWS', 'KYC Compliance'],
+  },
 ]
 
 export default function CaseStudiesSection() {
@@ -41,11 +56,19 @@ export default function CaseStudiesSection() {
               <p className="text-text-secondary leading-relaxed">{details}</p>
             </div>
           ))}
-          <div className="stack-card card-glass rounded-2xl p-8 border-pink/10">
-            <h3 className="font-display text-xl font-bold text-text-primary mb-4">My Products</h3>
-            <div className="flex flex-wrap gap-3">
-              {products.map(({ name, color }) => (
-                <span key={name} className={`text-sm px-4 py-1.5 rounded-full border ${color === 'accent' ? 'text-accent border-accent/20 bg-accent/[0.04]' : 'text-pink border-pink/20 bg-pink/[0.04]'}`}>{name}</span>
+          <div className="stack-card card-glass rounded-2xl p-8">
+            <h3 className="font-display text-xl font-bold text-text-primary mb-6">Products I've Built</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {products.map(({ name, color, description, stack }) => (
+                <div key={name} className={`rounded-xl border p-5 ${color === 'accent' ? 'border-accent/10 bg-accent/[0.02]' : 'border-pink/10 bg-pink/[0.02]'}`}>
+                  <h4 className={`font-display font-bold mb-2 ${color === 'accent' ? 'text-accent' : 'text-pink'}`}>{name}</h4>
+                  <p className="text-sm text-text-muted leading-relaxed mb-3">{description}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {stack.map(tech => (
+                      <span key={tech} className="text-[10px] font-mono px-2 py-0.5 rounded bg-dark-700 text-text-muted border border-white/5">{tech}</span>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
