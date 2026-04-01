@@ -8,11 +8,9 @@ const caseStudies = [
 ]
 
 const products = [
-  { name: 'Startupp.ai', color: 'accent' },
-  { name: 'Ava CRM', color: 'pink' },
-  { name: 'Agency OS', color: 'accent' },
-  { name: 'LivIQ', color: 'pink' },
-  { name: 'Smart Test', color: 'accent' },
+  { name: 'Ava CRM', color: 'accent' },
+  { name: 'Agency OS', color: 'pink' },
+  { name: 'Your ID', color: 'accent' },
 ]
 
 export default function CaseStudiesSection() {

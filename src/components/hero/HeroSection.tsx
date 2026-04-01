@@ -72,7 +72,7 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/[0.06] mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse-glow" />
-              <span className="text-xs font-mono text-accent">Available for Fractional CTO engagements</span>
+              <span className="text-xs font-mono text-accent">Open to Senior Engineering & Leadership Opportunities</span>
             </div>
 
             {/* Headline */}
@@ -87,24 +87,24 @@ export default function HeroSection() {
 
             {/* Subtext */}
             <p data-hero="subheadline" className="text-text-muted max-w-lg mb-8 leading-relaxed">
-              18+ years turning complex ideas into scalable products. From startups to enterprises, Uruguay to Utah.
+              18+ years building and scaling enterprise systems, leading engineering teams, and shipping products. From startups to enterprises, Uruguay to Utah.
             </p>
 
             {/* CTAs */}
             <div data-hero="cta" className="flex flex-wrap gap-4 mb-10">
               <a
+                href="/resume"
+                className="btn-primary px-7 py-3 text-sm font-semibold"
+              >
+                View Resume
+              </a>
+              <a
                 href="https://calendly.com/renzo-startupp/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary px-7 py-3 text-sm font-semibold"
-              >
-                Book a Call
-              </a>
-              <a
-                href="/resume"
                 className="btn-secondary px-7 py-3 text-sm font-semibold"
               >
-                View Resume
+                Let's Talk
               </a>
             </div>
 

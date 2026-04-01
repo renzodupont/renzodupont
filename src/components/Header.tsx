@@ -63,7 +63,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="btn-primary text-sm px-5 py-2"
           >
-            Book a Call
+            Let's Talk
           </a>
         </nav>
 
@@ -93,7 +93,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="btn-primary text-sm px-5 py-2 text-center"
           >
-            Book a Call
+            Let's Talk
           </a>
         </div>
       )}
