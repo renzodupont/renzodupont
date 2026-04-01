@@ -51,6 +51,9 @@ export default function Header() {
           <button onClick={() => scrollToSection('work')} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
             Work
           </button>
+          <Link to="/resume" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+            Resume
+          </Link>
           <button onClick={() => scrollToSection('contact')} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
             Contact
           </button>
@@ -82,6 +85,7 @@ export default function Header() {
           <button onClick={() => scrollToSection('about')} className="text-left text-text-secondary hover:text-text-primary">About</button>
           <button onClick={() => scrollToSection('expertise')} className="text-left text-text-secondary hover:text-text-primary">Expertise</button>
           <button onClick={() => scrollToSection('work')} className="text-left text-text-secondary hover:text-text-primary">Work</button>
+          <Link to="/resume" className="text-left text-text-secondary hover:text-text-primary" onClick={() => setMenuOpen(false)}>Resume</Link>
           <button onClick={() => scrollToSection('contact')} className="text-left text-text-secondary hover:text-text-primary">Contact</button>
           <a
             href="https://calendly.com/renzo-startupp/30min"

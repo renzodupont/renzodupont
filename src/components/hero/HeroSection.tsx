@@ -1,9 +1,12 @@
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import Aurora from '../Aurora'
 import CanvasHero from '../CanvasHero'
 import HeroEntrance from './HeroEntrance'
-import TrueFocus from '../TrueFocus'
 import PhotoFrame from './PhotoFrame'
 import { createGeometricPulse } from '../../animations/geometricPulse'
+
+const roles = ['Full-Stack Engineer', 'AI Builder', 'Fractional CTO']
 
 const stats = [
   { value: '18+', label: 'Years Exp.' },
@@ -12,9 +15,37 @@ const stats = [
   { value: '3', label: 'Countries' },
 ]
 
+function RoleCycler() {
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex(prev => (prev + 1) % roles.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
+  return (
+    <span className="inline-block relative h-[1.3em] overflow-hidden align-bottom">
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={roles[index]}
+          initial={{ y: 30, opacity: 0, filter: 'blur(8px)' }}
+          animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
+          exit={{ y: -30, opacity: 0, filter: 'blur(8px)' }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
+          className="inline-block gradient-text"
+        >
+          {roles[index]}
+        </motion.span>
+      </AnimatePresence>
+    </span>
+  )
+}
+
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-20">
       {/* Background layers */}
       <Aurora
         colorStops={['#64d386', '#0a0a0a', '#f472b6']}
@@ -25,10 +56,16 @@ export default function HeroSection() {
       />
       <CanvasHero scene={createGeometricPulse()} />
 
+      {/* Photo — absolutely positioned on the right */}
+      <PhotoFrame />
+
+      {/* Gradient overlay — keeps text readable over photo */}
+      <div className="absolute inset-0 bg-gradient-to-r from-dark-900/70 via-dark-900/40 to-transparent" />
+
       {/* Content */}
-      <HeroEntrance>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+        <HeroEntrance>
+          <div className="max-w-2xl">
             {/* Badge */}
             <div
               data-hero="badge"
@@ -39,21 +76,13 @@ export default function HeroSection() {
             </div>
 
             {/* Headline */}
-            <h1 data-hero="headline" className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-2">
+            <h1 data-hero="headline" className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-3">
               Renzo Dupont
             </h1>
 
-            {/* Subtitle with TrueFocus */}
-            <div data-hero="headline-accent" className="text-xl md:text-2xl text-text-secondary mb-4">
-              <TrueFocus
-                sentence="Full-Stack Engineer;AI Builder;Fractional CTO"
-                separator=";"
-                blurAmount={5}
-                borderColor="#64d386"
-                glowColor="rgba(100, 211, 134, 0.3)"
-                animationDuration={0.5}
-                pauseBetweenAnimations={2}
-              />
+            {/* Subtitle with cycling roles */}
+            <div data-hero="headline-accent" className="text-xl md:text-2xl text-text-secondary mb-6">
+              <RoleCycler />
             </div>
 
             {/* Subtext */}
@@ -89,11 +118,8 @@ export default function HeroSection() {
               ))}
             </div>
           </div>
-
-          {/* Photo with orbiting icons */}
-          <PhotoFrame />
-        </div>
-      </HeroEntrance>
+        </HeroEntrance>
+      </div>
     </section>
   )
 }
