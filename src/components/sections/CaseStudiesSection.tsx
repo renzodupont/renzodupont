@@ -4,7 +4,7 @@ import ScrollStack from '../ScrollStack'
 const caseStudies = [
   { company: 'Credilit S.A.', description: '40-year fintech company — full digital transformation', details: 'Managed technology for a legacy credit administrator. Automated workflows, built client portals, accounting systems, and marketing tracking.', metric: '$20K+', metricLabel: 'saved annually', color: 'accent' as const },
   { company: 'DentalMarketing.net', description: 'SaaS platform optimization', details: 'Built data-driven platform. Redesigned Call Scoring system, improving efficiency by 60% and reducing costs by 40%.', metric: '30%', metricLabel: 'productivity increase', color: 'pink' as const },
-  { company: 'Gargle', description: '80-person company — BI initiative', details: 'Led Business Intelligence initiative as sole senior engineer. Architected integrations across 15+ platforms serving 80+ employees.', metric: '20%', metricLabel: 'client retention increase', color: 'accent' as const },
+  { company: 'Digital Marketing Company', description: '80-person company — BI initiative', details: 'Led Business Intelligence initiative as sole senior engineer. Architected integrations across 15+ platforms serving 80+ employees.', metric: '20%', metricLabel: 'client retention increase', color: 'accent' as const },
 ]
 
 const products = [
