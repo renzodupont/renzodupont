@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "postbuild": "npx tsx scripts/prerender.ts",
-    "build:full": "npm run build && npm run postbuild",
+    "prerender": "npx tsx scripts/prerender.ts",
+    "build:full": "npm run build && npm run prerender",
     "preview": "vite preview",
     "deploy": "wrangler pages deploy dist"
   },
