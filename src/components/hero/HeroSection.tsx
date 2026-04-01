@@ -11,7 +11,7 @@ const roles = ['Full-Stack Engineer', 'AI Builder', 'Fractional CTO']
 const stats = [
   { value: '18+', label: 'Years Exp.' },
   { value: '5+', label: 'Companies' },
-  { value: '16+', label: 'SF Years' },
+  { value: '16+', label: 'Salesforce Yrs' },
   { value: '3', label: 'Countries' },
 ]
 
