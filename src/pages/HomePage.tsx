@@ -1,11 +1,12 @@
 import Header from '../components/Header'
+import HeroSection from '../components/hero/HeroSection'
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-dark-900 text-text-primary">
       <Header />
-      <main className="pt-16">
-        <p className="p-8">HomePage placeholder</p>
+      <main>
+        <HeroSection />
       </main>
     </div>
   )
