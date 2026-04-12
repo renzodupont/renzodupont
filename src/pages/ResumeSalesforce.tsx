@@ -87,11 +87,11 @@ export default function ResumeSalesforce() {
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
-              <li>Sole Salesforce architect owning an enterprise-scale org: 200+ custom objects, 200+ Flows, 100+ Apex classes and triggers, serving 80+ users — including integrations with financial systems, sales &amp; marketing platforms, and operational tools via REST/SOAP APIs</li>
-              <li>Led multiple Salesforce org mergers, environment splits, and large-scale data migrations — maintaining data integrity and zero downtime across consolidation and restructuring events</li>
-              <li>Architected integrations between Salesforce and 15+ platforms — Twilio, RingCentral, AWS, GCP, Stripe, Calendly, AgencyAnalytics, Apollo, Google Workspace, Ad Platforms — creating a unified operational hub</li>
-              <li>Built Business Intelligence dashboards and custom reporting that <strong>increased client retention by 20%</strong></li>
-              <li>Implemented AI/LLM-powered workflows integrated with Salesforce using n8n and Zapier, automating lead scoring, data enrichment, and outreach</li>
+              <li>Own the entire Salesforce ecosystem — an enterprise-scale org with 200+ custom objects, 200+ Flows, and 100+ Apex classes/triggers serving 80+ users across sales, operations, and finance</li>
+              <li>Built and maintain REST/SOAP API integrations between Salesforce and 15+ external platforms (Twilio, RingCentral, Stripe, Calendly, AgencyAnalytics, Apollo, AWS, GCP, Google Workspace, Ad Platforms) — creating a unified hub where all customer and operational data flows through Salesforce</li>
+              <li>Led multiple Salesforce org mergers and environment splits during company restructuring — planned data migration strategies, wrote Apex batch jobs, and maintained data integrity with zero downtime</li>
+              <li>Built custom Salesforce reports and BI dashboards that gave leadership visibility into client health, <strong>increasing client retention by 20%</strong></li>
+              <li>Connected AI/LLM workflows to Salesforce via n8n and Zapier — automated lead scoring, data enrichment, and outreach sequences triggered by Salesforce events</li>
             </ul>
 
             <div className="job-header">
@@ -99,8 +99,8 @@ export default function ResumeSalesforce() {
               <div className="job-period">June 2021 – December 2023</div>
             </div>
             <ul>
-              <li>Maintained Salesforce ecosystem continuity through major restructuring, <strong>reducing technology expenses by 75%</strong> by consolidating integrations and optimizing license allocation</li>
-              <li>Led Salesforce development team, managing sprint planning, code reviews, and deployment processes across multiple sandboxes</li>
+              <li>Kept the Salesforce ecosystem running through a major company restructuring — consolidated redundant integrations, optimized license allocation, and renegotiated vendor contracts, <strong>reducing technology expenses by 75%</strong></li>
+              <li>Managed the Salesforce development team — ran sprint planning, conducted code reviews, and oversaw deployment processes across multiple sandboxes and production orgs</li>
             </ul>
 
             <div className="print-page-break"></div>
@@ -110,9 +110,8 @@ export default function ResumeSalesforce() {
               <div className="job-period">August 2013 – May 2021</div>
             </div>
             <ul>
-              <li><strong>Saved $25,000+</strong> through strategic Salesforce data migrations, custom automation, and process optimization — reducing data errors by 20%</li>
-              <li>Led hundreds of Salesforce projects: custom objects, page layouts, validation rules, workflow rules, approval processes, and third-party integrations</li>
-              <li>Served as primary Salesforce administrator and go-to technical resource for the entire organization</li>
+              <li>Served as the primary Salesforce administrator for the entire organization — designed custom objects, page layouts, validation rules, workflow rules, and approval processes across every department</li>
+              <li>Led hundreds of Salesforce projects including third-party integrations, data migrations, and process automation — <strong>saved $25,000+</strong> and reduced data errors by 20% through automated validation and cleanup</li>
             </ul>
 
             <div className="job-header">
@@ -124,16 +123,15 @@ export default function ResumeSalesforce() {
               <div className="job-period">April 2018 – Present (formalized as Startupp.Cloud LLC in 2022, rebranded to Startupp.ai in 2023)</div>
             </div>
             <ul>
-              <li>Provide Salesforce architecture consulting and Fractional CTO services to startups and mid-market companies, specializing in CRM strategy and enterprise Salesforce implementations</li>
-              <li>Deliver end-to-end Salesforce solutions: org design, data modeling, automation, and integration architecture</li>
+              <li>Provide Fractional CTO services specializing in CRM strategy and Salesforce architecture — design org structures, data models, automation, and integration architecture for startups and mid-market companies</li>
             </ul>
 
             <div className="job-header">
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Designed and implemented CRM and client portal for 40+ year credit administrator, automating workflows and saving $20,000+ annually</li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built Salesforce-integrated data platform increasing productivity by 30%. Redesigned Call Scoring system, improving efficiency by 60%</li>
+              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Designed and implemented a CRM and client portal for a 40+ year credit administrator — built automated billing workflows, client communication tracking, and marketing dashboards, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built a Salesforce-integrated data platform that connected campaign performance data to CRM records, <strong>increasing team productivity by 30%</strong>. Redesigned the Call Scoring system end-to-end, <strong>improving efficiency by 60%</strong></li>
             </ul>
 
             <div className="job-header">
@@ -145,9 +143,8 @@ export default function ResumeSalesforce() {
               <div className="job-period">2010 – 2014</div>
             </div>
             <ul>
-              <li>Led the Salesforce GEMINI project (internal finance tool) as a direct contractor for Salesforce.com</li>
-              <li>Developed on Salesforce Partner Portal, mentored developers, and implemented Agile methodologies</li>
-              <li>Gained deep understanding of Salesforce internals through direct collaboration with Salesforce engineering teams</li>
+              <li>Led the Salesforce GEMINI project (internal finance tool) as a direct contractor for Salesforce.com — managed a development team, wrote Apex and Visualforce code, and coordinated directly with Salesforce engineering teams</li>
+              <li>Developed features on the Salesforce Partner Portal, mentored junior developers on the platform, and implemented Agile methodologies across the team</li>
             </ul>
 
             <div className="job-header">

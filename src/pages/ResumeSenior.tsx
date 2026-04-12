@@ -89,10 +89,9 @@ export default function ResumeSenior() {
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
-              <li>Sole senior engineer responsible for the full technology stack serving 80+ employees — architecting integrations across 15+ platforms (Salesforce, Twilio, RingCentral, AWS, GCP, Stripe, Calendly, AgencyAnalytics, Apollo, Google Workspace)</li>
-              <li>Led a Business Intelligence initiative that <strong>increased client retention by 20%</strong>, directly impacting recurring revenue</li>
-              <li>Designed and implemented AI/LLM-powered automation workflows using n8n, Zapier, and custom integrations, reducing manual workload across departments</li>
-              <li>Bridge business and engineering teams, orchestrating Development and Analytics teams for seamless cross-functional delivery</li>
+              <li>Only senior engineer at the company, responsible for the full technology stack supporting 80+ employees — built and maintained integrations between Salesforce and 15+ platforms including Twilio, RingCentral, Stripe, Calendly, AWS, GCP, and Google Workspace to create a unified operational system</li>
+              <li>Designed and built a Business Intelligence reporting platform that gave leadership visibility into client health metrics, <strong>increasing client retention by 20%</strong> and directly impacting recurring revenue</li>
+              <li>Built AI/LLM-powered automation workflows using n8n and Zapier — automated lead scoring, data enrichment, and outreach sequences that replaced hours of manual work across sales and operations</li>
             </ul>
 
             <div className="job-header">
@@ -100,8 +99,8 @@ export default function ResumeSenior() {
               <div className="job-period">June 2021 – December 2023</div>
             </div>
             <ul>
-              <li>Maintained operational continuity through major company restructuring, <strong>reducing technology expenses by 75%</strong> while preserving full system functionality</li>
-              <li>Orchestrated Development and Analytics teams, translating business requirements into technical execution across all product lines</li>
+              <li>Kept every system running through a major company restructuring — consolidated redundant tools, renegotiated vendor contracts, and optimized license allocation, <strong>reducing technology expenses by 75%</strong> without losing any functionality</li>
+              <li>Managed the Development and Analytics teams, running sprint planning, code reviews, and deployments while translating business requirements into technical specs across all product lines</li>
             </ul>
 
             <div className="job-header">
@@ -109,8 +108,8 @@ export default function ResumeSenior() {
               <div className="job-period">August 2013 – May 2021</div>
             </div>
             <ul>
-              <li><strong>Saved $25,000+</strong> through strategic data migrations and process automation, reducing errors by 20%</li>
-              <li>Led hundreds of projects spanning CRM customization, third-party integrations, and workflow optimization</li>
+              <li>Led hundreds of CRM projects — custom objects, workflow rules, approval processes, and third-party integrations — serving as the go-to technical resource for the entire organization</li>
+              <li>Executed large-scale data migrations between systems, <strong>saving $25,000+</strong> and reducing data errors by 20% through automated validation and cleanup processes</li>
             </ul>
 
             <div className="print-page-break"></div>
@@ -124,25 +123,24 @@ export default function ResumeSenior() {
               <div className="job-period">April 2018 – Present (formalized as Startupp.Cloud LLC in 2022, rebranded to Startupp.ai in 2023)</div>
             </div>
             <ul>
-              <li>Deliver Fractional CTO services to 5+ startups and mid-market companies, driving technical strategy that has generated <strong>$20K+ annual savings</strong> through automation, <strong>30% productivity increases</strong>, and <strong>60% efficiency improvements</strong></li>
-              <li>Lead technical roadmap planning, architecture decisions, and engineering team mentorship from pre-seed through Series A</li>
-              <li>Manage international engineering teams delivering full-stack development, AI implementation, and cloud infrastructure</li>
+              <li>Provide Fractional CTO services to startups and mid-market companies — own technical strategy, architecture decisions, and engineering team mentorship from pre-seed through Series A</li>
+              <li>Manage international engineering teams delivering full-stack applications, AI integrations, and cloud infrastructure across multiple time zones</li>
             </ul>
 
             <div className="job-header">
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Managed technology for 40+ year credit administrator. Automated workflows saving $20,000+ annually. Led full digital transformation: client portals, accounting systems, marketing tracking</li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built data-driven platform increasing team productivity by 30% and revenue by 15%. Redesigned Call Scoring system, improving efficiency by 60% and reducing costs by 40%</li>
+              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Led the full digital transformation of a 40+ year credit administrator — built client-facing portals, automated accounting workflows, and implemented marketing tracking systems, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built a data platform that gave the team real-time visibility into campaign performance, <strong>increasing productivity by 30% and revenue by 15%</strong>. Redesigned the Call Scoring system from scratch, <strong>improving efficiency by 60%</strong> and cutting costs by 40%</li>
             </ul>
 
             <div className="job-header">
               <div className="company-name">EARLIER CAREER (2007–2014) — Uruguay</div>
             </div>
             <ul>
-              <li>Progressive roles across 6 companies: Software Developer → Project Manager → Team Lead → Co-Founder</li>
-              <li>Led Salesforce GEMINI project at <strong>Altimetrik</strong> (contractor for Salesforce.com), co-founded 2 companies (HWDOTUY, GF Models International), built ERP solutions in C#/.NET at Loasoft S.A.</li>
+              <li>Progressive roles across 6 companies — Developer → Project Manager → Team Lead → Co-Founder — building ERP solutions in C#/.NET, Salesforce integrations with PHP, and managing international teams across India, Nepal, and Philippines</li>
+              <li>Led the Salesforce GEMINI project (internal finance tool) at <strong>Altimetrik</strong> as a direct contractor for Salesforce.com, gaining deep platform expertise through collaboration with Salesforce engineering teams</li>
             </ul>
           </section>
 

@@ -87,17 +87,16 @@ export default function ResumeLeader() {
               <div className="job-period">April 2018 – Present (formalized as Startupp.Cloud LLC in 2022, rebranded to Startupp.ai in 2023)</div>
             </div>
             <ul>
-              <li>Founded and lead a Fractional CTO consultancy serving 5+ startups and mid-market companies across North America — providing strategic technical leadership, architecture oversight, and engineering team mentorship</li>
-              <li>Own technical roadmap planning, hiring strategy, and vendor selection from pre-seed through Series A, enabling founders to scale their engineering organizations</li>
-              <li>Manage international engineering teams delivering full-stack development, AI implementation, and cloud infrastructure across multiple time zones</li>
+              <li>Founded and run a Fractional CTO consultancy — step into early-stage companies as their technical leader, define architecture and hiring strategy, build their engineering teams, and set the roadmap from pre-seed through Series A</li>
+              <li>Manage distributed engineering teams across North and South America, establishing development processes, conducting technical interviews, and aligning engineering output with business milestones</li>
             </ul>
 
             <div className="job-header">
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Led technology strategy for 40+ year credit administrator. Drove digital transformation across client portals, accounting, and marketing — saving $20,000+ annually through automation</li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Delivered data-driven platform increasing team productivity by 30% and revenue by 15%. Redesigned Call Scoring system, improving efficiency by 60% and reducing costs by 40%</li>
+              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Drove the digital transformation of a 40+ year credit administrator — defined technical strategy, hired and managed the engineering team, and oversaw delivery of client portals, accounting automation, and marketing systems, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Joined as technical leader for a growing marketing agency — built a data platform that gave the team real-time performance visibility (<strong>+30% productivity, +15% revenue</strong>), then redesigned the Call Scoring system end-to-end (<strong>+60% efficiency, −40% cost</strong>)</li>
             </ul>
 
             <div className="job-header">
@@ -109,10 +108,10 @@ export default function ResumeLeader() {
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
-              <li>Lead Senior Engineer for the entire company's technology infrastructure (80+ on-site and remote employees), owning architecture decisions, vendor relationships, and technical roadmap</li>
-              <li>Orchestrate a team of 3 engineers and cross-functional Analytics stakeholders, bridging business needs with engineering execution</li>
-              <li>Drove a Business Intelligence initiative that <strong>increased client retention by 20%</strong>, presenting insights directly to executive leadership to shape company strategy</li>
-              <li>Spearheaded AI/LLM adoption across the organization, defining implementation strategy and managing rollout across departments</li>
+              <li>Serve as the senior technical leader for the entire company (80+ employees) — own architecture decisions, manage vendor relationships, and set the technical roadmap across all product lines</li>
+              <li>Lead a team of 3 engineers and coordinate with Analytics stakeholders, running sprint planning, code reviews, and cross-functional delivery meetings to keep business and engineering aligned</li>
+              <li>Conceived and led a Business Intelligence initiative — built reporting dashboards and presented insights directly to executive leadership, <strong>increasing client retention by 20%</strong> and reshaping company strategy</li>
+              <li>Championed AI/LLM adoption across the organization — evaluated tools, defined the implementation strategy, and managed the rollout of automated workflows across sales and operations</li>
             </ul>
 
             <div className="print-page-break"></div>
@@ -122,9 +121,8 @@ export default function ResumeLeader() {
               <div className="job-period">June 2021 – December 2023</div>
             </div>
             <ul>
-              <li>Led technology organization through major company restructuring, <strong>reducing expenses by 75%</strong> while maintaining full operational continuity and team morale</li>
-              <li>Managed cross-functional teams spanning development, analytics, and IT operations, aligning technical priorities with business objectives</li>
-              <li>Established engineering processes and standards that scaled the team's delivery capacity during rapid organizational change</li>
+              <li>Guided the technology organization through a major company restructuring — consolidated redundant tools, renegotiated vendor contracts, and reallocated resources to <strong>reduce expenses by 75%</strong> while keeping every system operational and the team intact</li>
+              <li>Managed cross-functional teams across development, analytics, and IT operations — established sprint cadences, defined delivery standards, and aligned technical priorities with evolving business objectives during a period of rapid change</li>
             </ul>
 
             <div className="job-header">
@@ -132,16 +130,16 @@ export default function ResumeLeader() {
               <div className="job-period">August 2013 – May 2021</div>
             </div>
             <ul>
-              <li>Led hundreds of projects across CRM customization, process automation, and system integrations, <strong>saving $25,000+</strong> and reducing errors by 20%</li>
-              <li>Mentored junior developers and administrators, building institutional knowledge and engineering culture</li>
+              <li>Led hundreds of CRM and integration projects, growing from administrator to team lead — mentored junior developers, built institutional knowledge, and established the engineering culture that the team still operates on</li>
+              <li>Executed large-scale data migrations and process automation initiatives, <strong>saving $25,000+</strong> and reducing data errors by 20%</li>
             </ul>
 
             <div className="job-header">
               <div className="company-name">EARLIER CAREER (2007–2014) — Uruguay</div>
             </div>
             <ul>
-              <li>Progressive leadership roles across 6 companies: Software Developer → Project Manager → Team Lead → Co-Founder</li>
-              <li>Led Salesforce GEMINI project at <strong>Altimetrik</strong> (contractor for Salesforce.com), co-founded 2 companies (HWDOTUY, GF Models International), managed international teams across India, Nepal, and Philippines</li>
+              <li>Progressive leadership arc across 6 companies — Software Developer → Project Manager → Team Lead → Co-Founder — managing international teams across India, Nepal, and Philippines while co-founding 2 companies (HWDOTUY, GF Models International)</li>
+              <li>Led the Salesforce GEMINI project at <strong>Altimetrik</strong> as a direct contractor for Salesforce.com — managed developers, implemented Agile methodologies, and coordinated with Salesforce engineering teams</li>
             </ul>
           </section>
 
