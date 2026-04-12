@@ -6,13 +6,13 @@ import HeroEntrance from './HeroEntrance'
 import PhotoFrame from './PhotoFrame'
 import { createGeometricPulse } from '../../animations/geometricPulse'
 
-const roles = ['Full-Stack Engineer', 'AI Builder', 'Fractional CTO']
+const roles = ['Full-Stack Engineer', 'AI Builder', 'Technical Leader']
 
 const stats = [
   { value: '18+', label: 'Years Exp.' },
-  { value: '5+', label: 'Companies' },
-  { value: '16+', label: 'Salesforce Yrs' },
-  { value: '3', label: 'Countries' },
+  { value: '80+', label: 'Team Size Led' },
+  { value: '15+', label: 'Platforms Integrated' },
+  { value: '20%', label: 'Retention Increase' },
 ]
 
 function RoleCycler() {

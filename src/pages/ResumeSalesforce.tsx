@@ -47,7 +47,7 @@ export default function ResumeSalesforce() {
                 <a href="https://github.com/renzodupont" target="_blank" rel="noopener noreferrer"><span className="screen-only">GitHub</span><span className="print-only">github.com/renzodupont</span></a>
               </div>
               <div className="resume-personal">
-                Languages: Spanish (Native), English (Fluent)
+                Languages: English, Spanish
               </div>
             </div>
           </div>
@@ -119,11 +119,11 @@ export default function ResumeSalesforce() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Founder &amp; Fractional CTO</div>
-              <div className="job-period">April 2018 – Present (formalized as Startupp.Cloud LLC in 2022, rebranded to Startupp.ai in 2023)</div>
+              <div className="job-title">Fractional CTO</div>
+              <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Provide Fractional CTO services specializing in CRM strategy and Salesforce architecture — design org structures, data models, automation, and integration architecture for startups and mid-market companies</li>
+              <li>Provide technical consulting specializing in CRM strategy and Salesforce architecture — design org structures, data models, automation, and integration architecture for startups and mid-market companies</li>
             </ul>
 
             <div className="job-header">

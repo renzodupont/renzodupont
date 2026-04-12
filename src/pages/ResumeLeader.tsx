@@ -47,7 +47,7 @@ export default function ResumeLeader() {
                 <a href="https://github.com/renzodupont" target="_blank" rel="noopener noreferrer"><span className="screen-only">GitHub</span><span className="print-only">github.com/renzodupont</span></a>
               </div>
               <div className="resume-personal">
-                Languages: Spanish (Native), English (Fluent)
+                Languages: English, Spanish
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function ResumeLeader() {
             <h2>Professional Summary</h2>
             <p>
               Technical leader with <strong>18+ years</strong> driving engineering strategy, scaling teams, and delivering enterprise systems across multiple industries.
-              Currently leading the entire technology organization at Gargle, Inc. (80+ employees) while simultaneously running Startupp.ai as Founder &amp; CEO, providing Fractional CTO services to startups across the US and Latam.
+              Currently leading the entire technology organization at Gargle, Inc. (80+ employees) while providing Fractional CTO services to startups across the US and Latam through Startupp.ai.
               Proven track record managing international engineering teams, owning technical roadmaps, and <strong>bridging business strategy with engineering execution</strong>.
             </p>
           </section>
@@ -84,7 +84,7 @@ export default function ResumeLeader() {
 
             <div className="job-header">
               <div className="job-title">Founder &amp; Fractional CTO</div>
-              <div className="job-period">April 2018 – Present (formalized as Startupp.Cloud LLC in 2022, rebranded to Startupp.ai in 2023)</div>
+              <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
               <li>Founded and run a Fractional CTO consultancy — step into early-stage companies as their technical leader, define architecture and hiring strategy, build their engineering teams, and set the roadmap from pre-seed through Series A</li>

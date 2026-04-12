@@ -9,7 +9,7 @@ const expertise = [
   { icon: Brain, title: 'AI & Machine Learning', description: 'Harvard ML/AI. LLMs, agents, automation pipelines.' },
   { icon: Cloud, title: 'Cloud & Infrastructure', description: 'AWS, Cloudflare, CI/CD, serverless, Docker.' },
   { icon: Database, title: 'Database Management', description: 'PostgreSQL, MongoDB, Redis, DynamoDB, SQL Server.' },
-  { icon: Users, title: 'Leadership', description: 'CTO, hiring, team building, strategy, mentorship.' },
+  { icon: Users, title: 'Leadership', description: 'Team building, hiring, engineering strategy, mentorship.' },
 ]
 
 export default function ExpertiseSection() {

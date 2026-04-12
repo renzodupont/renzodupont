@@ -47,7 +47,7 @@ export default function ResumeSenior() {
                 <a href="https://github.com/renzodupont" target="_blank" rel="noopener noreferrer"><span className="screen-only">GitHub</span><span className="print-only">github.com/renzodupont</span></a>
               </div>
               <div className="resume-personal">
-                Languages: Spanish (Native), English (Fluent)
+                Languages: English, Spanish
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function ResumeSenior() {
             <p>
               Senior Engineer with <strong>18+ years</strong> architecting and scaling enterprise systems, CRMs, and cloud infrastructure.
               Sole senior engineer responsible for the full technology stack at Gargle, Inc., serving 80+ employees across <strong>15+ integrated platforms</strong>.
-              Founder &amp; CEO of Startupp.ai, delivering Fractional CTO services to startups and mid-market companies.
+              Currently building generative AI features on Cloudflare's edge stack for HoneyGrid, Inc.
               Harvard-certified in Machine Learning and Artificial Intelligence (AI), with hands-on Large Language Model (LLM) implementation experience.
             </p>
           </section>
@@ -119,11 +119,11 @@ export default function ResumeSenior() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Founder &amp; Fractional CTO</div>
-              <div className="job-period">April 2018 – Present (formalized as Startupp.Cloud LLC in 2022, rebranded to Startupp.ai in 2023)</div>
+              <div className="job-title">Senior Engineer &amp; Technical Consultant</div>
+              <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Provide Fractional CTO services to startups and mid-market companies — own technical strategy, architecture decisions, and engineering team mentorship from pre-seed through Series A</li>
+              <li>Provide senior engineering and technical consulting to startups and mid-market companies — own technical strategy, architecture decisions, and engineering team mentorship from pre-seed through Series A</li>
             </ul>
 
             <div className="job-header">

@@ -12,25 +12,21 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-dark-900 text-text-primary">
       <PageMeta
-        title="Renzo Dupont — Fractional CTO & Full-Stack Engineer"
-        description="18+ years building scalable products. Fractional CTO, AI, Salesforce, full-stack engineering."
+        title="Renzo Dupont — Senior Full-Stack Engineer"
+        description="Senior Engineer with 18+ years building scalable products. Full-stack, AI/ML, Salesforce, cloud infrastructure."
         canonicalUrl="https://renzodupont.com"
         ogImage="https://renzodupont.com/images/profile.jpg"
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'Person',
           name: 'Renzo Dupont',
-          jobTitle: 'Fractional CTO & Full-Stack Engineer',
+          jobTitle: 'Senior Full-Stack Engineer',
           url: 'https://renzodupont.com',
           image: 'https://renzodupont.com/images/profile.jpg',
           sameAs: [
             'https://www.linkedin.com/in/renzo-dupont-b9797941/',
             'https://github.com/renzodupont',
           ],
-          worksFor: {
-            '@type': 'Organization',
-            name: 'Startupp.ai',
-          },
         }}
       />
       <Header />
