@@ -89,9 +89,9 @@ export default function ResumeSenior() {
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
-              <li>Only senior engineer at the company, responsible for the full technology stack supporting 80+ employees — built and maintained integrations between Salesforce and 15+ platforms including Twilio, RingCentral, Stripe, Calendly, AWS, GCP, and Google Workspace to create a unified operational system</li>
-              <li>Designed and built a Business Intelligence reporting platform that gave leadership visibility into client health metrics, <strong>increasing client retention by 20%</strong> and directly impacting recurring revenue</li>
-              <li>Built AI/LLM-powered automation workflows using n8n and Zapier — automated lead scoring, data enrichment, and outreach sequences that replaced hours of manual work across sales and operations</li>
+              <li>Only senior engineer at the company, responsible for the full technology stack supporting 80+ employees — built and maintained integrations between Salesforce (Apex, Flows, SOQL) and 15+ platforms using Node.js, TypeScript, REST APIs, and Python scripts connecting Twilio, RingCentral, Stripe, AWS, GCP, and Google Workspace into a unified operational system</li>
+              <li>Designed and built a Business Intelligence reporting platform using Python and Salesforce custom reports that gave leadership visibility into client health metrics, <strong>increasing client retention by 20%</strong></li>
+              <li>Built AI/LLM-powered automation workflows with n8n, Zapier, and custom Node.js services — automated lead scoring, data enrichment, and outreach sequences that replaced hours of manual work across sales and operations</li>
             </ul>
 
             <div className="job-header">
@@ -100,7 +100,7 @@ export default function ResumeSenior() {
             </div>
             <ul>
               <li>Kept every system running through a major company restructuring — consolidated redundant tools, renegotiated vendor contracts, and optimized license allocation, <strong>reducing technology expenses by 75%</strong> without losing any functionality</li>
-              <li>Managed the Development and Analytics teams, running sprint planning, code reviews, and deployments while translating business requirements into technical specs across all product lines</li>
+              <li>Managed the Development and Analytics teams — ran sprint planning, code reviews, and deployments across a stack spanning Salesforce, Node.js, React, and SQL Server while translating business requirements into technical specs</li>
             </ul>
 
             <div className="job-header">
@@ -108,8 +108,8 @@ export default function ResumeSenior() {
               <div className="job-period">August 2013 – May 2021</div>
             </div>
             <ul>
-              <li>Led hundreds of CRM projects — custom objects, workflow rules, approval processes, and third-party integrations — serving as the go-to technical resource for the entire organization</li>
-              <li>Executed large-scale data migrations between systems, <strong>saving $25,000+</strong> and reducing data errors by 20% through automated validation and cleanup processes</li>
+              <li>Led hundreds of Salesforce projects — custom objects, Flows, workflow rules, approval processes, and PHP/Apex integrations with third-party systems — serving as the go-to technical resource for the entire organization</li>
+              <li>Executed large-scale data migrations using SQL and Salesforce Data Loader, <strong>saving $25,000+</strong> and reducing data errors by 20% through automated validation scripts</li>
             </ul>
 
             <div className="print-page-break"></div>
@@ -124,23 +124,23 @@ export default function ResumeSenior() {
             </div>
             <ul>
               <li>Provide Fractional CTO services to startups and mid-market companies — own technical strategy, architecture decisions, and engineering team mentorship from pre-seed through Series A</li>
-              <li>Manage international engineering teams delivering full-stack applications, AI integrations, and cloud infrastructure across multiple time zones</li>
             </ul>
 
             <div className="job-header">
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Led the full digital transformation of a 40+ year credit administrator — built client-facing portals, automated accounting workflows, and implemented marketing tracking systems, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built a data platform that gave the team real-time visibility into campaign performance, <strong>increasing productivity by 30% and revenue by 15%</strong>. Redesigned the Call Scoring system from scratch, <strong>improving efficiency by 60%</strong> and cutting costs by 40%</li>
+              <li><strong>HoneyGrid, Inc (Sr. Software Engineer, Apr 2024 – Present, Remote):</strong> Building generative AI features for a digital marketing platform on the Cloudflare stack (Workers, Pages, D1, R2, KV) — using TypeScript and multiple LLM providers to deliver pixel-perfect personalized content at scale</li>
+              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Led the digital transformation of a 40+ year credit administrator — built client portals in React, automated accounting workflows with Node.js, and implemented marketing tracking, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built a data platform in React/Node.js with real-time campaign visibility, <strong>increasing productivity by 30% and revenue by 15%</strong>. Redesigned the Call Scoring system, <strong>improving efficiency by 60%</strong></li>
             </ul>
 
             <div className="job-header">
               <div className="company-name">EARLIER CAREER (2007–2014) — Uruguay</div>
             </div>
             <ul>
-              <li>Progressive roles across 6 companies — Developer → Project Manager → Team Lead → Co-Founder — building ERP solutions in C#/.NET, Salesforce integrations with PHP, and managing international teams across India, Nepal, and Philippines</li>
-              <li>Led the Salesforce GEMINI project (internal finance tool) at <strong>Altimetrik</strong> as a direct contractor for Salesforce.com, gaining deep platform expertise through collaboration with Salesforce engineering teams</li>
+              <li>Progressive roles across 6 companies — Developer → Project Manager → Team Lead → Co-Founder. Built ERP systems in C#/WPF/SQL Server (Loasoft), Salesforce + PHP integrations (Dental Marketing), and client solutions in VB6/SQL Server (Powerstreet)</li>
+              <li>Led the Salesforce GEMINI project at <strong>Altimetrik</strong> (contractor for Salesforce.com) — wrote Apex and Visualforce code, managed the dev team, and coordinated with Salesforce engineering</li>
             </ul>
           </section>
 

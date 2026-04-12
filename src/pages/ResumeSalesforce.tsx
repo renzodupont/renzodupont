@@ -88,10 +88,10 @@ export default function ResumeSalesforce() {
             </div>
             <ul>
               <li>Own the entire Salesforce ecosystem — an enterprise-scale org with 200+ custom objects, 200+ Flows, and 100+ Apex classes/triggers serving 80+ users across sales, operations, and finance</li>
-              <li>Built and maintain REST/SOAP API integrations between Salesforce and 15+ external platforms (Twilio, RingCentral, Stripe, Calendly, AgencyAnalytics, Apollo, AWS, GCP, Google Workspace, Ad Platforms) — creating a unified hub where all customer and operational data flows through Salesforce</li>
-              <li>Led multiple Salesforce org mergers and environment splits during company restructuring — planned data migration strategies, wrote Apex batch jobs, and maintained data integrity with zero downtime</li>
-              <li>Built custom Salesforce reports and BI dashboards that gave leadership visibility into client health, <strong>increasing client retention by 20%</strong></li>
-              <li>Connected AI/LLM workflows to Salesforce via n8n and Zapier — automated lead scoring, data enrichment, and outreach sequences triggered by Salesforce events</li>
+              <li>Built and maintain REST/SOAP API integrations (Apex, Node.js) between Salesforce and 15+ platforms (Twilio, RingCentral, Stripe, Calendly, AgencyAnalytics, Apollo, AWS, GCP, Google Workspace) — creating a unified hub where all customer and operational data flows through Salesforce</li>
+              <li>Led multiple Salesforce org mergers and environment splits — wrote Apex batch jobs for data migrations, built validation triggers, and maintained data integrity with zero downtime</li>
+              <li>Built custom Salesforce reports, dashboards, and BI views that gave leadership visibility into client health, <strong>increasing client retention by 20%</strong></li>
+              <li>Connected AI/LLM workflows to Salesforce via n8n and Zapier — automated lead scoring, data enrichment, and outreach triggered by Salesforce events and Process Builder actions</li>
             </ul>
 
             <div className="job-header">
@@ -110,8 +110,8 @@ export default function ResumeSalesforce() {
               <div className="job-period">August 2013 – May 2021</div>
             </div>
             <ul>
-              <li>Served as the primary Salesforce administrator for the entire organization — designed custom objects, page layouts, validation rules, workflow rules, and approval processes across every department</li>
-              <li>Led hundreds of Salesforce projects including third-party integrations, data migrations, and process automation — <strong>saved $25,000+</strong> and reduced data errors by 20% through automated validation and cleanup</li>
+              <li>Primary Salesforce administrator for the entire organization — designed custom objects, page layouts, validation rules, workflow rules, approval processes, and built integrations using Apex and PHP</li>
+              <li>Led hundreds of Salesforce projects including third-party integrations, data migrations (Data Loader, Apex batch), and process automation — <strong>saved $25,000+</strong> and reduced data errors by 20%</li>
             </ul>
 
             <div className="job-header">
@@ -130,8 +130,9 @@ export default function ResumeSalesforce() {
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Designed and implemented a CRM and client portal for a 40+ year credit administrator — built automated billing workflows, client communication tracking, and marketing dashboards, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built a Salesforce-integrated data platform that connected campaign performance data to CRM records, <strong>increasing team productivity by 30%</strong>. Redesigned the Call Scoring system end-to-end, <strong>improving efficiency by 60%</strong></li>
+              <li><strong>HoneyGrid, Inc (Sr. Software Engineer, Apr 2024 – Present, Remote):</strong> Building generative AI features for a digital marketing platform using TypeScript on Cloudflare (Workers, Pages, D1, R2, KV) with multiple LLM providers — complementing Salesforce expertise with modern cloud-native development</li>
+              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Designed and implemented a CRM and client portal for a 40+ year credit administrator — built automated billing workflows, communication tracking, and marketing dashboards, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built a Salesforce-integrated data platform connecting campaign data to CRM records, <strong>increasing productivity by 30%</strong>. Redesigned Call Scoring end-to-end, <strong>improving efficiency by 60%</strong></li>
             </ul>
 
             <div className="job-header">
@@ -151,7 +152,7 @@ export default function ResumeSalesforce() {
               <div className="company-name">EARLIER CAREER (2007–2013) — Uruguay</div>
             </div>
             <ul>
-              <li>Software development roles at Dental Marketing (Salesforce + PHP integrations), Loasoft S.A. (ERP in C#/.NET), HunterPro S.A., and Powerstreet/Assist Ltda</li>
+              <li>Salesforce + PHP integrations at Dental Marketing, ERP development in C#/.NET/SQL Server at Loasoft S.A., and client solutions in VB6/SQL Server at Powerstreet/Assist Ltda</li>
             </ul>
           </section>
 

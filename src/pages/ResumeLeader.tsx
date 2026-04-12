@@ -95,8 +95,9 @@ export default function ResumeLeader() {
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Drove the digital transformation of a 40+ year credit administrator — defined technical strategy, hired and managed the engineering team, and oversaw delivery of client portals, accounting automation, and marketing systems, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Joined as technical leader for a growing marketing agency — built a data platform that gave the team real-time performance visibility (<strong>+30% productivity, +15% revenue</strong>), then redesigned the Call Scoring system end-to-end (<strong>+60% efficiency, −40% cost</strong>)</li>
+              <li><strong>HoneyGrid, Inc (Sr. Software Engineer, Apr 2024 – Present, Remote):</strong> Leading development of generative AI features for a digital marketing platform — architecting complex LLM pipelines on the Cloudflare stack (Workers, Pages, D1, R2, KV) with TypeScript to deliver pixel-perfect personalized content</li>
+              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Drove digital transformation of a 40+ year credit administrator — hired the engineering team, defined technical strategy, and oversaw delivery of client portals (React), accounting automation (Node.js), and marketing systems, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Joined as technical leader for a growing agency — built a data platform for real-time performance visibility (<strong>+30% productivity, +15% revenue</strong>), then redesigned Call Scoring end-to-end (<strong>+60% efficiency, −40% cost</strong>)</li>
             </ul>
 
             <div className="job-header">
@@ -108,10 +109,10 @@ export default function ResumeLeader() {
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
-              <li>Serve as the senior technical leader for the entire company (80+ employees) — own architecture decisions, manage vendor relationships, and set the technical roadmap across all product lines</li>
-              <li>Lead a team of 3 engineers and coordinate with Analytics stakeholders, running sprint planning, code reviews, and cross-functional delivery meetings to keep business and engineering aligned</li>
-              <li>Conceived and led a Business Intelligence initiative — built reporting dashboards and presented insights directly to executive leadership, <strong>increasing client retention by 20%</strong> and reshaping company strategy</li>
-              <li>Championed AI/LLM adoption across the organization — evaluated tools, defined the implementation strategy, and managed the rollout of automated workflows across sales and operations</li>
+              <li>Serve as the senior technical leader for the entire company (80+ employees) — own architecture decisions across a stack spanning Salesforce, Node.js, React, Python, AWS, and GCP, manage vendor relationships, and set the technical roadmap</li>
+              <li>Lead a team of 3 engineers and coordinate with Analytics stakeholders, running sprint planning, code reviews, and cross-functional delivery to keep business and engineering aligned</li>
+              <li>Conceived and led a Business Intelligence initiative — built reporting dashboards and presented insights directly to executives, <strong>increasing client retention by 20%</strong></li>
+              <li>Championed AI/LLM adoption across the organization — evaluated tools, defined implementation strategy, and managed rollout of n8n/Zapier automation workflows across departments</li>
             </ul>
 
             <div className="print-page-break"></div>
@@ -138,8 +139,8 @@ export default function ResumeLeader() {
               <div className="company-name">EARLIER CAREER (2007–2014) — Uruguay</div>
             </div>
             <ul>
-              <li>Progressive leadership arc across 6 companies — Software Developer → Project Manager → Team Lead → Co-Founder — managing international teams across India, Nepal, and Philippines while co-founding 2 companies (HWDOTUY, GF Models International)</li>
-              <li>Led the Salesforce GEMINI project at <strong>Altimetrik</strong> as a direct contractor for Salesforce.com — managed developers, implemented Agile methodologies, and coordinated with Salesforce engineering teams</li>
+              <li>Progressive leadership arc across 6 companies — Developer → PM → Team Lead → Co-Founder — managing international teams (India, Nepal, Philippines), co-founding 2 companies, and building products in C#/.NET, Salesforce/Apex, PHP, and VB6</li>
+              <li>Led the Salesforce GEMINI project at <strong>Altimetrik</strong> (contractor for Salesforce.com) — managed developers, implemented Agile, and coordinated with Salesforce engineering teams</li>
             </ul>
           </section>
 
