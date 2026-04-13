@@ -56,9 +56,10 @@ export default function CaseStudiesSection() {
               <p className="text-text-secondary leading-relaxed">{details}</p>
             </div>
           ))}
-          <div className="stack-card card-glass rounded-2xl p-8">
+          {/* Products — grouped card on desktop, individual cards on mobile */}
+          <div className="stack-card card-glass rounded-2xl p-8 hidden md:block">
             <h3 className="font-display text-xl font-bold text-text-primary mb-6">Products I've Built</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 gap-6">
               {products.map(({ name, color, description, stack }) => (
                 <div key={name} className={`rounded-xl border p-5 ${color === 'accent' ? 'border-accent/10 bg-accent/[0.02]' : 'border-pink/10 bg-pink/[0.02]'}`}>
                   <h4 className={`font-display font-bold mb-2 ${color === 'accent' ? 'text-accent' : 'text-pink'}`}>{name}</h4>
@@ -72,6 +73,17 @@ export default function CaseStudiesSection() {
               ))}
             </div>
           </div>
+          {products.map(({ name, color, description, stack }) => (
+            <div key={name} className="stack-card card-glass rounded-2xl p-8 md:hidden">
+              <h4 className={`font-display text-xl font-bold mb-2 ${color === 'accent' ? 'text-accent' : 'text-pink'}`}>{name}</h4>
+              <p className="text-sm text-text-muted leading-relaxed mb-3">{description}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {stack.map(tech => (
+                  <span key={tech} className="text-[10px] font-mono px-2 py-0.5 rounded bg-dark-700 text-text-muted border border-white/5">{tech}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </ScrollStack>
       </div>
     </section>
