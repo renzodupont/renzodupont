@@ -11,6 +11,7 @@ export default function ResumeSalesforce() {
         title="Renzo Dupont — Salesforce Architect Resume"
         description="Salesforce Architect with 16+ years experience."
         canonicalUrl="https://renzodupont.com/resume-salesforce"
+        noIndex
         jsonLd={{ '@context': 'https://schema.org', '@type': 'ProfilePage', name: 'Renzo Dupont — Salesforce Architect Resume' }}
       />
 

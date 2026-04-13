@@ -11,6 +11,7 @@ export default function ResumeSenior() {
         title="Renzo Dupont — Senior Engineer Resume"
         description="Senior Computer Science Engineer with 18+ years experience."
         canonicalUrl="https://renzodupont.com/resume"
+        noIndex
         jsonLd={{ '@context': 'https://schema.org', '@type': 'ProfilePage', name: 'Renzo Dupont — Senior Engineer Resume' }}
       />
 

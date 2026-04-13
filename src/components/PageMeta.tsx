@@ -6,6 +6,7 @@ interface PageMetaProps {
   canonicalUrl: string
   ogImage?: string
   ogType?: string
+  noIndex?: boolean
   jsonLd?: Record<string, unknown> | Record<string, unknown>[]
 }
 
@@ -15,6 +16,7 @@ export default function PageMeta({
   canonicalUrl,
   ogImage = 'https://startupp.ai/images/og-default.png',
   ogType = 'website',
+  noIndex = false,
   jsonLd,
 }: PageMetaProps) {
   useEffect(() => {
@@ -35,13 +37,21 @@ export default function PageMeta({
     // Basic meta
     setMeta('name', 'description', description)
 
+    // Robots
+    if (noIndex) {
+      setMeta('name', 'robots', 'noindex, nofollow')
+    } else {
+      const robotsMeta = document.querySelector('meta[name="robots"]')
+      if (robotsMeta) robotsMeta.remove()
+    }
+
     // Open Graph
     setMeta('property', 'og:title', title)
     setMeta('property', 'og:description', description)
     setMeta('property', 'og:url', canonicalUrl)
     setMeta('property', 'og:type', ogType)
     setMeta('property', 'og:image', ogImage)
-    setMeta('property', 'og:site_name', 'Startupp.ai')
+    setMeta('property', 'og:site_name', 'Renzo Dupont')
 
     // Twitter
     setMeta('name', 'twitter:card', 'summary_large_image')
@@ -72,7 +82,7 @@ export default function PageMeta({
         document.head.appendChild(script)
       })
     }
-  }, [title, description, canonicalUrl, ogImage, ogType, jsonLd])
+  }, [title, description, canonicalUrl, ogImage, ogType, noIndex, jsonLd])
 
   return null
 }

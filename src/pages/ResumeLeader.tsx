@@ -11,6 +11,7 @@ export default function ResumeLeader() {
         title="Renzo Dupont — Technical Leader Resume"
         description="Fractional CTO / Director of Engineering resume."
         canonicalUrl="https://renzodupont.com/resume-leader"
+        noIndex
         jsonLd={{ '@context': 'https://schema.org', '@type': 'ProfilePage', name: 'Renzo Dupont — Technical Leader Resume' }}
       />
 

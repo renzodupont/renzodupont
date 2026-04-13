@@ -93,18 +93,19 @@ export default function HeroSection() {
             {/* CTAs */}
             <div data-hero="cta" className="flex flex-wrap gap-4 mb-10">
               <a
-                href="/resume"
-                className="btn-primary px-7 py-3 text-sm font-semibold"
-              >
-                View Resume
-              </a>
-              <a
                 href="https://calendly.com/renzo-startupp/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary px-7 py-3 text-sm font-semibold"
+                className="btn-primary px-7 py-3 text-sm font-semibold"
               >
                 Let's Talk
+              </a>
+              <a
+                href="#work"
+                onClick={(e) => { e.preventDefault(); document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }) }}
+                className="btn-secondary px-7 py-3 text-sm font-semibold"
+              >
+                See My Work
               </a>
             </div>
 
