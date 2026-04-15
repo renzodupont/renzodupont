@@ -135,6 +135,7 @@ body {
   @apply transition-all duration-300 ease-out;
   @apply hover:shadow-lg hover:shadow-accent/30 hover:-translate-y-0.5;
   @apply active:translate-y-0 active:shadow-md;
+  gap: 0.5rem;
 }
 
 .btn-primary::before {
@@ -150,12 +151,31 @@ body {
   opacity: 1;
 }
 
+.btn-primary::after,
+.btn-secondary::after {
+  content: '→';
+  display: inline-block;
+  transform: translateX(-4px);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  width: 0;
+}
+
+.btn-primary:hover::after,
+.btn-secondary:hover::after {
+  transform: translateX(0);
+  opacity: 1;
+  width: auto;
+  margin-left: 0.25rem;
+}
+
 .btn-secondary {
   @apply relative inline-flex items-center justify-center px-8 py-4 text-base font-medium;
   @apply bg-transparent text-accent border border-accent/40 rounded-full;
   @apply transition-all duration-300 ease-out;
   @apply hover:border-accent hover:bg-accent/10 hover:-translate-y-0.5;
   @apply active:translate-y-0;
+  gap: 0.5rem;
 }
 
 /* Card styles */

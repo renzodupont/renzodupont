@@ -1,14 +1,25 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
+  const [hidden, setHidden] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const lastScrollY = useRef(0)
   const location = useLocation()
   const isHome = location.pathname === '/'
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80)
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled(y > 80)
+      if (y > 80) {
+        setHidden(y > lastScrollY.current)
+      } else {
+        setHidden(false)
+      }
+      lastScrollY.current = y
+    }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -30,6 +41,8 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        hidden && !menuOpen ? '-translate-y-full' : 'translate-y-0'
+      } ${
         scrolled
           ? 'bg-dark-900/90 backdrop-blur-xl border-b border-white/5'
           : 'bg-transparent'
