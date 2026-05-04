@@ -40,7 +40,10 @@ export default function ResumeSenior() {
           <div className="resume-header">
             <div>
               <h1>RENZO DUPONT</h1>
-              <div className="resume-title">Business Systems Architect | Salesforce, AI Automation, CRM Integrations &amp; Full-Stack Engineering</div>
+              <div className="resume-title">
+                <span className="resume-title-main">Business Systems Architect</span>
+                <span className="resume-title-detail">Salesforce · AI Automation · CRM Integrations · Full-Stack Engineering</span>
+              </div>
               <div className="resume-contact">
                 <a href="mailto:renzo@startupp.ai">renzo@startupp.ai</a> |{' '}
                 <a href="https://linkedin.com/in/renzo-dupont-b9797941" target="_blank" rel="noopener noreferrer"><span className="screen-only">LinkedIn</span><span className="print-only">linkedin.com/in/renzo-dupont</span></a> |{' '}

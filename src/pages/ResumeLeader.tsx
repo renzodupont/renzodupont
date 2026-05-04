@@ -40,7 +40,10 @@ export default function ResumeLeader() {
           <div className="resume-header">
             <div>
               <h1>RENZO DUPONT</h1>
-              <div className="resume-title">Technical Program Manager / Business Systems Architect | Salesforce, Enterprise Apps &amp; AI Automation</div>
+              <div className="resume-title">
+                <span className="resume-title-main">Technical Program Manager</span>
+                <span className="resume-title-detail">Business Systems Architect · Salesforce · Enterprise Apps · AI Automation</span>
+              </div>
               <div className="resume-contact">
                 <a href="mailto:renzo@startupp.ai">renzo@startupp.ai</a> |{' '}
                 <a href="https://linkedin.com/in/renzo-dupont-b9797941" target="_blank" rel="noopener noreferrer"><span className="screen-only">LinkedIn</span><span className="print-only">linkedin.com/in/renzo-dupont</span></a> |{' '}
