@@ -104,8 +104,6 @@ export default function ResumeSalesforce() {
               <li>Led a 5-person development and analytics team, running sprint planning, code reviews, deployments, requirements translation, and cross-functional delivery across Salesforce, Node.js, React, Python, and SQL Server</li>
             </ul>
 
-            <div className="print-page-break"></div>
-
             <div className="job-header">
               <div className="job-title">Team Leader &amp; Salesforce Administrator</div>
               <div className="job-period">August 2013 – May 2021</div>

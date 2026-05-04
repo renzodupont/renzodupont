@@ -113,8 +113,6 @@ export default function ResumeSenior() {
               <li>Executed large-scale Salesforce data migrations using SQL, Data Loader, and validation scripts, <strong>saving $25,000+</strong> and reducing data errors by 20%</li>
             </ul>
 
-            <div className="print-page-break"></div>
-
             <div className="job-header">
               <div className="company-name">STARTUPP.AI — US &amp; Latam (Remote)</div>
             </div>

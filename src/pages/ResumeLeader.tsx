@@ -116,8 +116,6 @@ export default function ResumeLeader() {
               <li>Championed AI/LLM adoption across the organization — evaluated tools, defined implementation strategy, and managed rollout of n8n/Zapier automation workflows across departments</li>
             </ul>
 
-            <div className="print-page-break"></div>
-
             <div className="job-header">
               <div className="job-title">IT &amp; Development Manager</div>
               <div className="job-period">June 2021 – December 2023</div>
