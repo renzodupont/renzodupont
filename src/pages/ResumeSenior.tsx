@@ -120,7 +120,7 @@ export default function ResumeSenior() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Technical Consultant / Fractional CTO</div>
+              <div className="job-title">Technical Consultant / Engineering Advisor</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
@@ -141,7 +141,7 @@ export default function ResumeSenior() {
               <div className="company-name">EARLIER CAREER (2007–2014) — Uruguay</div>
             </div>
             <ul>
-              <li>Progressive roles across 6 companies — Developer → Project Manager → Team Lead → Co-Founder. Built ERP systems in C#/WPF/SQL Server (Loasoft), Salesforce + PHP integrations (Dental Marketing), and client solutions in VB6/SQL Server (Powerstreet)</li>
+              <li>Progressive roles across 6 companies — Developer → Project Manager → Team Lead. Built ERP systems in C#/WPF/SQL Server (Loasoft), Salesforce + PHP integrations (Dental Marketing), and client solutions in VB6/SQL Server (Powerstreet)</li>
               <li>Led the Salesforce GEMINI project at <strong>Altimetrik</strong> (contractor for Salesforce.com) — wrote Apex and Visualforce code, managed the dev team, and coordinated with Salesforce engineering</li>
             </ul>
           </section>

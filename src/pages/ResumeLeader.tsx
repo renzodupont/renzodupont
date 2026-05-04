@@ -9,7 +9,7 @@ export default function ResumeLeader() {
     <div className="min-h-screen bg-dark-900 text-text-primary">
       <PageMeta
         title="Renzo Dupont — Technical Leader Resume"
-        description="Fractional CTO / Director of Engineering resume."
+        description="Technical program and business systems leadership resume."
         canonicalUrl="https://renzodupont.com/resume-leader"
         noIndex
         jsonLd={{ '@context': 'https://schema.org', '@type': 'ProfilePage', name: 'Renzo Dupont — Technical Leader Resume' }}
@@ -84,7 +84,7 @@ export default function ResumeLeader() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Technical Consultant / Fractional CTO</div>
+              <div className="job-title">Technical Consultant / Engineering Advisor</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
@@ -140,7 +140,7 @@ export default function ResumeLeader() {
               <div className="company-name">EARLIER CAREER (2007–2014) — Uruguay</div>
             </div>
             <ul>
-              <li>Progressive leadership arc across 6 companies — Developer → PM → Team Lead → Co-Founder — managing international teams (India, Nepal, Philippines), co-founding 2 companies, and building products in C#/.NET, Salesforce/Apex, PHP, and VB6</li>
+              <li>Progressive leadership arc across 6 companies — Developer → PM → Team Lead — managing international teams (India, Nepal, Philippines) and building products in C#/.NET, Salesforce/Apex, PHP, and VB6</li>
               <li>Led the Salesforce GEMINI project at <strong>Altimetrik</strong> (contractor for Salesforce.com) — managed developers, implemented Agile, and coordinated with Salesforce engineering teams</li>
             </ul>
           </section>

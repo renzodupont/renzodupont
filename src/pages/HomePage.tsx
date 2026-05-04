@@ -12,15 +12,15 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-dark-900 text-text-primary">
       <PageMeta
-        title="Renzo Dupont — Senior Full-Stack Engineer"
-        description="Senior Engineer with 18+ years building scalable products. Full-stack, AI/ML, Salesforce, cloud infrastructure."
+        title="Renzo Dupont — Business Systems Architect"
+        description="Senior technical leader with 18+ years building Salesforce-centered platforms, AI automation, enterprise applications, and technical teams."
         canonicalUrl="https://renzodupont.com"
         ogImage="https://renzodupont.com/images/profile.jpg"
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'Person',
           name: 'Renzo Dupont',
-          jobTitle: 'Senior Full-Stack Engineer',
+          jobTitle: 'Business Systems Architect',
           url: 'https://renzodupont.com',
           image: 'https://renzodupont.com/images/profile.jpg',
           sameAs: [

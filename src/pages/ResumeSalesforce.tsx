@@ -120,7 +120,7 @@ export default function ResumeSalesforce() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Technical Consultant / Fractional CTO</div>
+              <div className="job-title">Technical Consultant / Engineering Advisor</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>

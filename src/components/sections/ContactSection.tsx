@@ -11,7 +11,7 @@ export default function ContactSection() {
             <span className="font-mono text-xs text-accent uppercase tracking-widest">Let's Connect</span>
           </div>
           <BlurText
-            text="Interested in working together?"
+            text="Interested in adding me to your team?"
             className="font-display text-3xl md:text-4xl font-bold text-text-primary mb-4"
             delay={0.05}
           />
@@ -19,7 +19,7 @@ export default function ContactSection() {
             I'm open to senior engineering and leadership roles. Let's talk about how I can contribute to your team.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-10">
-            <a href="https://calendly.com/renzo-startupp/30min" target="_blank" rel="noopener noreferrer" className="btn-primary px-8 py-3 text-sm font-semibold">Let's Talk</a>
+            <a href="https://calendly.com/renzo-startupp/30min" target="_blank" rel="noopener noreferrer" className="btn-primary px-8 py-3 text-sm font-semibold">Discuss Opportunities</a>
             <a href="mailto:renzo@startupp.ai" className="btn-secondary px-8 py-3 text-sm font-semibold">Email Me</a>
           </div>
           <div className="flex justify-center gap-6">

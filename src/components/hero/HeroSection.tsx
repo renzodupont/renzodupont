@@ -6,7 +6,7 @@ import HeroEntrance from './HeroEntrance'
 import PhotoFrame from './PhotoFrame'
 import { createGeometricPulse } from '../../animations/geometricPulse'
 
-const roles = ['Full-Stack Engineer', 'AI Builder', 'Technical Leader']
+const roles = ['Business Systems Architect', 'AI Automation Lead', 'Technical Program Leader']
 
 const stats = [
   { value: '18+', label: 'Years Exp.' },
@@ -98,7 +98,7 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className="btn-primary px-7 py-3 text-sm font-semibold"
               >
-                Let's Talk
+                Discuss Opportunities
               </a>
               <a
                 href="#work"
