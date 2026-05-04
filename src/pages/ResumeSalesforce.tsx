@@ -40,7 +40,7 @@ export default function ResumeSalesforce() {
           <div className="resume-header">
             <div>
               <h1>RENZO DUPONT</h1>
-              <div className="resume-title">Salesforce Architect | 16+ Years Salesforce | Advanced Admin &amp; Developer</div>
+              <div className="resume-title">Salesforce &amp; Business Systems Architect | CRM Integrations | AI Automation | Full-Stack Engineering</div>
               <div className="resume-contact">
                 <a href="mailto:renzo@startupp.ai">renzo@startupp.ai</a> |{' '}
                 <a href="https://linkedin.com/in/renzo-dupont-b9797941" target="_blank" rel="noopener noreferrer"><span className="screen-only">LinkedIn</span><span className="print-only">linkedin.com/in/renzo-dupont</span></a> |{' '}
@@ -57,9 +57,9 @@ export default function ResumeSalesforce() {
           <section className="resume-section" id="summary">
             <h2>Professional Summary</h2>
             <p>
-              Salesforce Architect with <strong>16+ years</strong> of hands-on experience spanning Lightning, Flows, Apex, Visualforce, and enterprise-scale administration.
-              Currently the lead Salesforce engineer at Gargle, Inc., owning the complete Salesforce ecosystem and its integration with <strong>15+ external platforms</strong> (Twilio, RingCentral, Stripe, AWS, GCP, Calendly, AgencyAnalytics, Apollo, and more).
-              Certified Administrator (ADM201) and Advanced Administrator with deep expertise in complex org architecture, data migrations, and automation at scale.
+              Salesforce and Business Systems Architect with <strong>16+ years</strong> across Salesforce architecture, CRM integrations, BI reporting, data migrations, and automation at scale.
+              Sole senior engineer for an 80+ employee company, owning Salesforce, internal tools, reporting, cloud infrastructure, and integrations across <strong>15+ platforms</strong> including Twilio, RingCentral, Stripe, AWS, GCP, Calendly, AgencyAnalytics, Apollo, and Google Workspace.
+              Certified Administrator (ADM201) and Advanced Administrator with hands-on depth in Apex, Flows, SOQL, security, governance, data models, and stakeholder-facing delivery.
             </p>
           </section>
 
@@ -67,11 +67,11 @@ export default function ResumeSalesforce() {
           <section className="resume-section" id="competencies">
             <h2>Salesforce &amp; Technical Competencies</h2>
             <div className="tech-compact">
-              <strong>Salesforce Platform:</strong> Lightning Experience · Lightning Web Components · Flows · Process Builder · Apex · Visualforce · SOQL/SOSL · Reports &amp; Dashboards<br />
-              <strong>Salesforce Admin:</strong> ADM201 Certified · Advanced Administrator · Org Architecture · Security &amp; Sharing · Data Modeling · Sandbox Management · Change Sets<br />
-              <strong>Integrations:</strong> REST/SOAP APIs · Twilio · RingCentral · Stripe · ChargeOver · Calendly · AgencyAnalytics · Apollo · Zapier · n8n · Google Workspace<br />
-              <strong>Data &amp; BI:</strong> Data Migrations · ETL · Business Intelligence · Custom Reporting · Analytics Dashboards · Airtable<br />
-              <strong>Complementary Stack:</strong> JavaScript/TypeScript · Python · Node.js · React · AWS · GCP · Cloudflare · SQL Server · MongoDB · PostgreSQL
+              <strong>Salesforce Architecture:</strong> Flows · Apex · SOQL/SOSL · Lightning · Visualforce · Reports &amp; Dashboards · Data Modeling<br />
+              <strong>Platform Ownership:</strong> Business Systems Ownership · Security &amp; Sharing · Governance · Sandbox Management · Change Sets · License Optimization<br />
+              <strong>CRM Integrations:</strong> REST/SOAP APIs · Twilio · RingCentral · Stripe · ChargeOver · Calendly · AgencyAnalytics · Apollo · Zapier · n8n · Google Workspace<br />
+              <strong>Data, BI &amp; Automation:</strong> Data Migrations · Data Loader · ETL · Executive Reporting · Client Health Reporting · AI/LLM Workflows<br />
+              <strong>Complementary Stack:</strong> TypeScript · Python · Node.js · React · AWS · GCP · Cloudflare · SQL Server · MongoDB · PostgreSQL
             </div>
           </section>
 
@@ -84,15 +84,15 @@ export default function ResumeSalesforce() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Senior Computer Science Engineer &amp; Lead Salesforce Architect</div>
+              <div className="job-title">Senior Computer Science Engineer / Business Systems Architect</div>
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
-              <li>Own the entire Salesforce ecosystem — an enterprise-scale org with 200+ custom objects, 200+ Flows, and 100+ Apex classes/triggers serving 80+ users across sales, operations, and finance</li>
-              <li>Built and maintain REST/SOAP API integrations (Apex, Node.js) between Salesforce and 15+ platforms (Twilio, RingCentral, Stripe, Calendly, AgencyAnalytics, Apollo, AWS, GCP, Google Workspace) — creating a unified hub where all customer and operational data flows through Salesforce</li>
-              <li>Led multiple Salesforce org mergers and environment splits — wrote Apex batch jobs for data migrations, built validation triggers, and maintained data integrity with zero downtime</li>
+              <li>Own the full business technology stack for an 80+ employee company, including Salesforce, CRM workflows, internal tools, reporting, cloud infrastructure, and integrations across 15+ platforms</li>
+              <li>Architect Salesforce-centered operating systems using Apex, Flows, SOQL, Node.js, TypeScript, REST APIs, and Python to connect Twilio, RingCentral, Stripe, AWS, GCP, Google Workspace, and other business-critical platforms</li>
+              <li>Led multiple Salesforce org mergers and environment splits, writing Apex batch jobs for data migrations, building validation triggers, and maintaining data integrity with zero downtime</li>
               <li>Built custom Salesforce reports, dashboards, and BI views that gave leadership visibility into client health, <strong>increasing client retention by 20%</strong></li>
-              <li>Connected AI/LLM workflows to Salesforce via n8n and Zapier — automated lead scoring, data enrichment, and outreach triggered by Salesforce events and Process Builder actions</li>
+              <li>Built AI/LLM automation workflows with n8n, Zapier, and custom Node.js services for data enrichment, workflow routing, reporting, and operational process automation</li>
             </ul>
 
             <div className="job-header">
@@ -100,8 +100,8 @@ export default function ResumeSalesforce() {
               <div className="job-period">June 2021 – December 2023</div>
             </div>
             <ul>
-              <li>Kept the Salesforce ecosystem running through a major company restructuring — consolidated redundant integrations, optimized license allocation, and renegotiated vendor contracts, <strong>reducing technology expenses by 75%</strong></li>
-              <li>Managed the Salesforce development team — ran sprint planning, conducted code reviews, and oversaw deployment processes across multiple sandboxes and production orgs</li>
+              <li>Reduced technology expenses by <strong>75%</strong> by consolidating redundant tools, renegotiating vendor contracts, optimizing license allocation, and preserving core business functionality through restructuring</li>
+              <li>Led development and analytics teams, running sprint planning, code reviews, deployments, requirements translation, and cross-functional delivery across Salesforce, Node.js, React, Python, and SQL Server</li>
             </ul>
 
             <div className="print-page-break"></div>
@@ -120,11 +120,11 @@ export default function ResumeSalesforce() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Fractional CTO</div>
+              <div className="job-title">Technical Consultant / Fractional CTO</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Provide technical consulting specializing in CRM strategy and Salesforce architecture — design org structures, data models, automation, and integration architecture for startups and mid-market companies</li>
+              <li>Provide part-time technical leadership and implementation support for startups and mid-market companies across Salesforce, web platforms, cloud systems, AI features, automation, and data workflows</li>
             </ul>
 
             <div className="job-header">
@@ -170,7 +170,7 @@ export default function ResumeSalesforce() {
             </div>
 
             <div className="education-item">
-              <div className="education-degree">Machine Learning and AI with Python (CS109xa) — Harvard University (2024)</div>
+              <div className="education-degree">Machine Learning and AI with Python — Harvard CS109x (2024)</div>
             </div>
 
             <div className="education-item">
@@ -179,12 +179,7 @@ export default function ResumeSalesforce() {
 
             <div className="education-item">
               <div className="education-degree">Bachelor of Science in Computer Science</div>
-              <div className="education-school">Escuela Tecnica Pedro Blanes, Uruguay (2005–2008) | U.S. equivalency: Brooklyn College, CUNY</div>
-            </div>
-
-            <div className="education-item">
-              <div className="education-degree">Doctoral Studies in Computer Science (2 years)</div>
-              <div className="education-school">Universidad Catolica del Uruguay (2008–2011)</div>
+              <div className="education-school">U.S. equivalency: Brooklyn College, CUNY</div>
             </div>
           </section>
         </div>

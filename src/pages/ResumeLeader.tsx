@@ -40,7 +40,7 @@ export default function ResumeLeader() {
           <div className="resume-header">
             <div>
               <h1>RENZO DUPONT</h1>
-              <div className="resume-title">Fractional CTO | Director of Engineering | Technical Leader</div>
+              <div className="resume-title">Technical Program Manager / Business Systems Architect | Salesforce, Enterprise Apps &amp; AI Automation</div>
               <div className="resume-contact">
                 <a href="mailto:renzo@startupp.ai">renzo@startupp.ai</a> |{' '}
                 <a href="https://linkedin.com/in/renzo-dupont-b9797941" target="_blank" rel="noopener noreferrer"><span className="screen-only">LinkedIn</span><span className="print-only">linkedin.com/in/renzo-dupont</span></a> |{' '}
@@ -57,9 +57,9 @@ export default function ResumeLeader() {
           <section className="resume-section" id="summary">
             <h2>Professional Summary</h2>
             <p>
-              Technical leader with <strong>18+ years</strong> driving engineering strategy, scaling teams, and delivering enterprise systems across multiple industries.
-              Currently leading the entire technology organization at Gargle, Inc. (80+ employees) while providing Fractional CTO services to startups across the US and Latam through Startupp.ai.
-              Proven track record managing international engineering teams, owning technical roadmaps, and <strong>bridging business strategy with engineering execution</strong>.
+              Technical leader and Business Systems Architect with <strong>18+ years</strong> delivering enterprise applications, Salesforce-centered platforms, resource planning systems, BI reporting, and AI automation.
+              Sole senior engineer for an 80+ employee company, owning cross-functional delivery across Salesforce, integrations, internal tools, reporting, cloud infrastructure, and vendor systems.
+              Proven track record managing development and analytics teams, translating business requirements into technical roadmaps, and <strong>bridging business strategy with engineering execution</strong>.
             </p>
           </section>
 
@@ -67,11 +67,11 @@ export default function ResumeLeader() {
           <section className="resume-section" id="competencies">
             <h2>Core Competencies</h2>
             <div className="tech-compact">
-              <strong>Technical Leadership:</strong> Engineering Strategy · Roadmap Planning · Cross-Functional Collaboration · Vendor &amp; Stakeholder Management · Technical Due Diligence<br />
-              <strong>Team Management:</strong> International Teams · Agile/Scrum · Mentorship · Hiring &amp; Team Building · Performance Optimization<br />
-              <strong>Architecture &amp; Strategy:</strong> System Design · Microservices · Cloud Infrastructure · AI/LLM Strategy · Digital Transformation<br />
-              <strong>Platforms:</strong> Salesforce (16+ yrs) · AWS · Azure · GCP · Cloudflare<br />
-              <strong>Full Stack:</strong> JavaScript/TypeScript · Python · React · Node.js · .NET
+              <strong>Program Leadership:</strong> Technical Program Management · Enterprise Applications · Salesforce / CRM Delivery · Cross-Functional Leadership<br />
+              <strong>Business Systems:</strong> Enterprise Applications · Resource Planning · CRM Platform Ownership · Vendor &amp; Stakeholder Management · Roadmap Planning<br />
+              <strong>Architecture &amp; Strategy:</strong> System Design · Cloud Infrastructure · AI/LLM Strategy · Digital Transformation · BI / Data Systems<br />
+              <strong>Platforms:</strong> Salesforce (16+ yrs) · AWS · Azure · GCP · Cloudflare · SQL Server<br />
+              <strong>Full Stack:</strong> TypeScript · Python · React · Node.js · .NET
             </div>
           </section>
 
@@ -84,12 +84,12 @@ export default function ResumeLeader() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Founder &amp; Fractional CTO</div>
+              <div className="job-title">Technical Consultant / Fractional CTO</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Founded and run a Fractional CTO consultancy — step into early-stage companies as their technical leader, define architecture and hiring strategy, build their engineering teams, and set the roadmap from pre-seed through Series A</li>
-              <li>Manage distributed engineering teams across North and South America, establishing development processes, conducting technical interviews, and aligning engineering output with business milestones</li>
+              <li>Provide part-time technical leadership and implementation support for startups and mid-market companies across Salesforce, web platforms, cloud systems, AI features, automation, and data workflows</li>
+              <li>Manage distributed engineering teams across North and South America, establishing delivery processes, mentoring engineers, and aligning technical output with business milestones</li>
             </ul>
 
             <div className="job-header">
@@ -98,7 +98,7 @@ export default function ResumeLeader() {
             <ul>
               <li><strong>HoneyGrid, Inc (Sr. Software Engineer, Apr 2024 – Present, Remote):</strong> Leading development of generative AI features for a digital marketing platform — architecting complex LLM pipelines on the Cloudflare stack (Workers, Pages, D1, R2, KV) with TypeScript to deliver pixel-perfect personalized content</li>
               <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Drove digital transformation of a 40+ year credit administrator — hired the engineering team, defined technical strategy, and oversaw delivery of client portals (React), accounting automation (Node.js), and marketing systems, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Joined as technical leader for a growing agency — built a data platform for real-time performance visibility (<strong>+30% productivity, +15% revenue</strong>), then redesigned Call Scoring end-to-end (<strong>+60% efficiency, −40% cost</strong>)</li>
+              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Joined as technical leader for a growing agency — built a data platform for real-time performance visibility (<strong>+30% productivity</strong>), then redesigned Call Scoring end-to-end (<strong>+60% efficiency, -40% cost</strong>)</li>
             </ul>
 
             <div className="job-header">
@@ -106,7 +106,7 @@ export default function ResumeLeader() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Senior Computer Science Engineer</div>
+              <div className="job-title">Senior Computer Science Engineer / Business Systems Architect</div>
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
@@ -150,7 +150,7 @@ export default function ResumeLeader() {
             <h2>Certifications &amp; Education</h2>
 
             <div className="education-item">
-              <div className="education-degree">Machine Learning and AI with Python (CS109xa) — Harvard University (2024)</div>
+              <div className="education-degree">Machine Learning and AI with Python — Harvard CS109x (2024)</div>
             </div>
 
             <div className="education-item">
@@ -163,12 +163,7 @@ export default function ResumeLeader() {
 
             <div className="education-item">
               <div className="education-degree">Bachelor of Science in Computer Science</div>
-              <div className="education-school">Escuela Tecnica Pedro Blanes, Uruguay (2005–2008) | U.S. equivalency: Brooklyn College, CUNY</div>
-            </div>
-
-            <div className="education-item">
-              <div className="education-degree">Doctoral Studies in Computer Science (2 years)</div>
-              <div className="education-school">Universidad Catolica del Uruguay (2008–2011)</div>
+              <div className="education-school">U.S. equivalency: Brooklyn College, CUNY</div>
             </div>
           </section>
         </div>

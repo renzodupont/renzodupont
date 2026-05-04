@@ -40,7 +40,7 @@ export default function ResumeSenior() {
           <div className="resume-header">
             <div>
               <h1>RENZO DUPONT</h1>
-              <div className="resume-title">Senior Computer Science Engineer | Full-Stack Architect</div>
+              <div className="resume-title">Business Systems Architect | Salesforce, AI Automation, CRM Integrations &amp; Full-Stack Engineering</div>
               <div className="resume-contact">
                 <a href="mailto:renzo@startupp.ai">renzo@startupp.ai</a> |{' '}
                 <a href="https://linkedin.com/in/renzo-dupont-b9797941" target="_blank" rel="noopener noreferrer"><span className="screen-only">LinkedIn</span><span className="print-only">linkedin.com/in/renzo-dupont</span></a> |{' '}
@@ -57,10 +57,10 @@ export default function ResumeSenior() {
           <section className="resume-section" id="summary">
             <h2>Professional Summary</h2>
             <p>
-              Senior Engineer with <strong>18+ years</strong> architecting and scaling enterprise systems, CRMs, and cloud infrastructure.
-              Sole senior engineer responsible for the full technology stack at Gargle, Inc., serving 80+ employees across <strong>15+ integrated platforms</strong>.
-              Currently building generative AI features on Cloudflare's edge stack for HoneyGrid, Inc.
-              Harvard-certified in Machine Learning and Artificial Intelligence (AI), with hands-on Large Language Model (LLM) implementation experience.
+              Business Systems Architect and senior technical leader with <strong>18+ years</strong> building Salesforce-centered platforms, CRM integrations, BI reporting, cloud systems, and AI automation.
+              Sole senior engineer for an 80+ employee company, owning Salesforce, data pipelines, vendor systems, internal tools, and integrations across <strong>15+ platforms</strong>.
+              Strong record translating messy business requirements into scalable systems, reducing tech costs by <strong>75%</strong>, improving client retention by <strong>20%</strong>, and leading development/analytics teams.
+              Hands-on across Salesforce, Apex, Flows, Node.js, TypeScript, Python, React, SQL, cloud infrastructure, and LLM workflows.
             </p>
           </section>
 
@@ -68,12 +68,11 @@ export default function ResumeSenior() {
           <section className="resume-section" id="competencies">
             <h2>Core Competencies</h2>
             <div className="tech-compact">
-              <strong>Languages:</strong> JavaScript/TypeScript · Python · C#/.NET · PHP · Apex · HTML/CSS<br />
-              <strong>Frameworks &amp; Tools:</strong> React · Next.js · Astro · Node.js · Angular · Tailwind CSS · REST APIs · Salesforce (Lightning, Flows) · Docker · Git · CI/CD<br />
-              <strong>Platforms &amp; Cloud:</strong> Cloudflare (Workers, Pages, D1, R2, KV) · AWS · Azure · GCP · Salesforce (16+ yrs)<br />
-              <strong>Databases:</strong> SQL Server · MySQL · MongoDB (10+ years) · PostgreSQL · Airtable<br />
-              <strong>AI/ML:</strong> Large Language Model (LLM) Integration · Python ML Pipelines · Harvard CS109xa<br />
-              <strong>Architecture:</strong> Microservices · System Design · API Integrations · Business Intelligence
+              <strong>Business Systems:</strong> Salesforce Architecture · CRM Integrations · Enterprise Applications · Resource Planning · Vendor Management<br />
+              <strong>Salesforce:</strong> Flows · Apex · SOQL/SOSL · Lightning · Reports &amp; Dashboards · Data Loader · Security &amp; Sharing<br />
+              <strong>Automation &amp; Data:</strong> AI/LLM Workflows · n8n · Zapier · BI / Executive Reporting · Data Pipelines · ETL · Process Automation<br />
+              <strong>Engineering:</strong> TypeScript · Node.js · Python · React · REST APIs · SQL Server · PostgreSQL · MongoDB · C#/.NET · PHP<br />
+              <strong>Cloud &amp; Platforms:</strong> AWS · GCP · Azure · Cloudflare (Workers, Pages, D1, R2, KV) · Docker · CI/CD
             </div>
           </section>
 
@@ -86,13 +85,14 @@ export default function ResumeSenior() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Senior Computer Science Engineer</div>
+              <div className="job-title">Senior Computer Science Engineer / Business Systems Architect</div>
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
-              <li>Only senior engineer at the company, responsible for the full technology stack supporting 80+ employees — built and maintained integrations between Salesforce (Apex, Flows, SOQL) and 15+ platforms using Node.js, TypeScript, REST APIs, and Python scripts connecting Twilio, RingCentral, Stripe, AWS, GCP, and Google Workspace into a unified operational system</li>
-              <li>Designed and built a Business Intelligence reporting platform using Python and Salesforce custom reports that gave leadership visibility into client health metrics, <strong>increasing client retention by 20%</strong></li>
-              <li>Built AI/LLM-powered automation workflows with n8n, Zapier, and custom Node.js services — automated lead scoring, data enrichment, and outreach sequences that replaced hours of manual work across sales and operations</li>
+              <li>Own the full business technology stack for an 80+ employee company, including Salesforce, CRM workflows, internal tools, reporting, cloud infrastructure, and integrations across 15+ platforms</li>
+              <li>Architect Salesforce-centered operating systems using Apex, Flows, SOQL, Node.js, TypeScript, REST APIs, and Python to connect Twilio, RingCentral, Stripe, AWS, GCP, Google Workspace, and other business-critical platforms</li>
+              <li>Built executive BI and client-health reporting using Python and Salesforce reporting, giving leadership visibility into retention risks and <strong>increasing client retention by 20%</strong></li>
+              <li>Built AI/LLM automation workflows with n8n, Zapier, and custom Node.js services for data enrichment, workflow routing, reporting, and operational process automation</li>
             </ul>
 
             <div className="job-header">
@@ -100,8 +100,8 @@ export default function ResumeSenior() {
               <div className="job-period">June 2021 – December 2023</div>
             </div>
             <ul>
-              <li>Kept every system running through a major company restructuring — consolidated redundant tools, renegotiated vendor contracts, and optimized license allocation, <strong>reducing technology expenses by 75%</strong> without losing any functionality</li>
-              <li>Managed the Development and Analytics teams — ran sprint planning, code reviews, and deployments across a stack spanning Salesforce, Node.js, React, and SQL Server while translating business requirements into technical specs</li>
+              <li>Reduced technology expenses by <strong>75%</strong> by consolidating redundant tools, renegotiating vendor contracts, optimizing license allocation, and preserving core business functionality through restructuring</li>
+              <li>Led development and analytics teams, running sprint planning, code reviews, deployments, requirements translation, and cross-functional delivery across Salesforce, Node.js, React, Python, and SQL Server</li>
             </ul>
 
             <div className="job-header">
@@ -109,8 +109,8 @@ export default function ResumeSenior() {
               <div className="job-period">August 2013 – May 2021</div>
             </div>
             <ul>
-              <li>Led hundreds of Salesforce projects — custom objects, Flows, workflow rules, approval processes, and PHP/Apex integrations with third-party systems — serving as the go-to technical resource for the entire organization</li>
-              <li>Executed large-scale data migrations using SQL and Salesforce Data Loader, <strong>saving $25,000+</strong> and reducing data errors by 20% through automated validation scripts</li>
+              <li>Delivered hundreds of Salesforce projects, including custom objects, Flows, workflow rules, approvals, Apex/PHP integrations, migrations, and operational automation</li>
+              <li>Executed large-scale Salesforce data migrations using SQL, Data Loader, and validation scripts, <strong>saving $25,000+</strong> and reducing data errors by 20%</li>
             </ul>
 
             <div className="print-page-break"></div>
@@ -120,20 +120,21 @@ export default function ResumeSenior() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Senior Engineer &amp; Technical Consultant</div>
+              <div className="job-title">Technical Consultant / Fractional CTO</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Provide senior engineering and technical consulting to startups and mid-market companies — own technical strategy, architecture decisions, and engineering team mentorship from pre-seed through Series A</li>
+              <li>Provide part-time technical leadership and implementation support for startups and mid-market companies across Salesforce, web platforms, cloud systems, AI features, automation, and data workflows</li>
+              <li>Focus on architecture, hands-on delivery, technical strategy, and mentoring teams from pre-seed through growth-stage environments</li>
             </ul>
 
             <div className="job-header">
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>HoneyGrid, Inc (Sr. Software Engineer, Apr 2024 – Present, Remote):</strong> Building generative AI features for a digital marketing platform on the Cloudflare stack (Workers, Pages, D1, R2, KV) — using TypeScript and multiple LLM providers to deliver pixel-perfect personalized content at scale</li>
-              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Led the digital transformation of a 40+ year credit administrator — built client portals in React, automated accounting workflows with Node.js, and implemented marketing tracking, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built a data platform in React/Node.js with real-time campaign visibility, <strong>increasing productivity by 30% and revenue by 15%</strong>. Redesigned the Call Scoring system, <strong>improving efficiency by 60%</strong></li>
+              <li><strong>HoneyGrid, Inc (Sr. Software Engineer, Apr 2024 – Present, Remote):</strong> Build generative AI features for a digital marketing platform on the Cloudflare stack (Workers, Pages, D1, R2, KV) using TypeScript and multiple LLM providers</li>
+              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Led digital transformation for a 40+ year credit administrator, implementing CRM workflows, client portals, accounting automation, and marketing dashboards, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built a Salesforce-integrated data platform connecting campaign data to CRM records, <strong>increasing productivity by 30%</strong>. Redesigned Call Scoring end-to-end, <strong>improving efficiency by 60%</strong></li>
             </ul>
 
             <div className="job-header">
@@ -150,7 +151,7 @@ export default function ResumeSenior() {
             <h2>Certifications &amp; Education</h2>
 
             <div className="education-item">
-              <div className="education-degree">Machine Learning and AI with Python (CS109xa) — Harvard University (2024)</div>
+              <div className="education-degree">Machine Learning and AI with Python — Harvard CS109x (2024)</div>
             </div>
 
             <div className="education-item">
@@ -163,12 +164,7 @@ export default function ResumeSenior() {
 
             <div className="education-item">
               <div className="education-degree">Bachelor of Science in Computer Science</div>
-              <div className="education-school">Escuela Tecnica Pedro Blanes, Uruguay (2005–2008) | U.S. equivalency: Brooklyn College, CUNY</div>
-            </div>
-
-            <div className="education-item">
-              <div className="education-degree">Doctoral Studies in Computer Science (2 years)</div>
-              <div className="education-school">Universidad Catolica del Uruguay (2008–2011)</div>
+              <div className="education-school">U.S. equivalency: Brooklyn College, CUNY</div>
             </div>
           </section>
         </div>
