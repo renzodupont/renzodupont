@@ -16,22 +16,21 @@
 
 Senior technical leader with **18+ years** of experience building and scaling enterprise systems, CRMs, Salesforce platforms, AI automation, and cloud infrastructure.
 
-Currently the Lead Senior Engineer at **Gargle, Inc.** — owning the entire company's infrastructure across Salesforce, AWS, GCP, and 15+ integrated platforms.
+Currently a senior technical leader at **Gargle, Inc.** — owning Salesforce, business systems, AWS, GCP, and 15+ integrated platforms for an 80+ employee company.
 
 ### What I Bring
 
 - **Full-stack architecture** — React, Next.js, Astro, Node.js, .NET, Python
 - **Cloud & DevOps** — Cloudflare (Workers, Pages, D1, R2), AWS, Azure, GCP, Docker, CI/CD
-- **Salesforce expertise** — 16+ years, Advanced Admin & Development
-- **AI/ML integration** — Harvard-certified (CS109xa), hands-on LLM implementation
+- **Salesforce expertise** — 16+ years across administration, architecture, integrations, reporting, and automation
+- **AI/ML integration** — Harvard CS109x coursework, hands-on LLM implementation
 - **Proven impact** — 75% expense reductions, 30% productivity gains, $25K+ saved through automation
 
 ### Education & Certifications
 
-- **Machine Learning and AI with Python** — Harvard University (2024)
+- **Machine Learning and AI with Python** — Harvard CS109x (2024)
 - **Full Stack Development** — MIT xPro (2021)
-- **B.Sc. Computer Science** — Escuela Tecnica Pedro Blanes, Uruguay
-- **Doctoral Studies (2 years)** — Universidad Catolica del Uruguay
+- **Bachelor of Science in Computer Science** — Uruguay; evaluated as U.S. equivalent by Brooklyn College, CUNY
 
 ---
 

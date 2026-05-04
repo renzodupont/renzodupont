@@ -2,7 +2,7 @@ import BlurText from '../BlurText'
 import ScrollTextReveal from '../ScrollTextReveal'
 import ScrollReveal from '../ScrollReveal'
 
-const aboutText = `From building financial platforms in Uruguay to leading engineering teams in Utah, I've spent 18+ years building enterprise systems, scaling teams, and shipping products that matter. Certified in Machine Learning and AI from Harvard and Full Stack Development from MIT. I've led technology organizations of 80+ employees, managed international engineering teams, and driven digital transformations that saved $20K+ annually, improved productivity, and reduced operational cost. I thrive at the intersection of hands-on engineering and strategic leadership.`
+const aboutText = `From building financial platforms in Uruguay to leading engineering teams in Utah, I've spent 18+ years building enterprise systems, Salesforce platforms, GTM workflows, and AI automation that teams rely on every day. My background includes Machine Learning and AI with Python through Harvard CS109x and Full Stack Development through MIT xPro. I've led technology organizations of 80+ employees, managed 5-person development and analytics teams, and driven digital transformations that saved $20K+ annually, improved productivity, and reduced operational cost. I thrive where business systems, hands-on engineering, and strategic technical leadership intersect.`
 
 export default function AboutSection() {
   return (

@@ -4,12 +4,12 @@ import TiltCard from '../TiltCard'
 import ScrollReveal from '../ScrollReveal'
 
 const expertise = [
-  { icon: Shield, title: 'Salesforce Engineering', description: '16+ years. Apex, LWC, Flows, integrations, enterprise architecture.' },
-  { icon: Code2, title: 'Full-Stack Development', description: 'React, Node, Python, TypeScript, cloud infrastructure.' },
-  { icon: Brain, title: 'AI & Machine Learning', description: 'Harvard ML/AI. LLMs, agents, automation pipelines.' },
+  { icon: Shield, title: 'Salesforce Platform Ownership', description: '16+ years. Apex, Flows, integrations, reporting, governance, and enterprise architecture.' },
+  { icon: Code2, title: 'Business Systems Engineering', description: 'CRM integrations, GTM workflows, internal tools, React, Node, Python, and TypeScript.' },
+  { icon: Brain, title: 'AI Automation', description: 'Harvard CS109x ML/AI coursework. LLM workflows, agents, and automation pipelines.' },
   { icon: Cloud, title: 'Cloud & Infrastructure', description: 'AWS, Cloudflare, CI/CD, serverless, Docker.' },
   { icon: Database, title: 'Database Management', description: 'PostgreSQL, MongoDB, Redis, DynamoDB, SQL Server.' },
-  { icon: Users, title: 'Leadership', description: 'Team building, hiring, engineering strategy, mentorship.' },
+  { icon: Users, title: 'Technical Leadership', description: '5-person team management, technical delivery, stakeholder alignment, and mentorship.' },
 ]
 
 export default function ExpertiseSection() {

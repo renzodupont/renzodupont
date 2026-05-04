@@ -48,7 +48,7 @@ export default function ResumeSalesforce() {
                 <a href="https://github.com/renzodupont" target="_blank" rel="noopener noreferrer"><span className="screen-only">GitHub</span><span className="print-only">github.com/renzodupont</span></a>
               </div>
               <div className="resume-personal">
-                Languages: English, Spanish
+                Authorized to work in the U.S. — no sponsorship required | Languages: English, Spanish
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function ResumeSalesforce() {
             <p>
               Salesforce and Business Systems Architect with <strong>16+ years</strong> across Salesforce architecture, CRM integrations, BI reporting, data migrations, and automation at scale.
               Sole senior engineer for an 80+ employee company, owning Salesforce, internal tools, reporting, cloud infrastructure, and integrations across <strong>15+ platforms</strong> including Twilio, RingCentral, Stripe, AWS, GCP, Calendly, AgencyAnalytics, Apollo, and Google Workspace.
-              Certified Administrator (ADM201) and Advanced Administrator with hands-on depth in Apex, Flows, SOQL, security, governance, data models, and stakeholder-facing delivery.
+              Salesforce administration training in ADM201 and Advanced Administrator coursework, with hands-on depth in Apex, Flows, SOQL, security, governance, data models, and stakeholder-facing delivery.
             </p>
           </section>
 
@@ -84,15 +84,15 @@ export default function ResumeSalesforce() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Senior Computer Science Engineer / Business Systems Architect</div>
+              <div className="job-title">Senior Engineer / Business Systems Architect</div>
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
-              <li>Own the full business technology stack for an 80+ employee company, including Salesforce, CRM workflows, internal tools, reporting, cloud infrastructure, and integrations across 15+ platforms</li>
+              <li>Own Salesforce and the full business technology stack for an 80+ employee company, including CRM workflows, internal tools, executive reporting, cloud infrastructure, vendor systems, and integrations across 15+ platforms</li>
               <li>Architect Salesforce-centered operating systems using Apex, Flows, SOQL, Node.js, TypeScript, REST APIs, and Python to connect Twilio, RingCentral, Stripe, AWS, GCP, Google Workspace, and other business-critical platforms</li>
               <li>Led multiple Salesforce org mergers and environment splits, writing Apex batch jobs for data migrations, building validation triggers, and maintaining data integrity with zero downtime</li>
               <li>Built custom Salesforce reports, dashboards, and BI views that gave leadership visibility into client health, <strong>increasing client retention by 20%</strong></li>
-              <li>Built AI/LLM automation workflows with n8n, Zapier, and custom Node.js services for data enrichment, workflow routing, reporting, and operational process automation</li>
+              <li>Built AI/LLM-enabled automation workflows with n8n, Zapier, and custom Node.js services for data enrichment, workflow routing, reporting, GTM operations, and internal process automation</li>
             </ul>
 
             <div className="job-header">
@@ -101,7 +101,7 @@ export default function ResumeSalesforce() {
             </div>
             <ul>
               <li>Reduced technology expenses by <strong>75%</strong> by consolidating redundant tools, renegotiating vendor contracts, optimizing license allocation, and preserving core business functionality through restructuring</li>
-              <li>Led development and analytics teams, running sprint planning, code reviews, deployments, requirements translation, and cross-functional delivery across Salesforce, Node.js, React, Python, and SQL Server</li>
+              <li>Led a 5-person development and analytics team, running sprint planning, code reviews, deployments, requirements translation, and cross-functional delivery across Salesforce, Node.js, React, Python, and SQL Server</li>
             </ul>
 
             <div className="print-page-break"></div>
@@ -112,7 +112,7 @@ export default function ResumeSalesforce() {
             </div>
             <ul>
               <li>Primary Salesforce administrator for the entire organization — designed custom objects, page layouts, validation rules, workflow rules, approval processes, and built integrations using Apex and PHP</li>
-              <li>Led hundreds of Salesforce projects including third-party integrations, data migrations (Data Loader, Apex batch), and process automation — <strong>saved $25,000+</strong> and reduced data errors by 20%</li>
+              <li>Delivered 500+ Salesforce, reporting, automation, and business-systems requests including third-party integrations, data migrations (Data Loader, Apex batch), and process automation — <strong>saved $25,000+</strong> and reduced data errors by 20%</li>
             </ul>
 
             <div className="job-header">
@@ -120,7 +120,7 @@ export default function ResumeSalesforce() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Technical Consultant / Engineering Advisor</div>
+              <div className="job-title">Part-Time Technical Consultant</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
@@ -131,9 +131,9 @@ export default function ResumeSalesforce() {
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>HoneyGrid, Inc (Sr. Software Engineer, Apr 2024 – Present, Remote):</strong> Building generative AI features for a digital marketing platform using TypeScript on Cloudflare (Workers, Pages, D1, R2, KV) with multiple LLM providers — complementing Salesforce expertise with modern cloud-native development</li>
-              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Designed and implemented a CRM and client portal for a 40+ year credit administrator — built automated billing workflows, communication tracking, and marketing dashboards, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Built a Salesforce-integrated data platform connecting campaign data to CRM records, <strong>increasing productivity by 30%</strong>. Redesigned Call Scoring end-to-end, <strong>improving efficiency by 60%</strong></li>
+              <li><strong>HoneyGrid, Inc — Part-Time Client Engagement, Sr. Software Engineer, Apr 2024 – Present:</strong> Building generative AI features for a digital marketing platform using TypeScript on Cloudflare (Workers, Pages, D1, R2, KV) with multiple LLM providers — complementing Salesforce expertise with modern cloud-native development</li>
+              <li><strong>Credilit S.A. — Part-Time Technical Consultant, Apr 2018 – Oct 2025:</strong> Designed and implemented a CRM and client portal for a 40+ year credit administrator — built automated billing workflows, communication tracking, and marketing dashboards, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net — Part-Time Technical Consultant, Sep 2021 – Jan 2023:</strong> Built a Salesforce-integrated data platform connecting campaign data to CRM records, <strong>increasing productivity by 30%</strong>. Redesigned Call Scoring end-to-end, <strong>improving efficiency by 60%</strong></li>
             </ul>
 
             <div className="job-header">
@@ -162,11 +162,7 @@ export default function ResumeSalesforce() {
             <h2>Certifications &amp; Education</h2>
 
             <div className="education-item">
-              <div className="education-degree">Salesforce Administrator ADM201 (2010)</div>
-            </div>
-
-            <div className="education-item">
-              <div className="education-degree">Salesforce Advanced Administrator (2019)</div>
+              <div className="education-degree">Salesforce Administration Training — ADM201 (2010) | Advanced Administrator coursework (2019)</div>
             </div>
 
             <div className="education-item">
@@ -178,8 +174,8 @@ export default function ResumeSalesforce() {
             </div>
 
             <div className="education-item">
-              <div className="education-degree">Bachelor of Science in Computer Science</div>
-              <div className="education-school">U.S. equivalency: Brooklyn College, CUNY</div>
+              <div className="education-degree">Bachelor of Science in Computer Science — Uruguay</div>
+              <div className="education-school">Evaluated as U.S. equivalent: Brooklyn College, CUNY</div>
             </div>
           </section>
         </div>

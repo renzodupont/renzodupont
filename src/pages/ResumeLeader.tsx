@@ -48,7 +48,7 @@ export default function ResumeLeader() {
                 <a href="https://github.com/renzodupont" target="_blank" rel="noopener noreferrer"><span className="screen-only">GitHub</span><span className="print-only">github.com/renzodupont</span></a>
               </div>
               <div className="resume-personal">
-                Languages: English, Spanish
+                Authorized to work in the U.S. — no sponsorship required | Languages: English, Spanish
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function ResumeLeader() {
             <h2>Core Competencies</h2>
             <div className="tech-compact">
               <strong>Program Leadership:</strong> Technical Program Management · Enterprise Applications · Salesforce / CRM Delivery · Cross-Functional Leadership<br />
-              <strong>Business Systems:</strong> Enterprise Applications · Resource Planning · CRM Platform Ownership · Vendor &amp; Stakeholder Management · Roadmap Planning<br />
+              <strong>Business Systems:</strong> Enterprise Applications · GTM Systems · CRM Platform Ownership · Vendor &amp; Stakeholder Management · Roadmap Planning<br />
               <strong>Architecture &amp; Strategy:</strong> System Design · Cloud Infrastructure · AI/LLM Strategy · Digital Transformation · BI / Data Systems<br />
               <strong>Platforms:</strong> Salesforce (16+ yrs) · AWS · Azure · GCP · Cloudflare · SQL Server<br />
               <strong>Full Stack:</strong> TypeScript · Python · React · Node.js · .NET
@@ -84,7 +84,7 @@ export default function ResumeLeader() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Technical Consultant / Engineering Advisor</div>
+              <div className="job-title">Part-Time Technical Consultant</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
@@ -96,9 +96,9 @@ export default function ResumeLeader() {
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>HoneyGrid, Inc (Sr. Software Engineer, Apr 2024 – Present, Remote):</strong> Leading development of generative AI features for a digital marketing platform — architecting complex LLM pipelines on the Cloudflare stack (Workers, Pages, D1, R2, KV) with TypeScript to deliver pixel-perfect personalized content</li>
-              <li><strong>Credilit S.A. (CTO, Apr 2018 – Oct 2025, Uruguay):</strong> Drove digital transformation of a 40+ year credit administrator — hired the engineering team, defined technical strategy, and oversaw delivery of client portals (React), accounting automation (Node.js), and marketing systems, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net (CTO, Sep 2021 – Jan 2023, Utah):</strong> Joined as technical leader for a growing agency — built a data platform for real-time performance visibility (<strong>+30% productivity</strong>), then redesigned Call Scoring end-to-end (<strong>+60% efficiency, -40% cost</strong>)</li>
+              <li><strong>HoneyGrid, Inc — Part-Time Client Engagement, Sr. Software Engineer, Apr 2024 – Present:</strong> Leading development of generative AI features for a digital marketing platform — architecting complex LLM pipelines on the Cloudflare stack (Workers, Pages, D1, R2, KV) with TypeScript to deliver pixel-perfect personalized content</li>
+              <li><strong>Credilit S.A. — Part-Time Technical Consultant, Apr 2018 – Oct 2025:</strong> Drove digital transformation of a 40+ year credit administrator — hired the engineering team, defined technical strategy, and oversaw delivery of client portals (React), accounting automation (Node.js), and marketing systems, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net — Part-Time Technical Consultant, Sep 2021 – Jan 2023:</strong> Joined as technical leader for a growing agency — built a data platform for real-time performance visibility (<strong>+30% productivity</strong>), then redesigned Call Scoring end-to-end (<strong>+60% efficiency, -40% cost</strong>)</li>
             </ul>
 
             <div className="job-header">
@@ -106,12 +106,12 @@ export default function ResumeLeader() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Senior Computer Science Engineer / Business Systems Architect</div>
+              <div className="job-title">Senior Engineer / Business Systems Architect</div>
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>
               <li>Serve as the senior technical leader for the entire company (80+ employees) — own architecture decisions across a stack spanning Salesforce, Node.js, React, Python, AWS, and GCP, manage vendor relationships, and set the technical roadmap</li>
-              <li>Lead a team of 3 engineers and coordinate with Analytics stakeholders, running sprint planning, code reviews, and cross-functional delivery to keep business and engineering aligned</li>
+              <li>Lead a 5-person development and analytics team, running sprint planning, code reviews, and cross-functional delivery to keep business and engineering aligned</li>
               <li>Conceived and led a Business Intelligence initiative — built reporting dashboards and presented insights directly to executives, <strong>increasing client retention by 20%</strong></li>
               <li>Championed AI/LLM adoption across the organization — evaluated tools, defined implementation strategy, and managed rollout of n8n/Zapier automation workflows across departments</li>
             </ul>
@@ -132,7 +132,7 @@ export default function ResumeLeader() {
               <div className="job-period">August 2013 – May 2021</div>
             </div>
             <ul>
-              <li>Led hundreds of CRM and integration projects, growing from administrator to team lead — mentored junior developers, built institutional knowledge, and established the engineering culture that the team still operates on</li>
+              <li>Delivered 500+ CRM, reporting, automation, and integration requests while growing from administrator to team lead — mentored junior developers, built institutional knowledge, and established the engineering culture that the team still operates on</li>
               <li>Executed large-scale data migrations and process automation initiatives, <strong>saving $25,000+</strong> and reducing data errors by 20%</li>
             </ul>
 
@@ -158,12 +158,12 @@ export default function ResumeLeader() {
             </div>
 
             <div className="education-item">
-              <div className="education-degree">Salesforce Administrator ADM201 (2010) | Advanced Administrator (2019)</div>
+              <div className="education-degree">Salesforce Administration Training — ADM201 (2010) | Advanced Administrator coursework (2019)</div>
             </div>
 
             <div className="education-item">
-              <div className="education-degree">Bachelor of Science in Computer Science</div>
-              <div className="education-school">U.S. equivalency: Brooklyn College, CUNY</div>
+              <div className="education-degree">Bachelor of Science in Computer Science — Uruguay</div>
+              <div className="education-school">Evaluated as U.S. equivalent: Brooklyn College, CUNY</div>
             </div>
           </section>
         </div>

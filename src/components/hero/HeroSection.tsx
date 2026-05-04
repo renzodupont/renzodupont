@@ -6,7 +6,7 @@ import HeroEntrance from './HeroEntrance'
 import PhotoFrame from './PhotoFrame'
 import { createGeometricPulse } from '../../animations/geometricPulse'
 
-const roles = ['Business Systems Architect', 'AI Automation Lead', 'Technical Program Leader']
+const roles = ['Business Systems Architect', 'Salesforce Platform Leader', 'AI Automation Lead']
 
 const stats = [
   { value: '18+', label: 'Years Exp.' },
@@ -72,7 +72,7 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/[0.06] mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse-glow" />
-              <span className="text-xs font-mono text-accent">Open to Senior Engineering & Leadership Opportunities</span>
+              <span className="text-xs font-mono text-accent">Open to Salesforce, Business Systems & Technical Leadership Roles</span>
             </div>
 
             {/* Headline */}
@@ -87,7 +87,7 @@ export default function HeroSection() {
 
             {/* Subtext */}
             <p data-hero="subheadline" className="text-text-muted max-w-lg mb-8 leading-relaxed">
-              18+ years building and scaling enterprise systems, leading engineering teams, and shipping products. From startups to enterprises, Uruguay to Utah.
+              18+ years building Salesforce-centered platforms, GTM systems, AI automation, and enterprise applications while leading technical teams from Uruguay to Utah.
             </p>
 
             {/* CTAs */}

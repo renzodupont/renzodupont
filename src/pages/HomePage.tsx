@@ -13,7 +13,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-dark-900 text-text-primary">
       <PageMeta
         title="Renzo Dupont — Business Systems Architect"
-        description="Senior technical leader with 18+ years building Salesforce-centered platforms, AI automation, enterprise applications, and technical teams."
+        description="Senior technical leader with 18+ years building Salesforce-centered platforms, GTM systems, AI automation, enterprise applications, and technical teams."
         canonicalUrl="https://renzodupont.com"
         ogImage="https://renzodupont.com/images/profile.jpg"
         jsonLd={{
