@@ -117,7 +117,7 @@ export default function ResumeSenior() {
             </ul>
 
             <div className="job-header">
-              <div className="company-name">STARTUPP.AI / STARTUPP.CLOUD — US &amp; Latam (Remote)</div>
+              <div className="company-name">DUPONT VENTURES LLC — US &amp; Latam (Remote)</div>
             </div>
 
             <div className="job-header">
@@ -126,8 +126,8 @@ export default function ResumeSenior() {
             </div>
             <ul>
               <li>Lead an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
-              <li>Focus on architecture, hands-on delivery, technical strategy, and mentoring teams from pre-seed through growth-stage environments; related consulting and product work was formalized under <strong>Dupont Ventures LLC</strong> in 2026</li>
-              <li><strong>Selected ventures and brands:</strong> StartUpp.Cloud, OpenAva, Lumina Consulting Group, and Dupont Ventures LLC</li>
+              <li>Focus on architecture, hands-on delivery, technical strategy, and mentoring teams from pre-seed through growth-stage environments; the long-running practice was formalized under <strong>Dupont Ventures LLC</strong> in 2026</li>
+              <li><strong>Selected operating brands and ventures:</strong> STARTUPP.AI / StartUpp.Cloud, OpenAva, and Lumina Consulting Group</li>
             </ul>
 
             <div className="job-header">
