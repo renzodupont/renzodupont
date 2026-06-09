@@ -117,15 +117,16 @@ export default function ResumeSalesforce() {
             </ul>
 
             <div className="job-header">
-              <div className="company-name">STARTUPP.AI — US &amp; Latam (Remote)</div>
+              <div className="company-name">STARTUPP.AI / STARTUPP.CLOUD — US &amp; Latam (Remote)</div>
             </div>
 
             <div className="job-header">
-              <div className="job-title">Part-Time Technical Consultant</div>
+              <div className="job-title">Founder &amp; Principal Technical Consultant</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Provide part-time technical leadership and implementation support for startups and mid-market companies across Salesforce, web platforms, cloud systems, AI features, automation, and data workflows</li>
+              <li>Lead an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
+              <li>Selected ventures and brands include StartUpp.Cloud, OpenAva, Lumina Consulting Group, and Dupont Ventures LLC, which formalized related consulting and product work in 2026</li>
             </ul>
 
             <div className="job-header">

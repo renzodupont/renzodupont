@@ -117,16 +117,17 @@ export default function ResumeSenior() {
             </ul>
 
             <div className="job-header">
-              <div className="company-name">STARTUPP.AI — US &amp; Latam (Remote)</div>
+              <div className="company-name">STARTUPP.AI / STARTUPP.CLOUD — US &amp; Latam (Remote)</div>
             </div>
 
             <div className="job-header">
-              <div className="job-title">Part-Time Technical Consultant</div>
+              <div className="job-title">Founder &amp; Principal Technical Consultant</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Provide part-time technical leadership and implementation support for startups and mid-market companies across Salesforce, web platforms, cloud systems, AI features, automation, and data workflows</li>
-              <li>Focus on architecture, hands-on delivery, technical strategy, and mentoring teams from pre-seed through growth-stage environments</li>
+              <li>Lead an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
+              <li>Focus on architecture, hands-on delivery, technical strategy, and mentoring teams from pre-seed through growth-stage environments; related consulting and product work was formalized under <strong>Dupont Ventures LLC</strong> in 2026</li>
+              <li><strong>Selected ventures and brands:</strong> StartUpp.Cloud, OpenAva, Lumina Consulting Group, and Dupont Ventures LLC</li>
             </ul>
 
             <div className="job-header">

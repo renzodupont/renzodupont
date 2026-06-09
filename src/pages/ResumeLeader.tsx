@@ -83,28 +83,6 @@ export default function ResumeLeader() {
             <h2>Professional Experience</h2>
 
             <div className="job-header">
-              <div className="company-name">STARTUPP.AI — US &amp; Latam (Remote)</div>
-            </div>
-
-            <div className="job-header">
-              <div className="job-title">Part-Time Technical Consultant</div>
-              <div className="job-period">April 2018 – Present</div>
-            </div>
-            <ul>
-              <li>Provide part-time technical leadership and implementation support for startups and mid-market companies across Salesforce, web platforms, cloud systems, AI features, automation, and data workflows</li>
-              <li>Manage distributed engineering teams across North and South America, establishing delivery processes, mentoring engineers, and aligning technical output with business milestones</li>
-            </ul>
-
-            <div className="job-header">
-              <div className="job-title">Selected Client Engagements</div>
-            </div>
-            <ul>
-              <li><strong>HoneyGrid, Inc — Part-Time Client Engagement, Sr. Software Engineer, Apr 2024 – Present:</strong> Leading development of generative AI features for a digital marketing platform — architecting complex LLM pipelines on the Cloudflare stack (Workers, Pages, D1, R2, KV) with TypeScript to deliver pixel-perfect personalized content</li>
-              <li><strong>Credilit S.A. — Part-Time Technical Consultant, Apr 2018 – Oct 2025:</strong> Drove digital transformation of a 40+ year credit administrator — hired the engineering team, defined technical strategy, and oversaw delivery of client portals (React), accounting automation (Node.js), and marketing systems, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net — Part-Time Technical Consultant, Sep 2021 – Jan 2023:</strong> Joined as technical leader for a growing agency — built a data platform for real-time performance visibility (<strong>+30% productivity</strong>), then redesigned Call Scoring end-to-end (<strong>+60% efficiency, -40% cost</strong>)</li>
-            </ul>
-
-            <div className="job-header">
               <div className="company-name">GARGLE, INC — Lehi, Utah (Hybrid)</div>
             </div>
 
@@ -135,6 +113,29 @@ export default function ResumeLeader() {
             <ul>
               <li>Delivered 500+ CRM, reporting, automation, and integration requests while growing from administrator to team lead — mentored junior developers, built institutional knowledge, and established the engineering culture that the team still operates on</li>
               <li>Executed large-scale data migrations and process automation initiatives, <strong>saving $25,000+</strong> and reducing data errors by 20%</li>
+            </ul>
+
+            <div className="job-header">
+              <div className="company-name">STARTUPP.AI / STARTUPP.CLOUD — US &amp; Latam (Remote)</div>
+            </div>
+
+            <div className="job-header">
+              <div className="job-title">Founder &amp; Principal Technical Consultant</div>
+              <div className="job-period">April 2018 – Present</div>
+            </div>
+            <ul>
+              <li>Lead an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
+              <li>Manage distributed engineering teams across North and South America, establishing delivery processes, mentoring engineers, and aligning technical output with business milestones; related work was formalized under <strong>Dupont Ventures LLC</strong> in 2026</li>
+              <li><strong>Selected ventures and brands:</strong> StartUpp.Cloud, OpenAva, Lumina Consulting Group, and Dupont Ventures LLC</li>
+            </ul>
+
+            <div className="job-header">
+              <div className="job-title">Selected Client Engagements</div>
+            </div>
+            <ul>
+              <li><strong>HoneyGrid, Inc — Part-Time Client Engagement, Sr. Software Engineer, Apr 2024 – Present:</strong> Leading development of generative AI features for a digital marketing platform — architecting complex LLM pipelines on the Cloudflare stack (Workers, Pages, D1, R2, KV) with TypeScript to deliver pixel-perfect personalized content</li>
+              <li><strong>Credilit S.A. — Part-Time Technical Consultant, Apr 2018 – Oct 2025:</strong> Drove digital transformation of a 40+ year credit administrator — hired the engineering team, defined technical strategy, and oversaw delivery of client portals (React), accounting automation (Node.js), and marketing systems, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net — Part-Time Technical Consultant, Sep 2021 – Jan 2023:</strong> Joined as technical leader for a growing agency — built a data platform for real-time performance visibility (<strong>+30% productivity</strong>), then redesigned Call Scoring end-to-end (<strong>+60% efficiency, -40% cost</strong>)</li>
             </ul>
 
             <div className="job-header">
