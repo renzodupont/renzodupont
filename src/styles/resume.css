@@ -243,7 +243,7 @@
   }
   .resume-web .resume-container {
     max-width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
     margin: 0;
     font-size: 9pt;
     font-family: Arial, Helvetica, sans-serif !important;
@@ -301,23 +301,24 @@
   .screen-only { display: none !important; }
   .print-only { display: inline !important; }
 
-  .resume-web .resume-section { margin-bottom: 1.25rem; }
+  .resume-web .resume-section { margin-bottom: 0.85rem; }
   .resume-web .resume-section h2 {
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 10.5pt;
     color: #0a0e27;
     border-bottom: 2px solid #06b6d4;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.25rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.2rem;
     page-break-after: avoid;
   }
   .resume-web .resume-section p,
   .resume-web .resume-section li {
     font-size: 8.5pt;
-    line-height: 1.5;
+    line-height: 1.38;
     color: #374151;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.18rem;
   }
+  .resume-web .resume-section ul { margin-bottom: 0.45rem; }
   .resume-web .resume-section li::before { background: #06b6d4; }
 
   .resume-web .company-name {
@@ -335,14 +336,16 @@
     color: #64748b;
   }
   .resume-web .job-header {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
     page-break-after: avoid;
     page-break-inside: avoid;
   }
-  .resume-web .job-header + ul {
-    page-break-before: avoid;
-    page-break-inside: avoid;
-  }
+  /* Deliberately NO page-break-before/inside chaining on job lists:
+     combined with .job-header{page-break-after:avoid} it welds header→list
+     runs together and shoves whole blocks to the next page. Individual <li>
+     stay intact (rule below), so a long list may split between bullets —
+     which is correct resume behavior and keeps the doc at 2 pages. */
   .resume-web .tech-compact {
     font-size: 8.5pt;
     color: #374151;
@@ -350,6 +353,7 @@
   }
   .resume-web .tech-compact strong { color: #0f172a; }
 
+  .resume-web .education-item { margin-bottom: 0.3rem; }
   .resume-web .education-degree { font-size: 8.5pt; color: #0f172a; }
   .resume-web .education-school { font-size: 8pt; color: #475569; }
 
@@ -368,6 +372,4 @@
   #education { page-break-inside: avoid; }
 
   .resume-web .resume-section li { page-break-inside: avoid; }
-  .resume-web .job-header { page-break-after: avoid; }
-  .resume-web .job-header + ul { page-break-before: avoid; }
 }
