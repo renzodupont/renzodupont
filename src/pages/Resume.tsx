@@ -4,7 +4,7 @@ import '../styles/resume.css'
 
 export default function Resume() {
   return (
-    <div className="min-h-screen bg-dark-900 text-text-primary">
+    <div className="resume-page-root min-h-screen bg-dark-900 text-text-primary">
       <PageMeta
         title="Renzo Dupont — Senior Salesforce Architect & Business Systems Owner"
         description="Senior Salesforce Architect and Business Systems Owner with 18+ years across Salesforce architecture, RevOps/GTM systems, AI automation, and integrations."

@@ -227,6 +227,18 @@
 @media print {
   @page { size: letter; margin: 0.5in 0.6in; }
 
+  /* The resume must survive a print with "Background graphics" UNCHECKED —
+     that is Chrome's default. Nothing here may depend on a painted
+     background to be legible: force white ancestors, and render accents
+     with borders and text color (both of which always print). */
+  html,
+  body,
+  .resume-page-root,
+  .resume-web {
+    background: #fff !important;
+    background-image: none !important;
+  }
+
   body {
     background: #fff;
     color: #1a1a1a;
@@ -317,9 +329,32 @@
     line-height: 1.38;
     color: #374151;
     margin-bottom: 0.18rem;
+    orphans: 2;
+    widows: 2;
   }
-  .resume-web .resume-section ul { margin-bottom: 0.45rem; }
-  .resume-web .resume-section li::before { background: #06b6d4; }
+
+  /* Bullets: the screen view draws a dot as a background-colored ::before,
+     which disappears entirely when background graphics are off. Swap in
+     native list markers — real glyphs that always print and that ATS/PDF
+     text extraction reads correctly. */
+  .resume-web .resume-section li::before {
+    display: none !important;
+    content: none !important;
+  }
+  .resume-web .resume-section ul {
+    list-style: disc outside !important;
+    padding-left: 0.95rem;
+    margin-left: 0;
+    margin-bottom: 0.45rem;
+  }
+  .resume-web .resume-section li {
+    padding-left: 0;
+    list-style: disc outside !important;
+  }
+  .resume-web .resume-section li::marker {
+    color: #0891b2;
+    font-size: 0.8em;
+  }
 
   .resume-web .company-name {
     font-family: Arial, Helvetica, sans-serif !important;
