@@ -2,7 +2,10 @@ import BlurText from '../BlurText'
 import ScrollTextReveal from '../ScrollTextReveal'
 import ScrollReveal from '../ScrollReveal'
 
-const aboutText = `From building financial platforms in Uruguay to leading engineering teams in Utah, I've spent 18+ years building enterprise systems, Salesforce platforms, GTM workflows, and AI automation that teams rely on every day. My background includes Machine Learning and AI with Python through Harvard CS109x and Full Stack Development through MIT xPro. I've led technology organizations of 80+ employees, managed 5-person development and analytics teams, and driven digital transformations that saved $20K+ annually, improved productivity, and reduced operational cost. I thrive where business systems, hands-on engineering, and strategic technical leadership intersect.`
+// "Led technology organizations of 80+ employees" was removed: 80 was the size of
+// the company, not the org led. The resume says a 5-person team, and a recruiter
+// who catches the gap discounts every other number on the page.
+const aboutText = `I started as a direct contractor to Salesforce.com in Montevideo, delivering the GEMINI project and Partner Portal, and have spent the 18 years since owning the systems businesses run on — CRM architecture, finance and order-to-cash integrations, data migrations, and executive reporting. Today I'm the sole architect of a heavily customized Salesforce org and a 15+ platform stack at Gargle, where I also led a 5-person development and analytics team. Alongside that I build OpenAva, a multi-tenant business platform, which keeps me hands-on with Postgres, API design, and product engineering rather than only architecture diagrams. Formal training includes Machine Learning and AI with Python through Harvard CS109x and Full Stack Development through MIT xPro. I work best where business systems, hands-on engineering, and technical leadership meet.`
 
 export default function AboutSection() {
   return (

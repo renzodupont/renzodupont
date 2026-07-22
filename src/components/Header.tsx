@@ -1,6 +1,14 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
+const NAV = [
+  { id: 'work', label: 'Work' },
+  { id: 'approach', label: 'Approach' },
+  { id: 'stack', label: 'Stack' },
+  { id: 'about', label: 'About' },
+  { id: 'contact', label: 'Contact' },
+]
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [hidden, setHidden] = useState(false)
@@ -55,26 +63,18 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          <button onClick={() => scrollToSection('about')} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-            About
-          </button>
-          <button onClick={() => scrollToSection('expertise')} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-            Expertise
-          </button>
-          <button onClick={() => scrollToSection('work')} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-            Work
-          </button>
-          <button onClick={() => scrollToSection('contact')} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-            Contact
-          </button>
-          <a
-            href="https://calendly.com/renzo-startupp/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary text-sm px-5 py-2"
-          >
-            Let's Talk
-          </a>
+          {NAV.map(({ id, label }) => (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className="text-sm text-text-secondary hover:text-text-primary transition-colors"
+            >
+              {label}
+            </button>
+          ))}
+          <Link to="/resume" className="btn-primary text-sm px-5 py-2">
+            Resume
+          </Link>
         </nav>
 
         {/* Mobile hamburger */}
@@ -92,18 +92,18 @@ export default function Header() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-dark-900/95 backdrop-blur-xl border-t border-white/5 px-6 py-4 flex flex-col gap-4">
-          <button onClick={() => scrollToSection('about')} className="text-left text-text-secondary hover:text-text-primary">About</button>
-          <button onClick={() => scrollToSection('expertise')} className="text-left text-text-secondary hover:text-text-primary">Expertise</button>
-          <button onClick={() => scrollToSection('work')} className="text-left text-text-secondary hover:text-text-primary">Work</button>
-          <button onClick={() => scrollToSection('contact')} className="text-left text-text-secondary hover:text-text-primary">Contact</button>
-          <a
-            href="https://calendly.com/renzo-startupp/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary text-sm px-5 py-2 text-center"
-          >
-            Let's Talk
-          </a>
+          {NAV.map(({ id, label }) => (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className="text-left text-text-secondary hover:text-text-primary"
+            >
+              {label}
+            </button>
+          ))}
+          <Link to="/resume" className="btn-primary text-sm px-5 py-2 text-center">
+            Resume
+          </Link>
         </div>
       )}
     </header>

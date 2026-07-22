@@ -1,47 +1,10 @@
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import Aurora from '../Aurora'
 import CanvasHero from '../CanvasHero'
 import HeroEntrance from './HeroEntrance'
 import PhotoFrame from './PhotoFrame'
 import { createGeometricPulse } from '../../animations/geometricPulse'
-
-const roles = ['Business Systems Architect', 'Salesforce Platform Leader', 'AI Automation Lead']
-
-const stats = [
-  { value: '18+', label: 'Years Exp.' },
-  { value: '80+', label: 'Team Size Led' },
-  { value: '15+', label: 'Platforms Integrated' },
-  { value: '20%', label: 'Retention Increase' },
-]
-
-function RoleCycler() {
-  const [index, setIndex] = useState(0)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex(prev => (prev + 1) % roles.length)
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [])
-
-  return (
-    <span className="inline-block relative h-[1.3em] overflow-hidden align-bottom">
-      <AnimatePresence mode="wait">
-        <motion.span
-          key={roles[index]}
-          initial={{ y: 30, opacity: 0, filter: 'blur(8px)' }}
-          animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
-          exit={{ y: -30, opacity: 0, filter: 'blur(8px)' }}
-          transition={{ duration: 0.4, ease: 'easeOut' }}
-          className="inline-block gradient-text"
-        >
-          {roles[index]}
-        </motion.span>
-      </AnimatePresence>
-    </span>
-  )
-}
+import { profile, stats } from '../../data/profile'
 
 export default function HeroSection() {
   return (
@@ -72,45 +35,50 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/[0.06] mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse-glow" />
-              <span className="text-xs font-mono text-accent">Open to Salesforce, Business Systems & Technical Leadership Roles</span>
+              <span className="text-xs font-mono text-accent">
+                {profile.currentRole} · {profile.location}
+              </span>
             </div>
 
             {/* Headline */}
-            <h1 data-hero="headline" className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-3">
-              Renzo Dupont
+            <h1
+              data-hero="headline"
+              className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-3"
+            >
+              {profile.name}
             </h1>
 
-            {/* Subtitle with cycling roles */}
-            <div data-hero="headline-accent" className="text-xl md:text-2xl text-text-secondary mb-6">
-              <RoleCycler />
+            {/* Single title — recruiters filter on one, not three */}
+            <div data-hero="headline-accent" className="text-xl md:text-2xl mb-6">
+              <span className="gradient-text font-semibold">{profile.title}</span>
             </div>
 
             {/* Subtext */}
             <p data-hero="subheadline" className="text-text-muted max-w-lg mb-8 leading-relaxed">
-              18+ years building Salesforce-centered platforms, GTM systems, AI automation, and enterprise applications while leading technical teams from Uruguay to Utah.
+              18 years owning the systems a business actually runs on — Salesforce architecture,
+              order-to-cash and finance integrations, zero-downtime data migrations, executive
+              reporting, and the small engineering teams that ship them.
             </p>
 
             {/* CTAs */}
             <div data-hero="cta" className="flex flex-wrap gap-4 mb-10">
               <a
-                href="https://calendly.com/renzo-startupp/30min"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#work"
+                onClick={e => {
+                  e.preventDefault()
+                  document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })
+                }}
                 className="btn-primary px-7 py-3 text-sm font-semibold"
               >
-                Discuss Opportunities
+                See my work
               </a>
-              <a
-                href="#work"
-                onClick={(e) => { e.preventDefault(); document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }) }}
-                className="btn-secondary px-7 py-3 text-sm font-semibold"
-              >
-                See My Work
-              </a>
+              <Link to="/resume" className="btn-secondary px-7 py-3 text-sm font-semibold">
+                Read my resume
+              </Link>
             </div>
 
             {/* Stats */}
-            <div data-hero="stats" className="flex gap-8">
+            <div data-hero="stats" className="flex flex-wrap gap-x-8 gap-y-4">
               {stats.map(({ value, label }) => (
                 <div key={label}>
                   <div className="text-2xl font-bold text-accent">{value}</div>
