@@ -126,14 +126,10 @@ export default function Resume() {
               <div className="job-title">Technical Consultant — Self-Employed</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
-            <p>Hands-on engineering and architecture for US and LATAM clients.</p>
             <ul>
-              <li>Full-stack development in TypeScript, React/Next.js, and Node; also Python and C#/.NET</li>
-              <li>Architected and deployed on Cloudflare (Workers, D1, R2, KV), plus AWS, GCP, Azure, and Docker</li>
-              <li>Built LLM integrations and Python ML pipelines</li>
-              <li>Delivered accounting automation and marketing dashboards for a long-term client, <strong>saving $20,000+ annually</strong></li>
+              <li>Independent engineering and architecture for US and LATAM clients — full-stack (TypeScript, React/Next.js, Node), Python, C#/.NET, cloud (Cloudflare, AWS, GCP, Azure), and LLM/ML integrations</li>
+              <li>Delivered accounting automation and dashboards for a long-term client, <strong>saving $20,000+ annually</strong></li>
             </ul>
-            <div className="tech-compact"><strong>Databases:</strong> SQL Server, MySQL, PostgreSQL, MongoDB</div>
 
             <div className="job-header">
               <div className="company-name">DENTAL MARKETING | 123 POSTCARDS — Heber City, Utah</div>
