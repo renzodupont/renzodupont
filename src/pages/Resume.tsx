@@ -6,14 +6,14 @@ export default function Resume() {
   return (
     <div className="resume-page-root min-h-screen bg-dark-900 text-text-primary">
       <PageMeta
-        title="Renzo Dupont — Senior Salesforce Architect & Business Systems Owner"
-        description="Senior Salesforce Architect and Business Systems Owner with 18+ years across Salesforce architecture, RevOps/GTM systems, AI automation, and integrations."
+        title="Renzo Dupont — Salesforce Developer & Administrator"
+        description="Salesforce Developer and Administrator with 18+ years across Salesforce development, administration, integrations, and business systems."
         canonicalUrl="https://renzodupont.com/resume"
         noIndex
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'ProfilePage',
-          name: 'Renzo Dupont — Senior Salesforce Architect & Business Systems Owner',
+          name: 'Renzo Dupont — Salesforce Developer & Administrator',
         }}
       />
 
@@ -36,11 +36,11 @@ export default function Resume() {
             <div>
               <h1>RENZO DUPONT</h1>
               <div className="resume-title">
-                <span className="resume-title-main">Senior Salesforce Architect &amp; Business Systems Owner</span>
-                <span className="resume-title-detail">AI Automation &amp; Integrations</span>
+                <span className="resume-title-main">Salesforce Developer &amp; Administrator</span>
+                <span className="resume-title-detail">Apex · Flows · Integrations</span>
               </div>
               <div className="resume-contact">
-                <a href="mailto:renzo@startupp.ai">renzo@startupp.ai</a> |{' '}
+                <a href="mailto:renzo@renzodupont.com">renzo@renzodupont.com</a> |{' '}
                 <a href="https://linkedin.com/in/renzo-dupont-b9797941" target="_blank" rel="noopener noreferrer"><span className="screen-only">LinkedIn</span><span className="print-only">linkedin.com/in/renzo-dupont-b9797941</span></a> |{' '}
                 <a href="https://renzodupont.com" target="_blank" rel="noopener noreferrer">renzodupont.com</a> |{' '}
                 <a href="https://github.com/renzodupont" target="_blank" rel="noopener noreferrer"><span className="screen-only">GitHub</span><span className="print-only">github.com/renzodupont</span></a>
@@ -55,10 +55,10 @@ export default function Resume() {
           <section className="resume-section" id="summary">
             <h2>Professional Summary</h2>
             <p>
-              Senior Salesforce Architect and Business Systems Owner with <strong>18+ years</strong> designing and
-              running Salesforce-centered operating systems for sales, marketing, service, and finance. Sole technical
-              owner of Salesforce and the surrounding business technology stack — CRM architecture, GTM/RevOps systems,
-              executive BI, and integrations across <strong>15+ platforms</strong>. Hands-on in Apex, Flows, SOQL, and
+              Salesforce Developer and Administrator with <strong>18+ years</strong> building and
+              running Salesforce-centered business systems for sales, marketing, service, and finance. Sole technical
+              owner of Salesforce and the surrounding business technology stack — CRM setup, reporting, automation,
+              and integrations across <strong>15+ platforms</strong>. Hands-on in Apex, Flows, SOQL, and
               REST integrations, plus Node.js, TypeScript, Python, and AI/LLM automation.
               <strong> Cut technology spend 75%</strong>, <strong>lifted client retention 20%</strong>, and led a
               5-person development and analytics team. Began on the platform as a direct contractor to Salesforce.com,
@@ -87,7 +87,7 @@ export default function Resume() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Senior Engineer / Business Systems Architect</div>
+              <div className="job-title">Senior Engineer</div>
               <div className="job-period">December 2023 – Present</div>
             </div>
             <ul>

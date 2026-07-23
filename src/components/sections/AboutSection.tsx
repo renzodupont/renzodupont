@@ -5,7 +5,7 @@ import ScrollReveal from '../ScrollReveal'
 // "Led technology organizations of 80+ employees" was removed: 80 was the size of
 // the company, not the org led. The resume says a 5-person team, and a recruiter
 // who catches the gap discounts every other number on the page.
-const aboutText = `I started as a direct contractor to Salesforce.com in Montevideo, delivering the GEMINI project and Partner Portal, and have spent the 18 years since owning the systems businesses run on — CRM architecture, finance and order-to-cash integrations, data migrations, and executive reporting. Today I'm the sole architect of a heavily customized Salesforce org and a 15+ platform stack at Gargle, where I also led a 5-person development and analytics team. Alongside that I build OpenAva, a multi-tenant business platform, which keeps me hands-on with Postgres, API design, and product engineering rather than only architecture diagrams. Formal training includes Machine Learning and AI with Python through Harvard CS109x and Full Stack Development through MIT xPro. I work best where business systems, hands-on engineering, and technical leadership meet.`
+const aboutText = `I have about 18 years of experience building and supporting the business systems that companies rely on, with most of that time focused on Salesforce. I've worked as both an administrator and a developer — setting up CRM workflows, connecting different systems together, building custom tools and reports, and automating manual work. Over the years I've worked with a range of technologies, including Apex, Node.js, TypeScript, Python, C#/.NET, React, SQL databases, and the major cloud platforms. I've also led and mentored small engineering teams, handling planning, code reviews, and day-to-day delivery. I do my best work where business systems, hands-on development, and working with a team come together.`
 
 export default function AboutSection() {
   return (
@@ -16,7 +16,7 @@ export default function AboutSection() {
             <span className="font-mono text-xs text-pink uppercase tracking-widest">About</span>
           </div>
           <BlurText
-            text="Building the future, one product at a time"
+            text="About my experience"
             className="font-display text-3xl md:text-4xl font-bold text-text-primary mb-10"
             delay={0.05}
           />

@@ -55,9 +55,8 @@ export default function HeroSection() {
 
             {/* Subtext */}
             <p data-hero="subheadline" className="text-text-muted max-w-lg mb-8 leading-relaxed">
-              18 years owning the systems a business actually runs on — Salesforce architecture,
-              order-to-cash and finance integrations, zero-downtime data migrations, executive
-              reporting, and the small engineering teams that ship them.
+              18 years working with Salesforce and business systems — building CRM solutions,
+              integrations, reporting, and automation, and leading small engineering teams.
             </p>
 
             {/* CTAs */}

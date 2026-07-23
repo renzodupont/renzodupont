@@ -11,16 +11,14 @@
 
 export const profile = {
   name: 'Renzo Dupont',
-  title: 'Business Systems / Platform Architect',
-  subtitle: 'Salesforce-centered platforms, integrations, and data migrations',
+  title: 'Salesforce Developer & Administrator',
+  subtitle: 'Salesforce development, administration, and integrations',
   /** Shown in the hero badge. One line to update when the role changes. */
-  currentRole: 'Business Systems Architect at Gargle, Inc.',
+  currentRole: 'Senior Engineer at Gargle, Inc.',
   location: 'Lehi, Utah',
   languages: 'English, Spanish',
-  focus: 'Salesforce platform architecture, business systems, integrations, and data migration',
-  // TODO(renzo): swap in a personal address. renzo@startupp.ai points at your own
-  // company, which reads as "he runs an agency" rather than "he builds systems".
-  email: 'renzo@startupp.ai',
+  focus: 'Salesforce development, administration, integrations, and business systems',
+  email: 'renzo@renzodupont.com',
   linkedin: 'https://www.linkedin.com/in/renzo-dupont-b9797941/',
   github: 'https://github.com/renzodupont',
 } as const
@@ -32,8 +30,7 @@ export const profile = {
  * the resume is the kind of thing that gets a candidate quietly dropped.
  */
 export const stats = [
-  { value: '18+', label: 'Years building systems' },
-  { value: '15+', label: 'Platforms integrated' },
-  { value: '75%', label: 'Technology spend cut' },
-  { value: '20%', label: 'Client retention lift' },
+  { value: '18+', label: 'Years of experience' },
+  { value: '15+', label: 'Platforms & technologies' },
+  { value: '5', label: 'Engineers led' },
 ] as const
