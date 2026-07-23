@@ -119,17 +119,15 @@ export default function Resume() {
             </ul>
 
             <div className="job-header">
-              <div className="company-name">DUPONT VENTURES LLC — Independent Consulting Practice (Remote)</div>
+              <div className="company-name">DUPONT VENTURES LLC — Remote</div>
             </div>
 
             <div className="job-header">
-              <div className="job-title">Principal Technical Consultant</div>
+              <div className="job-title">Technical Consultant</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Fractional CTO and architecture advisory for a small roster of long-term US and LATAM clients across Salesforce, cloud platforms, and AI/LLM integrations</li>
-              <li><strong>Credilit S.A. — Fractional CTO (2014–2025):</strong> Led digital transformation for a 40+ year credit administrator — Salesforce CRM workflows and admin/dev features, .NET / C# ASP.NET MVC2 web apps, and Azure-hosted client portals and accounting automation. Delivered integrated marketing dashboards and <strong>saved the client $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net / 123 Postcards — Fractional CTO (2021–2023):</strong> Owned engineering and platform strategy across Salesforce, Angular, React, Node, and AWS. Built a Salesforce-integrated data platform connecting campaign data to CRM records, <strong>increasing productivity 30%</strong> and <strong>improving call-scoring efficiency 60%</strong></li>
+              <li><strong>Credilit S.A. (2014–2025):</strong> Technical consultant to a 40+ year credit administrator — built Salesforce CRM workflows, .NET / C# web apps, and Azure-hosted client portals and accounting automation, and delivered marketing dashboards that <strong>saved the client $20,000+ annually</strong></li>
             </ul>
 
             <div className="job-header">
@@ -142,7 +140,8 @@ export default function Resume() {
               <div className="job-period">February 2018 – December 2019</div>
             </div>
             <ul>
-              <li>Led a distributed engineering team across India, Nepal, and the Philippines delivering Salesforce and web projects on time, improving communication and release quality through structured scrum practices</li>
+              <li>Led a distributed engineering team across India, Nepal, and the Philippines delivering Salesforce and web projects on time, improving release quality through structured scrum practices</li>
+              <li>Built a Salesforce-integrated data platform connecting marketing campaign data to CRM records across Salesforce, React, Node, and AWS — <strong>increasing productivity 30%</strong> and <strong>improving call-scoring efficiency 60%</strong></li>
             </ul>
 
             <div className="job-header">
