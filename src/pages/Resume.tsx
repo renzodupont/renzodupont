@@ -123,12 +123,17 @@ export default function Resume() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Technical Consultant</div>
+              <div className="job-title">Technical Consultant — Self-Employed</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
+            <p>Hands-on engineering and architecture for US and LATAM clients.</p>
             <ul>
-              <li><strong>Credilit S.A. (2014–2025):</strong> Technical consultant to a 40+ year credit administrator — built Salesforce CRM workflows, .NET / C# web apps, and Azure-hosted client portals and accounting automation, and delivered marketing dashboards that <strong>saved the client $20,000+ annually</strong></li>
+              <li>Full-stack development in TypeScript, React/Next.js, and Node; also Python and C#/.NET</li>
+              <li>Architected and deployed on Cloudflare (Workers, D1, R2, KV), plus AWS, GCP, Azure, and Docker</li>
+              <li>Built LLM integrations and Python ML pipelines</li>
+              <li>Delivered accounting automation and marketing dashboards for a long-term client, <strong>saving $20,000+ annually</strong></li>
             </ul>
+            <div className="tech-compact"><strong>Databases:</strong> SQL Server, MySQL, PostgreSQL, MongoDB</div>
 
             <div className="job-header">
               <div className="company-name">DENTAL MARKETING | 123 POSTCARDS — Heber City, Utah</div>
