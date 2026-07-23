@@ -133,9 +133,9 @@ export default function ResumeLeader() {
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>HoneyGrid, Inc — Part-Time Client Engagement, Sr. Software Engineer, Apr 2024 – Present:</strong> Leading development of generative AI features for a digital marketing platform — architecting complex LLM pipelines on the Cloudflare stack (Workers, Pages, D1, R2, KV) with TypeScript to deliver pixel-perfect personalized content</li>
-              <li><strong>Credilit S.A. — Part-Time Technical Consultant, Apr 2018 – Oct 2025:</strong> Drove digital transformation of a 40+ year credit administrator — hired the engineering team, defined technical strategy, and oversaw delivery of client portals (React), accounting automation (Node.js), and marketing systems, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net — Part-Time Technical Consultant, Sep 2021 – Jan 2023:</strong> Joined as technical leader for a growing agency — built a data platform for real-time performance visibility (<strong>+30% productivity</strong>), then redesigned Call Scoring end-to-end (<strong>+60% efficiency, -40% cost</strong>)</li>
+              <li><strong>HoneyGrid, Inc — Sr. Software Engineer, Apr 2024 – Present:</strong> Leading development of generative AI features for a digital marketing platform — architecting complex LLM pipelines on the Cloudflare stack (Workers, Pages, D1, R2, KV) with TypeScript to deliver pixel-perfect personalized content</li>
+              <li><strong>Credilit S.A. — Technical Consultant, Apr 2018 – Oct 2025:</strong> Drove digital transformation of a 40+ year credit administrator — hired the engineering team, defined technical strategy, and oversaw delivery of client portals (React), accounting automation (Node.js), and marketing systems, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net — Technical Consultant, Sep 2021 – Jan 2023:</strong> Joined as technical leader for a growing agency — built a data platform for real-time performance visibility (<strong>+30% productivity</strong>), then redesigned Call Scoring end-to-end (<strong>+60% efficiency, -40% cost</strong>)</li>
             </ul>
 
             <div className="job-header">

@@ -123,11 +123,11 @@ export default function Resume() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Principal Technical Consultant (Part-Time)</div>
+              <div className="job-title">Principal Technical Consultant</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Part-time fractional CTO and architecture advisory held alongside full-time employment, serving a small roster of long-term US and LATAM clients across Salesforce, cloud platforms, and AI/LLM integrations</li>
+              <li>Fractional CTO and architecture advisory for a small roster of long-term US and LATAM clients across Salesforce, cloud platforms, and AI/LLM integrations</li>
               <li><strong>Credilit S.A. — Fractional CTO (2014–2025):</strong> Led digital transformation for a 40+ year credit administrator — Salesforce CRM workflows and admin/dev features, .NET / C# ASP.NET MVC2 web apps, and Azure-hosted client portals and accounting automation. Delivered integrated marketing dashboards and <strong>saved the client $20,000+ annually</strong></li>
               <li><strong>DentalMarketing.net / 123 Postcards — Fractional CTO (2021–2023):</strong> Owned engineering and platform strategy across Salesforce, Angular, React, Node, and AWS. Built a Salesforce-integrated data platform connecting campaign data to CRM records, <strong>increasing productivity 30%</strong> and <strong>improving call-scoring efficiency 60%</strong></li>
             </ul>

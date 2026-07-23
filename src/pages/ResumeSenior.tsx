@@ -134,9 +134,9 @@ export default function ResumeSenior() {
               <div className="job-title">Selected Client Engagements</div>
             </div>
             <ul>
-              <li><strong>HoneyGrid, Inc — Part-Time Client Engagement, Sr. Software Engineer, Apr 2024 – Present:</strong> Build generative AI features for a digital marketing platform on the Cloudflare stack (Workers, Pages, D1, R2, KV) using TypeScript and multiple LLM providers</li>
-              <li><strong>Credilit S.A. — Part-Time Technical Consultant, Apr 2018 – Oct 2025:</strong> Led digital transformation for a 40+ year credit administrator, implementing CRM workflows, client portals, accounting automation, and marketing dashboards, <strong>saving $20,000+ annually</strong></li>
-              <li><strong>DentalMarketing.net — Part-Time Technical Consultant, Sep 2021 – Jan 2023:</strong> Built a Salesforce-integrated data platform connecting campaign data to CRM records, <strong>increasing productivity by 30%</strong>. Redesigned Call Scoring end-to-end, <strong>improving efficiency by 60%</strong></li>
+              <li><strong>HoneyGrid, Inc — Sr. Software Engineer, Apr 2024 – Present:</strong> Build generative AI features for a digital marketing platform on the Cloudflare stack (Workers, Pages, D1, R2, KV) using TypeScript and multiple LLM providers</li>
+              <li><strong>Credilit S.A. — Technical Consultant, Apr 2018 – Oct 2025:</strong> Led digital transformation for a 40+ year credit administrator, implementing CRM workflows, client portals, accounting automation, and marketing dashboards, <strong>saving $20,000+ annually</strong></li>
+              <li><strong>DentalMarketing.net — Technical Consultant, Sep 2021 – Jan 2023:</strong> Built a Salesforce-integrated data platform connecting campaign data to CRM records, <strong>increasing productivity by 30%</strong>. Redesigned Call Scoring end-to-end, <strong>improving efficiency by 60%</strong></li>
             </ul>
 
             <div className="job-header">
