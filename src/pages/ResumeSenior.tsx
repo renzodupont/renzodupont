@@ -51,7 +51,7 @@ export default function ResumeSenior() {
                 <a href="https://github.com/renzodupont" target="_blank" rel="noopener noreferrer"><span className="screen-only">GitHub</span><span className="print-only">github.com/renzodupont</span></a>
               </div>
               <div className="resume-personal">
-                Authorized to work in the U.S. — no sponsorship required | Languages: English, Spanish
+                Lehi, Utah — On-Site (Lehi–Provo–SLC), Hybrid, or Remote | Authorized to work in the U.S. — no sponsorship required | Languages: English, Spanish
               </div>
             </div>
           </div>
