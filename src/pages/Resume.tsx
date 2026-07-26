@@ -2,22 +2,33 @@ import { Link } from 'react-router-dom'
 import PageMeta from '../components/PageMeta'
 import '../styles/resume.css'
 
-/* Earned credentials. Adding one here updates the header badge and the
-   Certifications section together — no other edits needed. */
+/* Proctored, verifiable credentials. Adding one here updates the header
+   badge and the Certifications & Diplomas section together. */
 const CERTIFICATIONS = [
   {
     name: 'Salesforce Certified Platform Administrator',
-    issuer: 'Salesforce',
-    issued: 'July 2026',
-    credentialId: '7967987',
+    meta: 'Salesforce · Jul 2026 · Credential ID 7967987',
   },
 ]
 
-/* Course completions — kept subordinate to earned credentials so they
-   don't dilute the certifications above. */
+/* Completed university programs. Sit alongside certifications up top —
+   these are graded, capstone-bearing programs, not course completions. */
+const DIPLOMAS = [
+  {
+    name: 'Machine Learning & AI with Python',
+    meta: 'Harvard University — CS109x · 2024 · Diploma awarded',
+  },
+  {
+    name: 'Full Stack Development (MERN)',
+    meta: 'MIT xPro · 2021 · 100% on final capstone',
+  },
+]
+
+/* Short-form course completions — kept at the end, subordinate to the
+   credentials above so they don't dilute them. */
 const PROFESSIONAL_DEVELOPMENT = [
-  { name: 'The Cybersecurity Threat Landscape', issuer: 'LinkedIn', issued: 'Apr 2026' },
-  { name: 'SOC 2 Compliance Essential Training', issuer: 'LinkedIn', issued: 'Apr 2026' },
+  'The Cybersecurity Threat Landscape',
+  'SOC 2 Compliance Essential Training',
 ]
 
 export default function Resume() {
@@ -55,7 +66,6 @@ export default function Resume() {
               <h1>RENZO DUPONT</h1>
               <div className="resume-title">
                 <span className="resume-title-main">Salesforce Developer &amp; Administrator</span>
-                <span className="resume-title-detail">Apex · Flows · Integrations</span>
               </div>
               <div className="resume-certs-badge">
                 {CERTIFICATIONS.map((cert) => cert.name).join(' · ')}
@@ -67,7 +77,7 @@ export default function Resume() {
                 <a href="https://github.com/renzodupont" target="_blank" rel="noopener noreferrer"><span className="screen-only">GitHub</span><span className="print-only">github.com/renzodupont</span></a>
               </div>
               <div className="resume-personal">
-                Lehi, Utah — On-Site (Lehi–Provo–SLC), Hybrid, or Remote | Authorized to work in the U.S. — no sponsorship required | Languages: English, Spanish
+                Lehi, Utah — on-site, hybrid, or remote | U.S. work authorized, no sponsorship | English &amp; Spanish
               </div>
             </div>
           </div>
@@ -85,23 +95,16 @@ export default function Resume() {
             </p>
           </section>
 
-          {/* CERTIFICATIONS */}
+          {/* CERTIFICATIONS & DIPLOMAS */}
           <section className="resume-section" id="certifications">
-            <h2>Certifications</h2>
+            <h2>Certifications &amp; Diplomas</h2>
 
-            {CERTIFICATIONS.map((cert) => (
-              <div className="cert-item" key={cert.name}>
-                <div className="cert-name">{cert.name}</div>
-                <div className="cert-meta">
-                  {cert.issuer} · Issued {cert.issued} · Credential ID {cert.credentialId}
-                </div>
+            {[...CERTIFICATIONS, ...DIPLOMAS].map((item) => (
+              <div className="cert-item" key={item.name}>
+                <span className="cert-name">{item.name}</span>
+                <span className="cert-meta"> — {item.meta}</span>
               </div>
             ))}
-
-            <div className="cert-development">
-              <strong>Professional development:</strong>{' '}
-              {PROFESSIONAL_DEVELOPMENT.map((course) => `${course.name} (${course.issuer}, ${course.issued})`).join(' · ')}
-            </div>
           </section>
 
           {/* CORE SKILLS & TECHNOLOGIES */}
@@ -201,23 +204,17 @@ export default function Resume() {
             </ul>
           </section>
 
-          {/* EDUCATION */}
+          {/* EDUCATION & PROFESSIONAL DEVELOPMENT */}
           <section className="resume-section" id="education">
-            <h2>Education</h2>
+            <h2>Education &amp; Professional Development</h2>
 
             <div className="education-item">
-              <div className="education-degree">Machine Learning and AI with Python — Harvard CS109x (2024)</div>
-              <div className="education-school">Diploma awarded following training in LLM training methods and using Python for reinforcement training</div>
+              <span className="education-degree">Bachelor of Science in Computer Science</span>
+              <span className="education-school"> — UTU, Uruguay · Evaluated as U.S. equivalent, Brooklyn College (CUNY)</span>
             </div>
 
-            <div className="education-item">
-              <div className="education-degree">Full Stack Development — MIT xPro (2021)</div>
-              <div className="education-school">MERN stack program; scored 100% on the final capstone project</div>
-            </div>
-
-            <div className="education-item">
-              <div className="education-degree">Bachelor of Science in Computer Science — UTU, Mercedes, Soriano, Uruguay</div>
-              <div className="education-school">U.S. equivalency certificate obtained; evaluated as U.S. equivalent at Brooklyn College, CUNY</div>
+            <div className="cert-development">
+              <strong>Professional development:</strong> {PROFESSIONAL_DEVELOPMENT.join(' · ')} — LinkedIn, 2026
             </div>
           </section>
         </div>

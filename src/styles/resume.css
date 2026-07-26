@@ -156,8 +156,11 @@
   font-weight: 600;
 }
 
+/* Credential rows are single-line (name + meta inline) to keep the
+   section compact — it sits above Experience and must not push it down. */
 .resume-web .cert-item {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
 }
 .resume-web .cert-name {
   font-size: 0.95rem;
@@ -180,7 +183,8 @@
 }
 
 .resume-web .education-item {
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
 }
 .resume-web .education-degree {
   font-size: 0.95rem;
@@ -466,7 +470,13 @@
 
   .print-page-break { display: block; page-break-before: always; break-before: page; }
 
-  #summary, #competencies { page-break-inside: avoid; page-break-after: avoid; }
+  /* Keep each intro block intact, but do NOT chain page-break-after here.
+     Combined with h2{page-break-after:avoid} and .job-header{page-break-
+     after:avoid}, an "avoid" on #competencies welds competencies → the
+     Experience heading → the first job header → its first bullet into one
+     unbreakable block. That block overflows page 1, jumps whole to page 2,
+     and strands ~40% of page 1 blank — which is what pushed this to 3 pages. */
+  #summary, #certifications, #competencies { page-break-inside: avoid; }
   #experience { page-break-inside: auto; }
   #education { page-break-inside: avoid; }
 
