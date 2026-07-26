@@ -187,6 +187,19 @@
   font-size: 0.85rem;
   color: #666666;
 }
+/* Per-stack experience totals under the summary. Reads as a scannable
+   index, so it sits tighter and slightly brighter than a footnote. */
+.resume-web .stack-years {
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  color: #9a9a9a;
+  line-height: 1.6;
+}
+.resume-web .stack-years strong {
+  color: #eaeaea;
+  font-weight: 600;
+}
+
 .resume-web .cert-development {
   margin-top: 0.75rem;
   font-size: 0.85rem;
@@ -483,6 +496,15 @@
   .resume-web .cert-item { margin-bottom: 0.25rem; page-break-inside: avoid; }
   .resume-web .cert-name { font-size: 8.5pt; font-weight: 700; color: #0f172a; }
   .resume-web .cert-meta { font-size: 8pt; color: #475569; }
+  .resume-web .stack-years {
+    margin-top: 0.2rem;
+    font-size: 8.5pt;
+    color: #374151;
+    line-height: 1.45;
+    page-break-inside: avoid;
+  }
+  .resume-web .stack-years strong { color: #0f172a; }
+
   .resume-web .cert-development {
     margin-top: 0.25rem;
     font-size: 8pt;

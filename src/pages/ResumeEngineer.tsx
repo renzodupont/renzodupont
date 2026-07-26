@@ -43,19 +43,24 @@ export default function ResumeEngineer() {
         <ResumeVersions />
 
         <div className="resume-container">
-          <ResumeHeader headline="Senior Software Engineer | TypeScript · Node.js · Python · Cloud · AI" />
+          <ResumeHeader headline="Senior Software Engineer | TypeScript · Node.js · C#/.NET · Python · Cloud · AI" />
 
           {/* PROFESSIONAL SUMMARY */}
           <section className="resume-section" id="summary">
             <h2>Professional Summary</h2>
             <p>
               Software engineer with <strong>18+ years</strong> building production systems end to end —
-              backend services, REST APIs, data migrations, and cloud infrastructure in TypeScript, Node.js,
-              and Python. Sole technical owner of an entire business technology stack spanning
-              <strong> 15+ integrated platforms</strong>, from data model through CI/CD and release
+              Web APIs, system integrations, data migrations, and cloud infrastructure across the
+              JavaScript and .NET ecosystems. Sole technical owner of an entire business technology stack
+              spanning <strong>15+ integrated platforms</strong>, from data model through CI/CD and release
               engineering. Led a 5-person engineering team, and build AI/LLM features and RAG pipelines on
               the Cloudflare edge stack.
             </p>
+            <div className="stack-years">
+              <strong>Experience by stack:</strong> SQL &amp; relational data 18+ yrs · Salesforce 16+ yrs ·
+              .NET / C# (ASP.NET, Web API, LINQ, WPF) 10+ yrs · JavaScript &amp; TypeScript (Node, React) 8+ yrs ·
+              Python 6+ yrs
+            </div>
           </section>
 
           <CredentialsSection />
@@ -116,7 +121,8 @@ export default function ResumeEngineer() {
                   <div className="job-title">Technical Consultant (Part-time / Independent)</div>
                 </div>
                 <ul>
-                  <li>Full-stack product delivery for US and LATAM clients — TypeScript, Python, PostgreSQL, React, RAG pipelines, and the Cloudflare edge stack (Workers, D1, R2, AI Gateway)</li>
+                  <li>Full-stack delivery for US and LATAM clients — C#/ASP.NET, TypeScript, Python, React, PostgreSQL, and the Cloudflare edge stack (Workers, D1, R2, AI Gateway)</li>
+                  <li>Build Web API layers and third-party system integrations with LINQ and SQL data access; ship RAG pipelines and LLM-backed features</li>
                   <li>Client-facing engineering — business analysis, requirements gathering, UI/UX, implementation, and end-user training</li>
                 </ul>
               </div>
@@ -135,7 +141,8 @@ export default function ResumeEngineer() {
                 </div>
                 <ul>
                   <li>Led a distributed engineering team across India, Nepal, and the Philippines delivering web and platform projects</li>
-                  <li>Built a data platform in React, Node, and AWS connecting campaign data to CRM records — <strong>increasing productivity 30%</strong> and <strong>call-scoring efficiency 60%</strong></li>
+                  <li>Delivered C#/ASP.NET Web API services with LINQ data access alongside React and Node front ends on AWS</li>
+                  <li>Built a data platform integrating campaign data with CRM records — <strong>increasing productivity 30%</strong> and <strong>call-scoring efficiency 60%</strong></li>
                 </ul>
 
                 <div className="job-header">
@@ -185,8 +192,8 @@ export default function ResumeEngineer() {
           <section className="resume-section" id="competencies">
             <h2>Core Skills &amp; Technologies</h2>
             <div className="tech-compact">
-              <strong>Languages &amp; Frameworks:</strong> TypeScript · JavaScript · Node.js · Python · React · C#/.NET · SQL<br />
-              <strong>Backend &amp; APIs:</strong> REST API Design · Integration Architecture · Data Modeling &amp; Migration · Batch Processing · Automated Testing · Release Management (GitHub CI/CD)<br />
+              <strong>Languages &amp; Frameworks:</strong> TypeScript · JavaScript · Node.js · Python · React · C# · .NET / ASP.NET · SQL<br />
+              <strong>Backend &amp; APIs:</strong> REST &amp; Web API Design · System Integrations · LINQ · Data Modeling &amp; Migration · Batch Processing · Automated Testing · Release Management (GitHub CI/CD)<br />
               <strong>AI &amp; Automation:</strong> OpenAI APIs · LLM Integrations · RAG Pipelines · Prompt Engineering · AI Workflow Automation · n8n · Zapier<br />
               <strong>AI Platforms &amp; Assistants:</strong> Claude Code · OpenCode · Codex · Local LLMs<br />
               <strong>Cloud &amp; Data:</strong> Cloudflare (Workers, D1, R2, AI Gateway) · AWS · PostgreSQL · SQL Server · Docker<br />
