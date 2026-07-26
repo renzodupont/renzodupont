@@ -168,8 +168,8 @@ export default function Resume() {
               <div className="job-title">Technical Consultant — Self-Employed</div>
             </div>
             <ul>
-              <li>Independent Salesforce and full-stack consulting for US and LATAM clients — TypeScript, Python, and cloud integrations</li>
-              <li>Delivered accounting automation and dashboards for a long-term client, <strong>saving $20,000+ annually</strong></li>
+              <li>Full-stack delivery outside the Salesforce stack — TypeScript, Python, PostgreSQL, RAG pipelines, and the Cloudflare edge stack (D1, R2, AI Gateway)</li>
+              <li>Client-facing consulting for US and LATAM clients — business analysis, requirements gathering, UI/UX, implementation, and end-user training</li>
             </ul>
             </div>
             </div>
