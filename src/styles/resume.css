@@ -213,8 +213,16 @@
 }
 
 /* ---------- RESUME VERSION SELECTOR ---------- */
+/* Variant switcher. Screen only — an exported PDF must never hint that
+   other versions of this resume exist. */
 .resume-versions {
-  display: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  padding: 0 clamp(1.25rem, 4vw, 2.5rem);
 }
 .resume-versions span {
   font-family: 'JetBrains Mono', monospace;
