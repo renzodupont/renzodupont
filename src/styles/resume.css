@@ -52,6 +52,20 @@
   color: #8be6a8;
   letter-spacing: 0.06em;
 }
+.resume-web .resume-certs-badge {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid rgba(100, 211, 134, 0.45);
+  border-radius: 999px;
+  background: rgba(100, 211, 134, 0.08);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8be6a8;
+}
 .resume-web .resume-contact {
   font-size: 0.9rem;
   color: #666666;
@@ -139,6 +153,29 @@
 }
 .resume-web .tech-compact strong {
   color: #eaeaea;
+  font-weight: 600;
+}
+
+.resume-web .cert-item {
+  margin-bottom: 0.6rem;
+}
+.resume-web .cert-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #eaeaea;
+}
+.resume-web .cert-meta {
+  font-size: 0.85rem;
+  color: #666666;
+}
+.resume-web .cert-development {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  line-height: 1.6;
+}
+.resume-web .cert-development strong {
+  color: #a0a0a0;
   font-weight: 600;
 }
 
@@ -300,6 +337,22 @@
     color: #0891b2;
     letter-spacing: 0.03em;
   }
+  /* Border, not background fill — the pill must survive printing with
+     background graphics turned off. */
+  .resume-web .resume-certs-badge {
+    display: inline-block;
+    margin-top: 0.3rem;
+    padding: 0.08rem 0.4rem;
+    border: 1pt solid #06b6d4;
+    border-radius: 3pt;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    color: #0891b2;
+  }
   .resume-web .resume-contact,
   .resume-web .resume-personal {
     font-size: 8pt;
@@ -387,6 +440,17 @@
     line-height: 1.5;
   }
   .resume-web .tech-compact strong { color: #0f172a; }
+
+  .resume-web .cert-item { margin-bottom: 0.25rem; page-break-inside: avoid; }
+  .resume-web .cert-name { font-size: 8.5pt; font-weight: 700; color: #0f172a; }
+  .resume-web .cert-meta { font-size: 8pt; color: #475569; }
+  .resume-web .cert-development {
+    margin-top: 0.25rem;
+    font-size: 8pt;
+    color: #475569;
+    line-height: 1.4;
+  }
+  .resume-web .cert-development strong { color: #0f172a; }
 
   .resume-web .education-item { margin-bottom: 0.3rem; }
   .resume-web .education-degree { font-size: 8.5pt; color: #0f172a; }

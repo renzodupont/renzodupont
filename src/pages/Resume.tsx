@@ -2,6 +2,24 @@ import { Link } from 'react-router-dom'
 import PageMeta from '../components/PageMeta'
 import '../styles/resume.css'
 
+/* Earned credentials. Adding one here updates the header badge and the
+   Certifications section together — no other edits needed. */
+const CERTIFICATIONS = [
+  {
+    name: 'Salesforce Certified Platform Administrator',
+    issuer: 'Salesforce',
+    issued: 'July 2026',
+    credentialId: '7967987',
+  },
+]
+
+/* Course completions — kept subordinate to earned credentials so they
+   don't dilute the certifications above. */
+const PROFESSIONAL_DEVELOPMENT = [
+  { name: 'The Cybersecurity Threat Landscape', issuer: 'LinkedIn', issued: 'Apr 2026' },
+  { name: 'SOC 2 Compliance Essential Training', issuer: 'LinkedIn', issued: 'Apr 2026' },
+]
+
 export default function Resume() {
   return (
     <div className="resume-page-root min-h-screen bg-dark-900 text-text-primary">
@@ -39,6 +57,9 @@ export default function Resume() {
                 <span className="resume-title-main">Salesforce Developer &amp; Administrator</span>
                 <span className="resume-title-detail">Apex · Flows · Integrations</span>
               </div>
+              <div className="resume-certs-badge">
+                {CERTIFICATIONS.map((cert) => cert.name).join(' · ')}
+              </div>
               <div className="resume-contact">
                 <a href="mailto:renzo@renzodupont.com">renzo@renzodupont.com</a> |{' '}
                 <a href="https://linkedin.com/in/renzo-dupont-b9797941" target="_blank" rel="noopener noreferrer"><span className="screen-only">LinkedIn</span><span className="print-only">linkedin.com/in/renzo-dupont-b9797941</span></a> |{' '}
@@ -55,15 +76,32 @@ export default function Resume() {
           <section className="resume-section" id="summary">
             <h2>Professional Summary</h2>
             <p>
-              Salesforce Developer and Administrator with <strong>18+ years</strong> building and
-              running Salesforce-centered business systems for sales, marketing, service, and finance. Sole technical
-              owner of Salesforce and the surrounding business technology stack — CRM setup, reporting, automation,
-              and integrations across <strong>15+ platforms</strong>. Hands-on in Apex, Flows, SOQL, and
-              REST integrations, plus Node.js, TypeScript, Python, and AI/LLM automation.
-              <strong> Cut technology spend 75%</strong>, <strong>lifted client retention 20%</strong>, and led a
-              5-person development and analytics team. Began on the platform as a direct contractor to Salesforce.com,
-              delivering the GEMINI project and Partner Portal.
+              Salesforce Certified Platform Administrator with <strong>18+ years</strong> building and running
+              Salesforce-centered business systems across sales, marketing, service, and finance. Sole technical
+              owner of Salesforce and the surrounding stack — Apex, Flows, SOQL, and REST integrations across
+              <strong> 15+ platforms</strong> — with a record of <strong>cutting technology spend 75%</strong> and
+              <strong> lifting client retention 20%</strong>. Began on the platform as a direct contractor to
+              Salesforce.com, delivering the GEMINI project and Partner Portal.
             </p>
+          </section>
+
+          {/* CERTIFICATIONS */}
+          <section className="resume-section" id="certifications">
+            <h2>Certifications</h2>
+
+            {CERTIFICATIONS.map((cert) => (
+              <div className="cert-item" key={cert.name}>
+                <div className="cert-name">{cert.name}</div>
+                <div className="cert-meta">
+                  {cert.issuer} · Issued {cert.issued} · Credential ID {cert.credentialId}
+                </div>
+              </div>
+            ))}
+
+            <div className="cert-development">
+              <strong>Professional development:</strong>{' '}
+              {PROFESSIONAL_DEVELOPMENT.map((course) => `${course.name} (${course.issuer}, ${course.issued})`).join(' · ')}
+            </div>
           </section>
 
           {/* CORE SKILLS & TECHNOLOGIES */}
@@ -163,13 +201,9 @@ export default function Resume() {
             </ul>
           </section>
 
-          {/* CERTIFICATIONS & EDUCATION */}
+          {/* EDUCATION */}
           <section className="resume-section" id="education">
-            <h2>Education &amp; Professional Development</h2>
-
-            <div className="education-item">
-              <div className="education-degree">Salesforce Administration Training — ADM201 (2010); Advanced Administrator coursework (2019)</div>
-            </div>
+            <h2>Education</h2>
 
             <div className="education-item">
               <div className="education-degree">Machine Learning and AI with Python — Harvard CS109x (2024)</div>
