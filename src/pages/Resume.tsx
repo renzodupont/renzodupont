@@ -31,6 +31,12 @@ const PROFESSIONAL_DEVELOPMENT = [
   'SOC 2 Compliance Essential Training',
 ]
 
+/* Vendor and institute training from the early career. */
+const TECHNICAL_TRAINING = [
+  'Microsoft C# & WPF — LATU, Montevideo · 2009–2010',
+  'ERP Development, SQL Server 2000 & Visual Basic 6 — Assist Ltda · 2007',
+]
+
 export default function Resume() {
   return (
     <div className="resume-page-root min-h-screen bg-dark-900 text-text-primary">
@@ -214,6 +220,7 @@ export default function Resume() {
               <strong>Salesforce:</strong> Apex · Lightning Web Components (LWC) · Flow Automation · SOQL/SOSL · REST API Integrations · Sales Cloud · Service Cloud · Data Modeling &amp; Migration (Data Loader) · Sandbox Strategy · Apex Test Coverage · Security &amp; Sharing · Reports &amp; Dashboards · Customer Portals · Visualforce<br />
               <strong>Platform Ownership:</strong> CRM &amp; Business Systems Ownership · Release Management (GitHub CI/CD) · Executive BI &amp; Client-Health Reporting · License Optimization · Team Leadership<br />
               <strong>Engineering:</strong> Node.js · TypeScript · Python · React · REST APIs · AI/LLM Workflows (n8n, Zapier) · AWS · Cloudflare · SQL Server · PostgreSQL<br />
+              <strong>AI Platforms &amp; Assistants:</strong> Claude Code · OpenCode · Codex · Local LLMs · RAG Strategies<br />
               <strong>Integrated Platforms:</strong> Twilio · RingCentral · Stripe · ChargeOver · QuickBooks · Google Workspace
             </div>
           </section>
@@ -223,12 +230,21 @@ export default function Resume() {
             <h2>Education &amp; Professional Development</h2>
 
             <div className="education-item">
-              <span className="education-degree">Bachelor of Science in Computer Science</span>
-              <span className="education-school"> — UTU, Uruguay · Evaluated as U.S. equivalent, Brooklyn College (CUNY)</span>
+              <span className="education-degree">Bachelor&rsquo;s Degree in Computer Science</span>
+              <span className="education-school"> — Universidad del Trabajo del Uruguay (UTU) · 2008</span>
+            </div>
+
+            <div className="education-item">
+              <span className="education-degree">U.S. Academic Equivalency</span>
+              <span className="education-school"> — Bachelor of Science in Computer Science, concentrations in Software Development &amp; Entrepreneurship · Evaluated 2024 by a professor of the Murray Koppelman School of Business, Brooklyn College (CUNY)</span>
             </div>
 
             <div className="cert-development">
               <strong>Professional development:</strong> {PROFESSIONAL_DEVELOPMENT.join(' · ')} — LinkedIn, 2026
+            </div>
+
+            <div className="cert-development">
+              <strong>Technical training:</strong> {TECHNICAL_TRAINING.join(' · ')}
             </div>
           </section>
         </div>
