@@ -129,6 +129,22 @@
   margin-bottom: 0.5rem;
 }
 .resume-web .job-header:first-of-type { margin-top: 0; }
+
+/* Each employer wraps its own roles and bullets. Without this, a role
+   block reads as ambiguous — the eye (and an ATS parser walking the DOM)
+   can attach a list of accomplishments to the company heading above it
+   rather than the one it belongs to. The indent plus rule makes the
+   ownership explicit, and the extra gap separates one employer from the
+   next more than roles are separated within an employer. */
+.resume-web .employer { margin-top: 1.9rem; }
+.resume-web .employer:first-of-type { margin-top: 0; }
+.resume-web .employer > .job-header { margin-top: 0; }
+.resume-web .employer-roles {
+  margin-top: 0.45rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid rgba(100, 211, 134, 0.28);
+}
+.resume-web .employer-roles > .job-header:first-child { margin-top: 0; }
 .resume-web .company-name {
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
@@ -433,6 +449,17 @@
     page-break-after: avoid;
     page-break-inside: avoid;
   }
+  /* Same employer grouping in print. A border prints even with
+     "Background graphics" unchecked, so the rule survives PDF export. */
+  .resume-web .employer { margin-top: 0.7rem; }
+  .resume-web .employer:first-of-type { margin-top: 0; }
+  .resume-web .employer > .job-header { margin-top: 0; }
+  .resume-web .employer-roles {
+    margin-top: 0.15rem;
+    padding-left: 0.45rem;
+    border-left: 1pt solid #9dd9e8;
+  }
+  .resume-web .employer-roles > .job-header:first-child { margin-top: 0; }
   /* Deliberately NO page-break-before/inside chaining on job lists:
      combined with .job-header{page-break-after:avoid} it welds header→list
      runs together and shoves whole blocks to the next page. Individual <li>

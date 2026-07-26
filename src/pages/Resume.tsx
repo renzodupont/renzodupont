@@ -116,11 +116,13 @@ export default function Resume() {
           <section className="resume-section" id="experience">
             <h2>Professional Experience</h2>
 
+            <div className="employer">
             <div className="job-header">
               <div className="company-name">GARGLE, INC — Lehi, Utah</div>
               <div className="job-period">January 2020 – Present</div>
             </div>
 
+            <div className="employer-roles">
             <div className="job-header">
               <div className="job-title">Senior Engineer</div>
               <div className="job-period">December 2023 – Present</div>
@@ -152,25 +154,33 @@ export default function Resume() {
               <li>Delivered <strong>500+</strong> Salesforce requests — custom objects, Flows, approvals, validation rules, and customer-facing portals</li>
               <li>Built Visualforce pages and REST integrations; ran large-scale data migrations with Data Loader — <strong>reducing data errors 20%</strong></li>
             </ul>
-
-            <div className="job-header">
-              <div className="company-name">DUPONT VENTURES LLC — Remote</div>
+            </div>
             </div>
 
+            <div className="employer">
+            <div className="job-header">
+              <div className="company-name">DUPONT VENTURES LLC — Remote</div>
+              <div className="job-period">April 2018 – Present</div>
+            </div>
+
+            <div className="employer-roles">
             <div className="job-header">
               <div className="job-title">Technical Consultant — Self-Employed</div>
-              <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
               <li>Independent Salesforce and full-stack consulting for US and LATAM clients — TypeScript, Python, and cloud integrations</li>
               <li>Delivered accounting automation and dashboards for a long-term client, <strong>saving $20,000+ annually</strong></li>
             </ul>
+            </div>
+            </div>
 
+            <div className="employer">
             <div className="job-header">
               <div className="company-name">DENTAL MARKETING | 123 POSTCARDS — Heber City, Utah</div>
               <div className="job-period">August 2013 – December 2019</div>
             </div>
 
+            <div className="employer-roles">
             <div className="job-header">
               <div className="job-title">Team Leader</div>
               <div className="job-period">February 2018 – December 2019</div>
@@ -187,12 +197,16 @@ export default function Resume() {
             <ul>
               <li>Built and maintained Salesforce-integrated systems connecting campaign data to CRM records via REST APIs</li>
             </ul>
+            </div>
+            </div>
 
+            <div className="employer">
             <div className="job-header">
               <div className="company-name">ALTIMETRIK — Montevideo, Uruguay · Direct contractor to Salesforce.com</div>
               <div className="job-period">2010 – 2014</div>
             </div>
 
+            <div className="employer-roles">
             <div className="job-header">
               <div className="job-title">Team Lead &amp; Salesforce Developer</div>
             </div>
@@ -200,17 +214,23 @@ export default function Resume() {
               <li>Delivered <strong>Salesforce&rsquo;s internal GEMINI project</strong>, working directly with Salesforce.com engineering teams — writing Apex and Visualforce and leading delivery end-to-end</li>
               <li>Built features for the <strong>Salesforce Partner Portal</strong>; mentored junior developers and introduced Agile practices across the team</li>
             </ul>
+            </div>
+            </div>
 
+            <div className="employer">
             <div className="job-header">
               <div className="company-name">EARLIER ROLES — Uruguay</div>
               <div className="job-period">2007 – 2012</div>
             </div>
+            <div className="employer-roles">
             <ul>
               <li><strong>Loasoft — Project Manager (2010–2011):</strong> Managed ERP delivery for enterprise clients</li>
               <li><strong>HWDotUY — Cofounder (2011–2012):</strong> Co-founded a software development and support firm</li>
               <li><strong>Logivai S.A. — Developer (2009–2010):</strong> Built ERP systems in C# and WPF</li>
               <li><strong>PowerStreet — Developer (2007–2008):</strong> Built VB and SQL Server products</li>
             </ul>
+            </div>
+            </div>
           </section>
 
           {/* CORE SKILLS & TECHNOLOGIES */}
@@ -219,7 +239,8 @@ export default function Resume() {
             <div className="tech-compact">
               <strong>Salesforce:</strong> Apex · Lightning Web Components (LWC) · Flow Automation · SOQL/SOSL · REST API Integrations · Sales Cloud · Service Cloud · Data Modeling &amp; Migration (Data Loader) · Sandbox Strategy · Apex Test Coverage · Security &amp; Sharing · Reports &amp; Dashboards · Customer Portals · Visualforce<br />
               <strong>Platform Ownership:</strong> CRM &amp; Business Systems Ownership · Release Management (GitHub CI/CD) · Executive BI &amp; Client-Health Reporting · License Optimization · Team Leadership<br />
-              <strong>Engineering:</strong> Node.js · TypeScript · Python · React · REST APIs · AI/LLM Workflows (n8n, Zapier) · AWS · Cloudflare · SQL Server · PostgreSQL<br />
+              <strong>Engineering:</strong> Node.js · TypeScript · Python · React · REST APIs · AWS · Cloudflare · SQL Server · PostgreSQL<br />
+              <strong>AI &amp; Automation:</strong> OpenAI APIs · LLM Integrations · Prompt Engineering · AI Workflow Automation · n8n · Zapier<br />
               <strong>AI Platforms &amp; Assistants:</strong> Claude Code · OpenCode · Codex · Local LLMs · RAG Strategies<br />
               <strong>Integrated Platforms:</strong> Twilio · RingCentral · Stripe · ChargeOver · QuickBooks · Google Workspace
             </div>
