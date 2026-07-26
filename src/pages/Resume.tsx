@@ -165,7 +165,7 @@ export default function Resume() {
 
             <div className="employer-roles">
             <div className="job-header">
-              <div className="job-title">Technical Consultant — Self-Employed</div>
+              <div className="job-title">Technical Consultant (Part-time / Independent)</div>
             </div>
             <ul>
               <li>Full-stack delivery outside the Salesforce stack — TypeScript, Python, PostgreSQL, RAG pipelines, and the Cloudflare edge stack (D1, R2, AI Gateway)</li>
