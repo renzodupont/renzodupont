@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageMeta from '../components/PageMeta'
 import {
-  CERTIFICATIONS,
+  CERTIFICATIONS_BADGE,
   ResumeVersions,
   ResumeHeader,
   CredentialsSection,
@@ -17,7 +17,7 @@ export default function Resume() {
     <div className="resume-page-root min-h-screen bg-dark-900 text-text-primary">
       <PageMeta
         title="Renzo Dupont — Salesforce Developer"
-        description="Salesforce Certified Platform Administrator and developer with 18+ years on the platform — Apex, LWC, Flows, SOQL, and REST integrations."
+        description="Salesforce Certified Platform Developer and Administrator with 18+ years on the platform — Apex, LWC, Flows, SOQL, and REST integrations."
         canonicalUrl="https://renzodupont.com/resume"
         noIndex
         jsonLd={{
@@ -45,14 +45,14 @@ export default function Resume() {
         <div className="resume-container">
           <ResumeHeader
             headline="Salesforce Developer | Apex | LWC | Flows | REST Integrations"
-            badge={CERTIFICATIONS.map((cert) => cert.name).join(' · ')}
+            badge={CERTIFICATIONS_BADGE}
           />
 
           {/* PROFESSIONAL SUMMARY */}
           <section className="resume-section" id="summary">
             <h2>Professional Summary</h2>
             <p>
-              Salesforce Certified Platform Administrator and developer with <strong>18+ years</strong> on the
+              Salesforce Certified Platform Developer and Administrator with <strong>18+ years</strong> on the
               platform — Apex, LWC, Flows, SOQL, and REST integrations. Sole technical owner of a customized
               Enterprise Edition org spanning sales, service, and finance, where I <strong>lifted client
               retention 20%</strong> and <strong>cut technology spend 75%</strong>. Began as a direct contractor

@@ -9,10 +9,20 @@ import { Link, useLocation } from 'react-router-dom'
    badge and the Certifications & Diplomas section on every variant. */
 export const CERTIFICATIONS = [
   {
+    name: 'Salesforce Certified Platform Developer',
+    short: 'Platform Developer',
+    meta: 'Salesforce · Jul 2026 · Credential ID 7976268',
+  },
+  {
     name: 'Salesforce Certified Platform Administrator',
+    short: 'Platform Administrator',
     meta: 'Salesforce · Jul 2026 · Credential ID 7967987',
   },
 ]
+
+/* Header pill. Uses the short names behind one "Salesforce Certified" so a
+   second credential widens the badge by a few words, not a full line. */
+export const CERTIFICATIONS_BADGE = `Salesforce Certified: ${CERTIFICATIONS.map((cert) => cert.short).join(' · ')}`
 
 /* Completed university programs. Sit alongside certifications up top —
    these are graded, capstone-bearing programs, not course completions. */
