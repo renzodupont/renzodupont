@@ -14,6 +14,11 @@ export const CERTIFICATIONS = [
     meta: 'Salesforce · Jul 2026 · Credential ID 7976268',
   },
   {
+    name: 'Salesforce Certified Platform Administrator II',
+    short: 'Platform Administrator II',
+    meta: 'Salesforce · Aug 2026 · Credential ID 7988640',
+  },
+  {
     name: 'Salesforce Certified Platform Administrator',
     short: 'Platform Administrator',
     meta: 'Salesforce · Jul 2026 · Credential ID 7967987',
