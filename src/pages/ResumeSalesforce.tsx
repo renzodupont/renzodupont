@@ -88,7 +88,7 @@ export default function ResumeSalesforce() {
 
             <div className="job-header">
               <div className="job-title">Senior Engineer / Business Systems Architect</div>
-              <div className="job-period">December 2023 – Present</div>
+              <div className="job-period">December 2023 – July 31, 2026</div>
             </div>
             <ul>
               <li>Own Salesforce and the full business technology stack for an 80+ employee company, including CRM workflows, internal tools, executive reporting, cloud infrastructure, vendor systems, and integrations across 15+ platforms</li>

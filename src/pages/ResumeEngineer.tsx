@@ -72,13 +72,13 @@ export default function ResumeEngineer() {
             <div className="employer">
               <div className="job-header">
                 <div className="company-name">GARGLE, INC — Lehi, Utah</div>
-                <div className="job-period">January 2020 – Present</div>
+                <div className="job-period">January 2020 – July 31, 2026</div>
               </div>
 
               <div className="employer-roles">
                 <div className="job-header">
                   <div className="job-title">Senior Engineer</div>
-                  <div className="job-period">December 2023 – Present</div>
+                  <div className="job-period">December 2023 – July 31, 2026</div>
                 </div>
                 <ul>
                   <li>Sole owner and architect of the company&rsquo;s business technology stack — backend services, internal tools, cloud infrastructure, and integrations across <strong>15+ platforms</strong></li>

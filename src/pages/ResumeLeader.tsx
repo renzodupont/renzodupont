@@ -88,7 +88,7 @@ export default function ResumeLeader() {
 
             <div className="job-header">
               <div className="job-title">Senior Engineer / Business Systems Architect</div>
-              <div className="job-period">December 2023 – Present</div>
+              <div className="job-period">December 2023 – July 31, 2026</div>
             </div>
             <ul>
               <li>Serve as the senior technical leader for the entire company (80+ employees) — own architecture decisions across a stack spanning Salesforce, Node.js, React, Python, AWS, and GCP, manage vendor relationships, and set the technical roadmap</li>
