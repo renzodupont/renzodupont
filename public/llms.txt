@@ -1,0 +1,23 @@
+# Renzo Dupont
+
+> Salesforce & Software Engineer with 18+ years building business systems, integrations, automation, and software platforms.
+
+- Website: https://renzodupont.com
+- Resume: https://renzodupont.com/resume
+- Email: renzo@renzodupont.com
+- Location: Lehi, Utah
+
+## Profile
+
+Renzo Dupont is a Salesforce and software engineer. Public pages describe professional experience across Salesforce, integrations, automation, and software platforms. This site is a professional career profile, not a consulting intake funnel.
+
+## Selected work
+
+- OpenAva — Founder & Owner, 2024 – Present. Multi-tenant business platform shipping as Ava CRM and Agency OS.
+- Gargle, Inc. — Senior Engineer / Business Systems Architect, 2020 – Jul 2026.
+- DentalMarketing.net / 123 Postcards — historical Fractional CTO, previously Team Leader & Developer, 2013 – 2019 and 2021 – 2023.
+- Credilit S.A. — historical Fractional CTO, 2014 – 2025.
+
+## Focus
+
+Salesforce development, administration, integrations, and business systems.
