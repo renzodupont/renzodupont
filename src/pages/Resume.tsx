@@ -112,6 +112,23 @@ export default function Resume() {
 
             <div className="employer">
             <div className="job-header">
+              <div className="company-name">HONEYGRID, INC</div>
+              <div className="job-period">April 2024 – Present</div>
+            </div>
+
+            <div className="employer-roles">
+            <div className="job-header">
+              <div className="job-title">Sr. Software Engineer</div>
+              <div className="job-period">April 2024 – Present</div>
+            </div>
+            <ul>
+              <li>Building generative AI features for a digital marketing platform using TypeScript on Cloudflare (Workers, Pages, D1, R2, KV) with multiple LLM providers — complementing Salesforce expertise with modern cloud-native development</li>
+            </ul>
+            </div>
+            </div>
+
+            <div className="employer">
+            <div className="job-header">
               <div className="company-name">DENTAL MARKETING | 123 POSTCARDS — Heber City, Utah</div>
               <div className="job-period">August 2013 – December 2019</div>
             </div>
