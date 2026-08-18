@@ -121,11 +121,11 @@ export default function ResumeSalesforce() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Founder</div>
+              <div className="job-title">Founder &amp; Principal Technical Consultant</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Founded an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
+              <li>Lead an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
               <li>Selected operating brands and ventures include STARTUPP.AI / StartUpp.Cloud, OpenAva, and Lumina Consulting Group; the long-running practice was formalized under Dupont Ventures LLC in 2026</li>
             </ul>
 

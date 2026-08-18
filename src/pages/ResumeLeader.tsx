@@ -120,12 +120,12 @@ export default function ResumeLeader() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Founder</div>
+              <div className="job-title">Founder &amp; Principal Technical Consultant</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Founded an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
-              <li>Built and managed distributed engineering teams across North and South America, establishing delivery processes, mentoring engineers, and aligning technical output with business milestones; the long-running practice was formalized under <strong>Dupont Ventures LLC</strong> in 2026</li>
+              <li>Lead an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
+              <li>Manage distributed engineering teams across North and South America, establishing delivery processes, mentoring engineers, and aligning technical output with business milestones; the long-running practice was formalized under <strong>Dupont Ventures LLC</strong> in 2026</li>
               <li><strong>Selected operating brands and ventures:</strong> STARTUPP.AI / StartUpp.Cloud, OpenAva, and Lumina Consulting Group</li>
             </ul>
 

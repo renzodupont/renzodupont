@@ -121,12 +121,12 @@ export default function ResumeSenior() {
             </div>
 
             <div className="job-header">
-              <div className="job-title">Founder</div>
+              <div className="job-title">Founder &amp; Principal Technical Consultant</div>
               <div className="job-period">April 2018 – Present</div>
             </div>
             <ul>
-              <li>Founded an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
-              <li>Focus on architecture, technical strategy, and mentoring teams from pre-seed through growth-stage environments; the long-running practice was formalized under <strong>Dupont Ventures LLC</strong> in 2026</li>
+              <li>Lead an independent consulting and product practice focused on Salesforce, web platforms, cloud systems, AI features, automation, and data workflows for startups and mid-market companies</li>
+              <li>Focus on architecture, hands-on delivery, technical strategy, and mentoring teams from pre-seed through growth-stage environments; the long-running practice was formalized under <strong>Dupont Ventures LLC</strong> in 2026</li>
               <li><strong>Selected operating brands and ventures:</strong> STARTUPP.AI / StartUpp.Cloud, OpenAva, and Lumina Consulting Group</li>
             </ul>
 
