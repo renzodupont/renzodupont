@@ -11,7 +11,11 @@ import '../styles/resume.css'
 /* Software-engineering variant. Same roles and same facts as /resume, but
    led by languages, services, APIs and cloud rather than the Salesforce
    platform — Salesforce appears as the enterprise system of record it is,
-   not as the headline. */
+   not as the headline.
+
+   Section order for this variant: Summary → Core Skills → Experience →
+   Certifications → Education. Engineering stack must lead; Salesforce
+   credentials must not be the first signal a generalist recruiter sees. */
 export default function ResumeEngineer() {
   return (
     <div className="resume-page-root min-h-screen bg-dark-900 text-text-primary">
@@ -51,9 +55,9 @@ export default function ResumeEngineer() {
             <p>
               Software engineer with <strong>18+ years</strong> building production systems end to end —
               Web APIs, system integrations, data migrations, and cloud infrastructure across the
-              JavaScript and .NET ecosystems. Sole technical owner of an entire business technology stack
+              JavaScript and .NET ecosystems. Architected and led an entire business technology stack
               spanning <strong>15+ integrated platforms</strong>, from data model through CI/CD and release
-              engineering. Led a 5-person engineering team, and build AI/LLM features and RAG pipelines on
+              engineering. Led a 5-person engineering team and shipped AI/LLM features and RAG pipelines on
               the Cloudflare edge stack.
             </p>
             <div className="stack-years">
@@ -63,9 +67,21 @@ export default function ResumeEngineer() {
             </div>
           </section>
 
-          <CredentialsSection />
+          {/* CORE SKILLS — before credentials so engineering stack leads */}
+          <section className="resume-section" id="competencies">
+            <h2>Core Skills &amp; Technologies</h2>
+            <div className="tech-compact">
+              <strong>Languages &amp; Frameworks:</strong> TypeScript · JavaScript · Node.js · Python · React · C# · .NET / ASP.NET · SQL<br />
+              <strong>Backend &amp; APIs:</strong> REST &amp; Web API Design · System Integrations · LINQ · Data Modeling &amp; Migration · Batch Processing · Automated Testing · Release Management (GitHub CI/CD)<br />
+              <strong>AI &amp; Automation:</strong> OpenAI APIs · LLM Integrations · RAG Pipelines · Prompt Engineering · AI Workflow Automation · n8n · Zapier<br />
+              <strong>AI Platforms &amp; Assistants:</strong> Claude Code · OpenCode · Codex · Local LLMs<br />
+              <strong>Cloud &amp; Data:</strong> Cloudflare (Workers, D1, R2, AI Gateway) · AWS · PostgreSQL · SQL Server · Docker<br />
+              <strong>Enterprise Platforms:</strong> Salesforce (Apex, LWC, Flows, SOQL) · Twilio · RingCentral · Stripe · QuickBooks · Google Workspace<br />
+              <strong>Delivery:</strong> Team Leadership · Business Analysis · UI/UX · Stakeholder-Facing Implementation
+            </div>
+          </section>
 
-          {/* PROFESSIONAL EXPERIENCE */}
+          {/* PROFESSIONAL EXPERIENCE — contiguous block before certs/education */}
           <section className="resume-section" id="experience">
             <h2>Professional Experience</h2>
 
@@ -81,13 +97,12 @@ export default function ResumeEngineer() {
                   <div className="job-period">December 2023 – July 31, 2026</div>
                 </div>
                 <ul>
-                  <li>Sole owner and architect of the company&rsquo;s business technology stack — backend services, internal tools, cloud infrastructure, and integrations across <strong>15+ platforms</strong></li>
-                  <li>Build backend services and REST APIs in Node.js, TypeScript, and Python connecting billing, telephony, and productivity systems — Stripe, ChargeOver, QuickBooks, Twilio, RingCentral, and Google Workspace</li>
-                  <li>Design and ship AI/LLM automation for data enrichment, workflow routing, and reporting using custom Node.js services, n8n, and Zapier</li>
-                  <li>Own release engineering — GitHub CI/CD, multi-environment sandbox strategy, and automated test coverage standards</li>
+                  <li>Architected and led the company&rsquo;s business technology stack across backend services, internal tools, cloud infrastructure, and integrations spanning <strong>15+ platforms</strong></li>
+                  <li>Built backend services and REST APIs in Node.js, TypeScript, Python, and C#/ASP.NET connecting billing, telephony, and productivity systems — Stripe, ChargeOver, QuickBooks, Twilio, RingCentral, and Google Workspace</li>
+                  <li>Shipped AI/LLM automation and RAG pipelines for data enrichment, workflow routing, and reporting on Node.js services and the Cloudflare edge stack (Workers, D1, R2, AI Gateway), plus n8n and Zapier</li>
+                  <li>Owned release engineering — GitHub CI/CD, multi-environment strategy, automated tests; used PostgreSQL and SQL Server alongside Python for data pipelines and executive reporting — <strong>client retention +20%</strong></li>
                   <li>Ran large-scale data migrations and system merges with batch jobs, validation, and integrity controls at zero downtime, replacing work previously outsourced at <strong>$20K+ per engagement</strong></li>
-                  <li>Built executive dashboards and client-health reporting in Python — <strong>increasing client retention 20%</strong></li>
-                  <li>Architect and maintain the heavily customized Salesforce Enterprise Edition org that serves as the system of record — Apex, LWC, Flows, and SOQL</li>
+                  <li>Architected and maintained the Salesforce Enterprise Edition org as the system of record — Apex, LWC, Flows, and SOQL — with stakeholder-facing delivery from requirements through implementation and training</li>
                 </ul>
 
                 <div className="job-header">
@@ -95,36 +110,21 @@ export default function ResumeEngineer() {
                   <div className="job-period">June 2021 – December 2023</div>
                 </div>
                 <ul>
-                  <li>Led a 5-person development and analytics team across Node.js, React, Python, and SQL Server — sprint planning, code review, and delivery</li>
+                  <li>Player-coach: led a 5-person development and analytics team across Node.js, TypeScript, React, Python, and SQL Server while remaining hands-on on APIs, integrations, and production troubleshooting</li>
+                  <li>Owned Web API design, third-party integrations, and UI/UX delivery for internal tools — sprint planning, code review, and stakeholder demos</li>
                   <li><strong>Reduced technology expenses 75%</strong> by consolidating redundant tools, renegotiating vendor contracts, and optimizing infrastructure and license allocation</li>
                 </ul>
 
+                <div className="role-keep">
                 <div className="job-header">
-                  <div className="job-title">Advanced Administrator &amp; Developer</div>
+                  <div className="job-title">Salesforce Advanced Administrator</div>
                   <div className="job-period">January 2020 – May 2021</div>
                 </div>
                 <ul>
-                  <li>Delivered <strong>500+</strong> platform, reporting, and automation requests across accounting, sales, marketing, and support</li>
+                  <li>Delivered <strong>500+</strong> platform, reporting, and automation requests <strong>per quarter</strong> across accounting, sales, marketing, and support</li>
                   <li>Built REST and third-party integrations and ran large-scale data migrations with validation scripts — <strong>reducing data errors 20%</strong></li>
                 </ul>
-              </div>
-            </div>
-
-            <div className="employer">
-              <div className="job-header">
-                <div className="company-name">DUPONT VENTURES LLC — Remote</div>
-                <div className="job-period">April 2018 – Present</div>
-              </div>
-
-              <div className="employer-roles">
-                <div className="job-header">
-                  <div className="job-title">Technical Consultant (Part-time / Independent)</div>
                 </div>
-                <ul>
-                  <li>Full-stack delivery for US and LATAM clients — C#/ASP.NET, TypeScript, Python, React, PostgreSQL, and the Cloudflare edge stack (Workers, D1, R2, AI Gateway)</li>
-                  <li>Build Web API layers and third-party system integrations with LINQ and SQL data access; ship RAG pipelines and LLM-backed features</li>
-                  <li>Client-facing engineering — business analysis, requirements gathering, UI/UX, implementation, and end-user training</li>
-                </ul>
               </div>
             </div>
 
@@ -140,9 +140,9 @@ export default function ResumeEngineer() {
                   <div className="job-period">February 2018 – December 2019</div>
                 </div>
                 <ul>
-                  <li>Led a distributed engineering team across India, Nepal, and the Philippines delivering web and platform projects</li>
-                  <li>Delivered C#/ASP.NET Web API services with LINQ data access alongside React and Node front ends on AWS</li>
-                  <li>Built a data platform integrating campaign data with CRM records — <strong>increasing productivity 30%</strong> and <strong>call-scoring efficiency 60%</strong></li>
+                  <li>Hands-on lead for a distributed engineering team (India, Nepal, Philippines) — business analysis, requirements, UI/UX, implementation, and end-user training alongside delivery management</li>
+                  <li>Delivered C#/ASP.NET Web API services with LINQ and SQL data access alongside TypeScript, React, and Node front ends on AWS; PostgreSQL and SQL Server for campaign and CRM data stores</li>
+                  <li>Built a data platform integrating campaign data with CRM records via REST — <strong>productivity +30%</strong> and <strong>call-scoring efficiency +60%</strong></li>
                 </ul>
 
                 <div className="job-header">
@@ -150,20 +150,20 @@ export default function ResumeEngineer() {
                   <div className="job-period">August 2013 – February 2018</div>
                 </div>
                 <ul>
-                  <li>Built and maintained integration services connecting campaign data to CRM records via REST APIs</li>
+                  <li>Built and maintained integration services and Web APIs connecting campaign data to CRM records — C#, REST, and SQL</li>
                 </ul>
               </div>
             </div>
 
             <div className="employer">
               <div className="job-header">
-                <div className="company-name">ALTIMETRIK — Montevideo, Uruguay · Direct contractor to Salesforce.com</div>
+                <div className="company-name">ALTIMETRIK | Salesforce.com Engineering Contractor — Montevideo, Uruguay</div>
                 <div className="job-period">2010 – 2014</div>
               </div>
 
               <div className="employer-roles">
                 <div className="job-header">
-                  <div className="job-title">Team Lead &amp; Developer</div>
+                  <div className="job-title">Team Lead</div>
                 </div>
                 <ul>
                   <li>Led a development team delivering <strong>Salesforce&rsquo;s internal GEMINI platform</strong>, working directly with Salesforce.com engineering teams on architecture and delivery standards</li>
@@ -188,20 +188,7 @@ export default function ResumeEngineer() {
             </div>
           </section>
 
-          {/* CORE SKILLS & TECHNOLOGIES */}
-          <section className="resume-section" id="competencies">
-            <h2>Core Skills &amp; Technologies</h2>
-            <div className="tech-compact">
-              <strong>Languages &amp; Frameworks:</strong> TypeScript · JavaScript · Node.js · Python · React · C# · .NET / ASP.NET · SQL<br />
-              <strong>Backend &amp; APIs:</strong> REST &amp; Web API Design · System Integrations · LINQ · Data Modeling &amp; Migration · Batch Processing · Automated Testing · Release Management (GitHub CI/CD)<br />
-              <strong>AI &amp; Automation:</strong> OpenAI APIs · LLM Integrations · RAG Pipelines · Prompt Engineering · AI Workflow Automation · n8n · Zapier<br />
-              <strong>AI Platforms &amp; Assistants:</strong> Claude Code · OpenCode · Codex · Local LLMs<br />
-              <strong>Cloud &amp; Data:</strong> Cloudflare (Workers, D1, R2, AI Gateway) · AWS · PostgreSQL · SQL Server · Docker<br />
-              <strong>Enterprise Platforms:</strong> Salesforce (Apex, LWC, Flows, SOQL) · Twilio · RingCentral · Stripe · QuickBooks · Google Workspace<br />
-              <strong>Delivery:</strong> Team Leadership · Business Analysis · UI/UX · Stakeholder-Facing Implementation
-            </div>
-          </section>
-
+          <CredentialsSection />
           <EducationSection />
         </div>
       </div>
