@@ -29,6 +29,16 @@ export const CERTIFICATIONS = [
    second credential widens the badge by a few words, not a full line. */
 export const CERTIFICATIONS_BADGE = `Salesforce Certified: ${CERTIFICATIONS.map((cert) => cert.short).join(' · ')}`
 
+/* Admin-first ordering — same credentials, Admin II and Admin ahead of
+   Platform Developer so Administrator applications lead with the right signal. */
+export const CERTIFICATIONS_ADMIN = [
+  CERTIFICATIONS[1],
+  CERTIFICATIONS[2],
+  CERTIFICATIONS[0],
+]
+
+export const CERTIFICATIONS_BADGE_ADMIN = `Salesforce Certified: ${CERTIFICATIONS_ADMIN.map((cert) => cert.short).join(' · ')}`
+
 /* Completed university programs. Sit alongside certifications up top —
    these are graded, capstone-bearing programs, not course completions. */
 export const DIPLOMAS = [
@@ -65,6 +75,15 @@ export function ResumeVersions() {
       <Link to="/resume" className={pathname === '/resume' ? 'active' : ''}>
         Salesforce Developer
       </Link>
+      <Link to="/resume-admin" className={pathname === '/resume-admin' ? 'active' : ''}>
+        Salesforce Administrator
+      </Link>
+      <Link to="/resume-pm" className={pathname === '/resume-pm' ? 'active' : ''}>
+        Project / Product Leader
+      </Link>
+      <Link to="/resume-it-director" className={pathname === '/resume-it-director' ? 'active' : ''}>
+        IT &amp; Business Systems
+      </Link>
       <Link to="/resume-engineer" className={pathname === '/resume-engineer' ? 'active' : ''}>
         Software Engineer
       </Link>
@@ -95,11 +114,19 @@ export function ResumeHeader({ headline, badge }: { headline: string; badge?: st
   )
 }
 
-export function CredentialsSection() {
+export function CredentialsSection({
+  priority = 'developer',
+}: {
+  priority?: 'developer' | 'admin'
+}) {
+  const certifications = priority === 'admin' ? CERTIFICATIONS_ADMIN : CERTIFICATIONS
+  /* Admin: Salesforce certs only up top — diplomas sit under Education in
+     chronological order so the first page leads with Admin credentials. */
+  const items = priority === 'admin' ? certifications : [...certifications, ...DIPLOMAS]
   return (
     <section className="resume-section" id="certifications">
-      <h2>Certifications &amp; Diplomas</h2>
-      {[...CERTIFICATIONS, ...DIPLOMAS].map((item) => (
+      <h2>{priority === 'admin' ? 'Certifications' : 'Certifications & Diplomas'}</h2>
+      {items.map((item) => (
         <div className="cert-item" key={item.name}>
           <span className="cert-name">{item.name}</span>
           <span className="cert-meta"> — {item.meta}</span>
@@ -109,7 +136,15 @@ export function CredentialsSection() {
   )
 }
 
-export function EducationSection() {
+export function EducationSection({
+  includeDiplomas = false,
+}: {
+  includeDiplomas?: boolean
+}) {
+  /* Chronological: MIT xPro 2021, then Harvard CS109x 2024. DIPLOMAS is
+     newest-first for the developer credentials block. */
+  const diplomasChronological = [...DIPLOMAS].reverse()
+
   return (
     <section className="resume-section" id="education">
       <h2>Education &amp; Professional Development</h2>
@@ -123,6 +158,14 @@ export function EducationSection() {
         <span className="education-degree">U.S. Academic Equivalency</span>
         <span className="education-school"> — Bachelor of Science in Computer Science, concentrations in Software Development &amp; Entrepreneurship · Evaluated 2024 by a professor of the Murray Koppelman School of Business, Brooklyn College (CUNY)</span>
       </div>
+
+      {includeDiplomas &&
+        diplomasChronological.map((item) => (
+          <div className="education-item" key={item.name}>
+            <span className="education-degree">{item.name}</span>
+            <span className="education-school"> — {item.meta}</span>
+          </div>
+        ))}
 
       <div className="cert-development">
         <strong>Professional development:</strong> {PROFESSIONAL_DEVELOPMENT.join(' · ')} — LinkedIn, 2026

@@ -12,9 +12,9 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(100, 211, 134, 0.3);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .resume-web .profile-image {
@@ -175,8 +175,8 @@
 /* Credential rows are single-line (name + meta inline) to keep the
    section compact — it sits above Experience and must not push it down. */
 .resume-web .cert-item {
-  margin-bottom: 0.3rem;
-  line-height: 1.5;
+  margin-bottom: 0.1rem;
+  line-height: 1.3;
 }
 .resume-web .cert-name {
   font-size: 0.95rem;
@@ -341,9 +341,9 @@
   }
 
   .resume-web .resume-header {
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 2px solid #06b6d4;
+    margin-bottom: 0.35rem;
+    padding-bottom: 0;
+    border-bottom: none;
     display: block;
     text-align: center;
     width: 100%;
@@ -493,7 +493,7 @@
   }
   .resume-web .tech-compact strong { color: #0f172a; }
 
-  .resume-web .cert-item { margin-bottom: 0.25rem; page-break-inside: avoid; }
+  .resume-web .cert-item { margin-bottom: 0.05rem; line-height: 1.25; page-break-inside: avoid; }
   .resume-web .cert-name { font-size: 8.5pt; font-weight: 700; color: #0f172a; }
   .resume-web .cert-meta { font-size: 8pt; color: #475569; }
   .resume-web .stack-years {
@@ -538,4 +538,11 @@
   #education { page-break-inside: avoid; }
 
   .resume-web .resume-section li { page-break-inside: avoid; }
+
+  /* Keep a short role (header + its bullets) from splitting across a page
+     boundary — used for the 2-bullet Admin stretch at Gargle. */
+  .resume-web .role-keep {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
 }

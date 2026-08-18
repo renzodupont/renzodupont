@@ -48,9 +48,7 @@ export default function ContactSection() {
             />
           </div>
           <p className="text-text-muted text-center max-w-xl mx-auto mb-10 leading-relaxed">
-            I'm always glad to talk through a gnarly integration, a migration nobody wants to own,
-            or how a business should be structuring its systems. Email is the fastest way to reach
-            me.
+            For professional inquiries, email is the fastest way to reach me.
           </p>
 
           <div className="card-glass rounded-2xl p-6 md:p-8 mb-10 space-y-5 text-left">

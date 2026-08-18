@@ -15,7 +15,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-dark-900 text-text-primary">
       <PageMeta
         title={`${profile.name} — ${profile.title}`}
-        description="Business systems and platform architect with 18 years owning Salesforce architecture, finance and order-to-cash integrations, zero-downtime data migrations, executive reporting, and the small engineering teams that ship them."
+        description="Salesforce & Software Engineer with 18+ years building business systems, integrations, automation, and software platforms."
         canonicalUrl="https://renzodupont.com"
         ogImage="https://renzodupont.com/images/profile.jpg"
         jsonLd={{

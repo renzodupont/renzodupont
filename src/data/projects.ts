@@ -28,20 +28,20 @@ export const projects: Project[] = [
   {
     slug: 'openava',
     company: 'OpenAva',
-    role: 'Founder & Principal Engineer',
+    role: 'Founder & Owner',
     period: '2024 – Present',
     context:
       'A multi-tenant, white-label business platform shipping as two products: Ava CRM for operators and Agency OS for marketing agencies.',
     problem:
       'Small operators outgrow spreadsheets but cannot absorb the cost or implementation overhead of enterprise CRM. The gap is not features — it is that every vertical needs a slightly different data model, and most platforms make you fork the product to get one.',
     architecture: [
-      'PostgreSQL-backed multi-tenant data layer with per-tenant isolation, so a single deployment serves independent customers without forking the schema per vertical',
-      'User-defined custom objects and fields — the same mechanism that lets one codebase serve dental practices, real-estate teams, lending offices, restaurants, and workshops',
-      'A single versioned REST API (api.startupp.ai) as the only path to data; every client — web app, agency console, customer portal, third-party integration — is a consumer of that one contract',
-      'React + TypeScript application front ends; Astro static marketing surface on Cloudflare Pages, so public pages ship fully-crawlable HTML with no client-side routing',
-      'BYOK model for AI features — customers supply their own model keys, which keeps inference cost off the platform and customer data out of a shared vendor account',
-      'Twelve-plus functional modules built on shared primitives (contacts, invoicing, projects, inventory, forms, email, workflows, reporting) rather than as separate applications',
-      'Localized to English, Spanish, and Japanese at the routing layer, not as a bolt-on translation pass',
+      'Designed a PostgreSQL-backed multi-tenant data layer with per-tenant isolation, so a single deployment serves independent customers without forking the schema per vertical',
+      'Created user-defined custom objects and fields — the same mechanism that lets one codebase serve dental practices, real-estate teams, lending offices, restaurants, and workshops',
+      'Architected a single versioned REST API (api.startupp.ai) as the only path to data; every client — web app, agency console, customer portal, third-party integration — is a consumer of that one contract',
+      'Built React + TypeScript application front ends and an Astro static marketing surface on Cloudflare Pages, so public pages ship fully-crawlable HTML with no client-side routing',
+      'Designed a BYOK model for AI features — customers supply their own model keys, which keeps inference cost off the platform and customer data out of a shared vendor account',
+      'Built twelve-plus functional modules on shared primitives (contacts, invoicing, projects, inventory, forms, email, workflows, reporting) rather than as separate applications',
+      'Localized the product to English, Spanish, and Japanese at the routing layer, not as a bolt-on translation pass',
     ],
     stack: [
       'PostgreSQL',
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     slug: 'gargle',
     company: 'Gargle, Inc.',
     role: 'Senior Engineer / Business Systems Architect',
-    period: '2020 – Present · Lehi, Utah',
+    period: '2020 – Jul 2026 · Lehi, Utah',
     context:
       'An 80-person dental marketing company running sales, marketing, service, and finance on a heavily customized Salesforce Enterprise Edition org.',
     problem:

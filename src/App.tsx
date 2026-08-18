@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import Resume from './pages/Resume'
+import ResumeAdmin from './pages/ResumeAdmin'
+import ResumePM from './pages/ResumePM'
+import ResumeITDirector from './pages/ResumeITDirector'
 import ResumeEngineer from './pages/ResumeEngineer'
 import { useSmoothScroll } from './hooks/useSmoothScroll'
 
@@ -11,6 +14,9 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/resume" element={<Resume />} />
+      <Route path="/resume-admin" element={<ResumeAdmin />} />
+      <Route path="/resume-pm" element={<ResumePM />} />
+      <Route path="/resume-it-director" element={<ResumeITDirector />} />
       {/* Software-engineering variant of the same history — see ResumeShared */}
       <Route path="/resume-engineer" element={<ResumeEngineer />} />
       {/* Legacy per-audience resume variants — consolidated into a single /resume */}

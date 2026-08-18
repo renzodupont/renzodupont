@@ -34,9 +34,8 @@ export default function HeroSection() {
               data-hero="badge"
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/[0.06] mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-accent animate-pulse-glow" />
               <span className="text-xs font-mono text-accent">
-                {profile.currentRole} · {profile.location}
+                {profile.location}
               </span>
             </div>
 
@@ -55,8 +54,7 @@ export default function HeroSection() {
 
             {/* Subtext */}
             <p data-hero="subheadline" className="text-text-muted max-w-lg mb-8 leading-relaxed">
-              18 years working with Salesforce and business systems — building CRM solutions,
-              integrations, reporting, and automation, and leading small engineering teams.
+              {profile.subtitle}
             </p>
 
             {/* CTAs */}

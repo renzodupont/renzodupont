@@ -11,10 +11,8 @@
 
 export const profile = {
   name: 'Renzo Dupont',
-  title: 'Salesforce Developer & Administrator',
-  subtitle: 'Salesforce development, administration, and integrations',
-  /** Shown in the hero badge. One line to update when the role changes. */
-  currentRole: 'Senior Engineer at Gargle, Inc.',
+  title: 'Salesforce & Software Engineer',
+  subtitle: '18+ years building business systems, integrations, automation, and software platforms.',
   location: 'Lehi, Utah',
   languages: 'English, Spanish',
   focus: 'Salesforce development, administration, integrations, and business systems',
