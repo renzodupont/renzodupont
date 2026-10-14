@@ -5,7 +5,7 @@ import { join, extname } from 'path'
 
 const DIST = join(process.cwd(), 'dist')
 const PORT = 4173
-const ROUTES = ['/', '/resume', '/resume-admin', '/resume-pm', '/resume-it-director', '/resume-engineer']
+const ROUTES = ['/', '/resume', '/resume-admin', '/resume-pm', '/resume-it-director', '/resume-engineer', '/resume-fractional']
 
 function startServer(): Promise<ReturnType<typeof createServer>> {
   return new Promise((resolve) => {

@@ -3,9 +3,11 @@ import PageMeta from '../components/PageMeta'
 import {
   CERTIFICATIONS_BADGE,
   ResumeVersions,
+  ResumeDownload,
   ResumeHeader,
   CredentialsSection,
   EducationSection,
+  VantaExperience,
 } from '../components/ResumeShared'
 import '../styles/resume.css'
 
@@ -14,7 +16,7 @@ import '../styles/resume.css'
    variant at /resume-engineer. */
 export default function Resume() {
   return (
-    <div className="resume-page-root min-h-screen bg-dark-900 text-text-primary">
+    <div className="resume-page-root resume-tight min-h-screen bg-dark-900 text-text-primary">
       <PageMeta
         title="Renzo Dupont — Salesforce Developer"
         description="Salesforce Certified Platform Developer and Platform Administrator II — Apex, Lightning Web Components, Flows, SOQL/SOSL, Visualforce, REST/JSON integrations, and production support."
@@ -33,12 +35,7 @@ export default function Resume() {
       </header>
 
       <div className="resume-web">
-        <button className="print-button" onClick={() => window.print()}>
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-          </svg>
-          Export PDF
-        </button>
+        <ResumeDownload />
 
         <ResumeVersions />
 
@@ -66,6 +63,8 @@ export default function Resume() {
           {/* PROFESSIONAL EXPERIENCE */}
           <section className="resume-section" id="experience">
             <h2>Professional Experience</h2>
+
+            <VantaExperience />
 
             <div className="employer">
             <div className="job-header">

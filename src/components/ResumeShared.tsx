@@ -87,7 +87,52 @@ export function ResumeVersions() {
       <Link to="/resume-engineer" className={pathname === '/resume-engineer' ? 'active' : ''}>
         Software Engineer
       </Link>
+      <Link to="/resume-fractional" className={pathname === '/resume-fractional' ? 'active' : ''}>
+        Fractional / Contract
+      </Link>
     </div>
+  )
+}
+
+/* Current role shared across the five employment resumes. Keep this entry
+   limited to verified public claims until project outcomes are supplied. */
+export function VantaExperience() {
+  return (
+    <div className="employer">
+      <div className="job-header">
+        <div className="company-name">VANTA</div>
+        <div className="job-period">September 2026 – Present</div>
+      </div>
+      <div className="employer-roles">
+        <div className="job-header">
+          <div className="job-title">Salesforce Platform Engineer</div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const RESUME_PDFS: Record<string, string> = {
+  '/resume': 'Renzo_Dupont_Salesforce_Developer.pdf',
+  '/resume-admin': 'Renzo_Dupont_Salesforce_Administrator.pdf',
+  '/resume-pm': 'Renzo_Dupont_Project_Product_Leader.pdf',
+  '/resume-it-director': 'Renzo_Dupont_IT_Business_Systems.pdf',
+  '/resume-engineer': 'Renzo_Dupont_Software_Engineer.pdf',
+  '/resume-fractional': 'Renzo_Dupont_Fractional_CTO_Software_Engineer.pdf',
+}
+
+export function ResumeDownload() {
+  const { pathname } = useLocation()
+  const filename = RESUME_PDFS[pathname]
+  if (!filename) return null
+
+  return (
+    <a className="print-button" href={`/resumes/${filename}`} download={filename}>
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3a1 1 0 001 1h14a1 1 0 001-1v-3" />
+      </svg>
+      Download PDF
+    </a>
   )
 }
 

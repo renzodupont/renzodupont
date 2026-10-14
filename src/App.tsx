@@ -5,6 +5,7 @@ import ResumeAdmin from './pages/ResumeAdmin'
 import ResumePM from './pages/ResumePM'
 import ResumeITDirector from './pages/ResumeITDirector'
 import ResumeEngineer from './pages/ResumeEngineer'
+import ResumeFractional from './pages/ResumeFractional'
 import { useSmoothScroll } from './hooks/useSmoothScroll'
 
 function AppRoutes() {
@@ -19,6 +20,7 @@ function AppRoutes() {
       <Route path="/resume-it-director" element={<ResumeITDirector />} />
       {/* Software-engineering variant of the same history — see ResumeShared */}
       <Route path="/resume-engineer" element={<ResumeEngineer />} />
+      <Route path="/resume-fractional" element={<ResumeFractional />} />
       {/* Legacy per-audience resume variants — consolidated into a single /resume */}
       <Route path="/resume-leader" element={<Navigate to="/resume" replace />} />
       <Route path="/resume-salesforce" element={<Navigate to="/resume" replace />} />
