@@ -175,7 +175,7 @@ export default function ResumePM() {
           </section>
 
           <CredentialsSection />
-          <EducationSection />
+          <EducationSection compact />
         </div>
       </div>
     </div>

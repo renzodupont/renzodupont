@@ -118,6 +118,9 @@ export default function ResumeFractional() {
               </div>
               <div className="employer-roles">
                 <div className="job-header"><div className="job-title">Salesforce Platform Engineer</div></div>
+                <ul>
+                  <li>Own Salesforce development pipeline improvements across GitHub rulesets, Actions, approval automation, Gearset exclusions, and environment data-use controls.</li>
+                </ul>
               </div>
             </div>
             <div className="employer">

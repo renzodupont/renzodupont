@@ -172,15 +172,14 @@ export default function ResumeAdmin() {
           <section className="resume-section" id="competencies">
             <h2>Core Skills &amp; Technologies</h2>
             <div className="tech-compact">
-              <strong>Salesforce Administration:</strong> Flows · Sales Cloud · Service Cloud · Omni-Channel · Custom Objects · Validation Rules · Approvals · Page Layouts · App Personalization · Sites · Role Hierarchy · Profiles · Permission Sets · Queues · Public Groups · Sharing Rules · SSO (JumpCloud) · Login IP Ranges · Password Policies · Reports &amp; Dashboards · Pricing / Discounts / Quote-to-Cash · Managed Packages · AppExchange (Conga · Calendly · WeFlow) · Pardot<br />
-              <strong>Data &amp; Automation:</strong> Data Loader · Data Quality · Business Process Automation · Sandbox Management · Change Sets · Release Management · Change Validation<br />
-              <strong>Governance &amp; Support:</strong> User Management · License Optimization · User Training &amp; Adoption · Incident Analysis · Stakeholder Requirements<br />
-              <strong>Technical Differentiator:</strong> Apex · SOQL/SOSL · REST/JSON Integrations · Named Credentials · Salesforce CLI · Visualforce · Lightning Web Components<br />
-              <strong>Delivery:</strong> Agile (Standups · Sprint Planning · Backlog Grooming · Retrospectives) · BSA / PM / QA Collaboration
+              <strong>Salesforce Administration:</strong> Flows · Sales Cloud · Service Cloud · Security &amp; Sharing · Reports &amp; Dashboards · Data Loader · AppExchange · Pardot<br />
+              <strong>Release &amp; Support:</strong> Sandboxes · Change Sets · Salesforce CLI · Data Quality · Production Support · User Training<br />
+              <strong>Development:</strong> Apex · SOQL/SOSL · Lightning Web Components · REST/JSON · Named Credentials<br />
+              <strong>Delivery:</strong> Agile · Stakeholder Requirements · BSA / PM / QA Collaboration
             </div>
           </section>
 
-          <EducationSection includeDiplomas />
+          <EducationSection includeDiplomas compact />
         </div>
       </div>
     </div>

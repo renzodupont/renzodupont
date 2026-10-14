@@ -94,8 +94,7 @@ export function ResumeVersions() {
   )
 }
 
-/* Current role shared across the five employment resumes. Keep this entry
-   limited to verified public claims until project outcomes are supplied. */
+/* Current role shared across the five employment resumes. */
 export function VantaExperience() {
   return (
     <div className="employer">
@@ -107,6 +106,10 @@ export function VantaExperience() {
         <div className="job-header">
           <div className="job-title">Salesforce Platform Engineer</div>
         </div>
+        <ul>
+          <li>Own improvements to the Salesforce development pipeline, configuring GitHub rulesets, Actions, and scripts that automate approval steps and standardize release controls.</li>
+          <li>Configure Gearset exclusions and environment-specific data-use controls to strengthen compliance across the development and deployment cycle.</li>
+        </ul>
       </div>
     </div>
   )
@@ -183,8 +186,10 @@ export function CredentialsSection({
 
 export function EducationSection({
   includeDiplomas = false,
+  compact = false,
 }: {
   includeDiplomas?: boolean
+  compact?: boolean
 }) {
   /* Chronological: MIT xPro 2021, then Harvard CS109x 2024. DIPLOMAS is
      newest-first for the developer credentials block. */
@@ -192,7 +197,7 @@ export function EducationSection({
 
   return (
     <section className="resume-section" id="education">
-      <h2>Education &amp; Professional Development</h2>
+      <h2>{compact ? 'Education' : 'Education & Professional Development'}</h2>
 
       <div className="education-item">
         <span className="education-degree">Bachelor&rsquo;s Degree in Computer Science</span>
@@ -201,7 +206,9 @@ export function EducationSection({
 
       <div className="education-item">
         <span className="education-degree">U.S. Academic Equivalency</span>
-        <span className="education-school"> — Bachelor of Science in Computer Science, concentrations in Software Development &amp; Entrepreneurship · Evaluated 2024 by a professor of the Murray Koppelman School of Business, Brooklyn College (CUNY)</span>
+        <span className="education-school">{compact
+          ? ' — B.S. Computer Science · Evaluated 2024 by a Brooklyn College (CUNY) professor'
+          : ' — Bachelor of Science in Computer Science, concentrations in Software Development & Entrepreneurship · Evaluated 2024 by a professor of the Murray Koppelman School of Business, Brooklyn College (CUNY)'}</span>
       </div>
 
       {includeDiplomas &&
@@ -212,13 +219,15 @@ export function EducationSection({
           </div>
         ))}
 
-      <div className="cert-development">
-        <strong>Professional development:</strong> {PROFESSIONAL_DEVELOPMENT.join(' · ')} — LinkedIn, 2026
-      </div>
+      {!compact && <>
+        <div className="cert-development">
+          <strong>Professional development:</strong> {PROFESSIONAL_DEVELOPMENT.join(' · ')} — LinkedIn, 2026
+        </div>
 
-      <div className="cert-development">
-        <strong>Technical training:</strong> {TECHNICAL_TRAINING.join(' · ')}
-      </div>
+        <div className="cert-development">
+          <strong>Technical training:</strong> {TECHNICAL_TRAINING.join(' · ')}
+        </div>
+      </>}
     </section>
   )
 }
