@@ -66,30 +66,28 @@ export default function ResumeFractional() {
 
             <div className="employer">
               <div className="job-header">
-                <div className="company-name">CREDILIT S.A. — Montevideo, Uruguay</div>
-                <div className="job-period">2014 – 2025</div>
+                <div className="company-name">myHANA / CHRONIC CARE ADVOCATES</div>
+                <div className="job-period">September 2026 – Present</div>
               </div>
               <div className="employer-roles">
-                <div className="job-header"><div className="job-title">Fractional CTO</div></div>
+                <div className="job-header"><div className="job-title">Interim CTO and Technical Delivery Lead</div></div>
                 <ul>
-                  <li>Led a Salesforce-centered modernization of a credit administrator, replacing manual loan-origination workflows with client and partner self-service.</li>
-                  <li>Built ASP.NET MVC portals connected to live Salesforce records and automated accounting workflows; the program saved more than $20K annually.</li>
-                  <li>Owned application architecture and delivery across Salesforce, Azure, C#/.NET, SQL Server, and REST APIs.</li>
+                  <li>Guide technical direction and delivery for a caregiver platform spanning web and mobile experiences, care coordination, and the Hana AI companion.</li>
+                  <li>Delivered a technical assessment; now oversee architecture, development partners, security boundaries, and staged release planning.</li>
                 </ul>
               </div>
             </div>
 
             <div className="employer">
               <div className="job-header">
-                <div className="company-name">DENTALMARKETING.NET / 123 POSTCARDS — Heber City, Utah</div>
-                <div className="job-period">2021 – 2023 fractional; 2013 – 2019 staff</div>
+                <div className="company-name">DENTAL PURCHASING PARTNERS</div>
+                <div className="job-period">2026</div>
               </div>
               <div className="employer-roles">
-                <div className="job-header"><div className="job-title">Fractional CTO · Previously Team Leader and Developer</div></div>
+                <div className="job-header"><div className="job-title">Product Architect and Software Engineer</div></div>
                 <ul>
-                  <li>Modernized campaign and CRM reporting with governed .NET Web APIs and executive and client-facing dashboards.</li>
-                  <li>Built a Salesforce-integrated data platform and redesigned call scoring; the reported outcomes were 30% greater productivity and 60% greater call-scoring efficiency.</li>
-                  <li>Led distributed engineering delivery across India, Nepal, and the Philippines.</li>
+                  <li>Designed and built a dental staffing marketplace for practices and credentialed professionals, including shift workflows and administrative operations.</li>
+                  <li>Structured the client-owned React applications and Cloudflare Worker API around a separate, reusable platform for identity and integrations.</li>
                 </ul>
               </div>
             </div>
@@ -103,7 +101,34 @@ export default function ResumeFractional() {
                 <div className="job-header"><div className="job-title">Founder and Owner</div></div>
                 <ul>
                   <li>Built a multi-tenant, white-label platform shipping as Ava CRM and Agency OS, with PostgreSQL tenant isolation, a versioned REST API, and React/TypeScript front ends.</li>
-                  <li>Designed custom objects and fields, shared business modules, and a bring-your-own-key model for AI features.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="employer">
+              <div className="job-header">
+                <div className="company-name">CREDILIT S.A. — Montevideo, Uruguay</div>
+                <div className="job-period">2014 – 2025</div>
+              </div>
+              <div className="employer-roles">
+                <div className="job-header"><div className="job-title">Fractional CTO</div></div>
+                <ul>
+                  <li>Led Salesforce-centered modernization and built ASP.NET MVC self-service portals connected to live records; the program saved more than $20K annually.</li>
+                  <li>Owned architecture and delivery across Salesforce, Azure, C#/.NET, SQL Server, and REST APIs.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="employer">
+              <div className="job-header">
+                <div className="company-name">DENTALMARKETING.NET / 123 POSTCARDS — Heber City, Utah</div>
+                <div className="job-period">2021 – 2023 fractional; 2013 – 2019 staff</div>
+              </div>
+              <div className="employer-roles">
+                <div className="job-header"><div className="job-title">Fractional CTO · Previously Team Leader and Developer</div></div>
+                <ul>
+                  <li>Modernized campaign and CRM reporting with .NET APIs, Salesforce-integrated data, and executive and client dashboards.</li>
+                  <li>Redesigned call scoring; reported outcomes were 30% greater productivity and 60% greater scoring efficiency.</li>
                 </ul>
               </div>
             </div>
